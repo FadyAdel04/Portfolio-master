@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 // Import your project images here
+import imaginify from "../../Assets/Projects/imaginify.png";
 import gym from "../../Assets/Projects/gym.png";
 import techTrove from "../../Assets/Projects/techTrove.png";
 import novil from "../../Assets/Projects/novil.png";
@@ -30,6 +31,30 @@ function Projects() {
 
   const projects = [
     {
+      imgPath: techTrove,
+      title: "techTrove Shop",
+      description:
+        "This website serves as a platform for technology enthusiasts to explore and purchase a variety of gadgets, electronics and accessories. Key Features: User-friendly interface: The website features a sleek and intuitive design",
+      ghLink: "https://github.com/FadyAdel04/Tech-Trove-Shop",
+      demoLink: "https://tech-trove-shop.vercel.app/",
+    },
+    {
+      imgPath: imaginify,
+      title: "imaginify AI Platform",
+      description:
+        "imaginify AI Platform:Creative Tools: Imaginify offers tools for image restoration, generative fill, and object removal.Usage Credits: The platform operates on a credit system, which users can purchase to access services.",
+      ghLink: "https://github.com/FadyAdel04/Imaginify",
+      demoLink: "https://imaginify-eight-pi.vercel.app/",
+    },
+    {
+      imgPath: chat,
+      title: "chat 2 chat app",
+      description:
+        "A chat room where users can exchange messages. The main function is real-time communication, allowing users to interact with each other. The technology behind this chat room can include web sockets, and client-server architecture",
+      ghLink: "https://github.com/FadyAdel04/chat-2-chat",
+      demoLink: "https://chat-2-chat.vercel.app/",
+    },
+    {
       imgPath: novil,
       title: "Novil Academy",
       description:
@@ -44,22 +69,6 @@ function Projects() {
         "Fitness Club: A home exercise platform offering personalized workout routines. Explore Exercises: Users can search for various exercises tailored to their needs.",
       ghLink: "https://github.com/FadyAdel04/Fitness-Gym",
       demoLink: "https://fitness-hlv7jbrji-fady-adels-projects.vercel.app/",
-    },
-    {
-      imgPath: techTrove,
-      title: "techTrove Shop",
-      description:
-        "This website serves as a platform for technology enthusiasts to explore and purchase a variety of gadgets, electronics and accessories. Key Features: User-friendly interface: The website features a sleek and intuitive design",
-      ghLink: "https://github.com/FadyAdel04/Tech-Trove-Shop",
-      demoLink: "https://tech-trove-shop.vercel.app/",
-    },
-    {
-      imgPath: chat,
-      title: "chat 2 chat app",
-      description:
-        "A chat room where users can exchange messages. The main function is real-time communication, allowing users to interact with each other. The technology behind this chat room can include web sockets, and client-server architecture",
-      ghLink: "https://github.com/FadyAdel04/chat-2-chat",
-      demoLink: "https://chat-2-chat.vercel.app/",
     },
     {
       imgPath: courses,
