@@ -11,7 +11,7 @@ function Github() {
     });
   }, []);
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "10px" }} data-aos="fade-up" data-aos-duration="3000">
+    <Row style={{ justifyContent: "center", paddingBottom: "10px", color:"#fff" }} data-aos="fade-up" data-aos-duration="3000">
       <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
         Days I <strong className="purple">Code</strong>
       </h1>
@@ -21,6 +21,7 @@ function Github() {
         blockMargin={5}
         color="#c084f5"
         fontSize={16}
+        
       />
     </Row>
   );

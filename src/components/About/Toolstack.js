@@ -1,3 +1,4 @@
+// Toolstack.js
 import React, { useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
 import {
@@ -8,17 +9,46 @@ import {
   SiFirebase,
   SiStrapi,
   SiGithub,
+  SiNetlify,
+  SiPostgresql,
+  SiFigma 
 } from "react-icons/si";
-import { TbApi } from "react-icons/tb";
-import {
-  DiGit,
-  DiNodejs,
-} from "react-icons/di";
+import { MdAnimation } from "react-icons/md";
+import { SiAxios } from "react-icons/si";
+import { GiArtificialIntelligence } from "react-icons/gi";
+import { DiGit, DiNodejs } from "react-icons/di";
 import { FaCcStripe, FaWindows } from "react-icons/fa";
+import { TbApi } from "react-icons/tb";
+import { FaMapMarkedAlt } from "react-icons/fa";
+import { DiResponsive } from "react-icons/di";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-function Toolstack() {
+// Mapping of tool names to icons
+const toolIconMapping = {
+  "VS Code": <SiVisualstudiocode />,
+  "Postman": <SiPostman />,
+  "Slack": <SiSlack />,
+  "Vercel": <SiVercel />,
+  "Firebase": <SiFirebase />,
+  "Strapi": <SiStrapi />,
+  "GitHub": <SiGithub />,
+  "Netlify": <SiNetlify />,
+  "PostgreSQL": <SiPostgresql />,
+  "Git": <DiGit />,
+  "Node.js": <DiNodejs />,
+  "Stripe": <FaCcStripe />,
+  "Windows": <FaWindows />,
+  "API": <TbApi />,
+  "Figma": <SiFigma />,
+  "Ai" :<GiArtificialIntelligence />,
+  "Axios" : <SiAxios />,
+  "Animation" :<MdAnimation />,
+  "MapIntegration" :<FaMapMarkedAlt />,
+  "Responsive" :<DiResponsive />
+};
+
+function Toolstack({ tools }) {
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration
@@ -27,30 +57,21 @@ function Toolstack() {
     });
   }, []);
 
-  const tools = [
-    { icon: <FaWindows />, delay: 0 },
-    { icon: <SiVisualstudiocode />, delay: 200 },
-    { icon: <SiFirebase />, delay: 400 },
-    { icon: <SiStrapi />, delay: 600 },
-    { icon: <FaCcStripe />, delay: 800 },
-    { icon: <SiVercel />, delay: 1000 },
-    { icon: <DiGit />, delay: 1200 },
-    { icon: <SiGithub />, delay: 1400 },
-    { icon: <TbApi />, delay: 1600 },
-  ];
-
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       {tools.map((tool, index) => (
         <Col
           xs={4}
           md={2}
-          className="tech-icons"
+          className="tool-icons"
           data-aos="fade-up"
-          data-aos-delay={tool.delay}
+          data-aos-delay={index * 200} // Increase delay for each icon
           key={index}
+          style={{ position: "relative", textAlign: "center" }} // Tooltip positioning
         >
-          {tool.icon}
+          {toolIconMapping[tool] || null} {/* Display the corresponding icon */}
+          {/* Tooltip displaying tool name */}
+          <div className="tool-tooltip">{tool}</div>
         </Col>
       ))}
     </Row>

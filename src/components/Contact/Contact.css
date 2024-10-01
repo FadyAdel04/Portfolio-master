@@ -1,0 +1,119 @@
+/* Set the form section to take the full height of the viewport */
+.contact-section {
+    background-color: #0d0d0d;
+    color: #fff;
+    padding: 60px 20px;
+    height: 100vh; /* Full height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  /* Heading styles */
+  .contact-header .heading {
+    font-size: 2.2em;
+    color: #c889e6; /* Purple color */
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form-section {
+    text-align: left;
+    width: 100%;
+  }
+  
+  .contact-form {
+    border: 2px solid transparent; /* Initial transparent border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px;
+    background-color: #1c1c1c; /* Darker background for form */
+    position: relative;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 0 20px rgba(200, 137, 230, 0.6); /* Neon effect */
+  }
+  
+  /* Neon hover effect */
+  .contact-form:hover {
+    border-color: #c889e6; /* Neon color on hover */
+    box-shadow: 0 0 30px rgba(200, 137, 230, 0.8); /* More neon effect on hover */
+  }
+  
+  /* Form input fields */
+  .contact-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #c889e6;
+    background-color: #333;
+    color: white;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: #c889e6;
+    box-shadow: 0 0 8px rgba(200, 137, 230, 0.5);
+  }
+  
+/* Submit button */
+.submit-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #6f42c1;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.submit-btn:hover {
+  background-color: #563d7c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15), 0 0 20px rgba(200, 137, 230, 0.5);
+}
+  
+  /* Full-width responsive form */
+  .contact-form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .contact-form {
+      padding: 20px;
+    }
+  
+    .contact-header .heading {
+      font-size: 1.8em;
+    }
+  
+    .submit-btn {
+      font-size: 1em;
+      padding: 8px 16px;
+    }
+  }
+  

@@ -1,13 +1,56 @@
+// Techstack.js
 import React, { useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
-import { DiJavascript1, DiReact, DiPython, DiJava, DiCss3, DiHtml5 } from "react-icons/di";
+import {
+  DiJavascript1, DiReact, DiPython, DiJava, DiCss3, DiHtml5
+} from "react-icons/di";
 import { SiBootstrap, SiTailwindcss, SiNextdotjs, SiMysql } from "react-icons/si";
+import { MdMovieEdit } from "react-icons/md";
+import { SiReacthookform } from "react-icons/si";
+import { SiReactrouter } from "react-icons/si";
 import { FaPhp } from "react-icons/fa";
+import { FaServer } from "react-icons/fa";
 import { TbBrandCpp } from "react-icons/tb";
+import { MdAnimation } from "react-icons/md";
+import { SiTypescript } from "react-icons/si";
 import AOS from "aos";
+import { SiOpenai } from "react-icons/si";
 import "aos/dist/aos.css";
+import { DiNodejs } from "react-icons/di";
+import { MdDynamicFeed } from "react-icons/md";
+import { MdOutlinePayments } from "react-icons/md";
+import { FaMapMarkedAlt } from "react-icons/fa";
+import { DiResponsive } from "react-icons/di";
 
-function Techstack() {
+// Mapping of technology names to icons
+const iconMapping = {
+  "HTML": <DiHtml5 />,
+  "CSS": <DiCss3 />,
+  "Bootstrap": <SiBootstrap />,
+  "Tailwind": <SiTailwindcss />,
+  "JavaScript": <DiJavascript1 />,
+  "React": <DiReact />,
+  "Next.js": <SiNextdotjs />,
+  "PHP": <FaPhp />,
+  "MySQL": <SiMysql />,
+  "Python": <DiPython />,
+  "Java": <DiJava />,
+  "C++": <TbBrandCpp />,
+  "TMDb API": <MdMovieEdit />,
+  "React Router": <SiReactrouter />,
+  "Node.js":<DiNodejs />,
+  "Hooks": <SiReacthookform />,
+  "Server-Side": <FaServer />,
+  "Animation" :<MdAnimation />,
+  "Open Ai" : <SiOpenai />,
+  "TypeScript" : <SiTypescript />,
+  "Dynamic Root" : <MdDynamicFeed />,
+  "Payment": <MdOutlinePayments />,
+  "MapIntegration" :<FaMapMarkedAlt />,
+  "Responsive" :<DiResponsive />
+};
+
+function Techstack({ skills, technologies }) {
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration
@@ -16,33 +59,24 @@ function Techstack() {
     });
   }, []);
 
-  const icons = [
-    { icon: <DiHtml5 />, delay: 0 },
-    { icon: <DiCss3 />, delay: 200 },
-    { icon: <SiBootstrap />, delay: 400 },
-    { icon: <SiTailwindcss />, delay: 600 },
-    { icon: <DiJavascript1 />, delay: 800 },
-    { icon: <DiReact />, delay: 1000 },
-    { icon: <SiNextdotjs />, delay: 1200 },
-    { icon: <FaPhp />, delay: 1400 },
-    { icon: <SiMysql />, delay: 1600 },
-    { icon: <DiPython />, delay: 1800 },
-    { icon: <DiJava />, delay: 2000 },
-    { icon: <TbBrandCpp />, delay: 2200 },
-  ];
+  // Combine skills and technologies into one array
+  const allTechs = [...skills, ...technologies];
 
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      {icons.map((iconObj, index) => (
+      {allTechs.map((tech, index) => (
         <Col
           xs={4}
           md={2}
           className="tech-icons"
           data-aos="fade-up"
-          data-aos-delay={iconObj.delay}
+          data-aos-delay={index * 200} // Increase delay for each icon
           key={index}
+          style={{ position: "relative", textAlign: "center" }} // Tooltip positioning
         >
-          {iconObj.icon}
+          {iconMapping[tech] || null} {/* Display the corresponding icon */}
+          {/* Tooltip displaying tech name */}
+          <div className="tech-tooltip">{tech}</div>
         </Col>
       ))}
     </Row>

@@ -1,3 +1,7 @@
+/* Add this to your CSS file */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 html {
   --section-background-color: linear-gradient(to bottom left,
       rgba(17, 16, 16, 0.582),
@@ -331,6 +335,8 @@ button:focus {
   }
 }
 
+
+
 .home-about-section {
   position: relative;
   padding-bottom: 70px !important;
@@ -563,14 +569,7 @@ button:focus {
 /* About */
 /* --------- */
 
-.about-section {
-  position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
-}
-
+/* Tech icon styles */
 .tech-icons {
   font-size: 4.5em !important;
   margin: 15px !important;
@@ -584,24 +583,122 @@ button:focus {
   box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
+  position: relative; /* For tooltip positioning */
+  color: white; /* Default white color for icons */
+  background-color: rgba(89, 4, 168, 0.137); /* Subtle purple background */
 }
 
+/* Hover effect for tech icons */
+.tech-icons:hover {
+  transform: scale(1.05) translateY(15px) !important; /* Move icon down slightly on hover */
+  overflow: hidden !important;
+  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  color: rgba(200, 137, 230, 0.883); /* Purple color on hover */
+  background-color: rgba(200, 137, 230, 0.1); /* Light purple background */
+}
+
+/* Tech name styling above the icon */
+.tech-tooltip {
+  visibility: hidden;
+  color: rgba(200, 137, 230, 0.883); /* Neon purple color */
+  text-align: center;
+  font-size: 0.4em; /* Smaller font size */
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+  top: 10px; /* Positioned above the tech icon */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  text-shadow: 0 0 5px rgba(200, 137, 230, 0.8), 0 0 10px rgba(200, 137, 230, 0.5); /* Neon glow effect */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Show tooltip and move the icon down on hover */
+.tech-icons:hover .tech-tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(-10px); /* Slight upward animation */
+}
+
+/* Adjust for mobile responsiveness */
 @media (max-width: 767px) {
   .tech-icons {
     margin: 10px !important;
   }
+
+  .tech-tooltip {
+    top: 10px;
+    font-size: 0.3em; /* Adjust tooltip position for smaller screens */
+  }
 }
 
-.tech-icons:hover {
-  transform: scale(1.05) !important;
+/* Tool icon styles */
+.tool-icons {
+  font-size: 4.5em !important;
+  margin: 15px !important;
+  padding: 10px !important;
+  opacity: 0.93 !important;
+  border: 1.7px solid rgba(137, 177, 230, 0.637) !important; /* Green tint for tools */
+  vertical-align: middle !important;
+  text-align: center !important;
+  border-radius: 5px !important;
+  display: table !important;
+  box-shadow: 4px 5px 4px 3px rgba(4, 168, 89, 0.137) !important; /* Subtle green shadow */
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  transition: all 0.4s ease 0s !important;
+  position: relative; /* For tooltip positioning */
+  color: white; /* Default white color for icons */
+  background-color: rgba(4, 168, 89, 0.137); /* Subtle green background */
 }
 
-.tech-icon-images {
-  padding: 20px !important;
-  line-height: 1.6 !important;
+/* Hover effect for tool icons */
+.tool-icons:hover {
+  transform: scale(1.05) translateY(15px) !important; /* Move icon down slightly on hover */
+  overflow: hidden !important;
+  border: 2.2px solid rgba(137, 177, 230, 0.637) !important; /* Green border on hover */
+  color: rgba(137, 177, 230, 0.637); /* Green color on hover */
+  background-color: rgba(137, 230, 137, 0.1); /* Light green background */
 }
+
+/* Tool name styling above the icon */
+.tool-tooltip {
+  visibility: hidden;
+  color: rgba(137, 177, 230, 0.637); /* Neon green color */
+  text-align: center;
+  font-size: 0.4em; /* Smaller font size */
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+  top: 6px; /* Positioned above the tool icon */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  text-shadow: 0 0 5px rgba(137, 177, 230, 0.637), 0 0 10px rgba(137, 197, 230, 0.5); /* Neon glow effect */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Show tooltip and move the icon down on hover */
+.tool-icons:hover .tool-tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(-10px); /* Slight upward animation */
+}
+
+/* Adjust for mobile responsiveness */
+@media (max-width: 767px) {
+  .tool-icons {
+    margin: 10px !important;
+  }
+
+  .tool-tooltip {
+    top: 10px;
+    font-size: 0.2em;
+  }
+}
+
 
 .quote-card-view {
   border: none !important;
@@ -800,3 +897,4 @@ button:focus {
 .home-image {
   animation: slideInRight 3s ease-out;
 }
+

@@ -1,0 +1,283 @@
+/* Container for the entire project detail page */
+.project-detail-container {
+  max-width: 1200px;
+  margin: 65px auto 10px;
+  padding: 40px 20px;
+  text-align: center; /* Center the content */
+  border-radius: 10px;
+  box-shadow: none; /* Remove background and shadow */
+}
+
+/* Project detail row */
+.project-detail-row {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  align-items: flex-start; /* Align items at the start */
+  margin-bottom: 20px; /* Space below the row */
+}
+
+/* Project image container */
+.project-image-container {
+  flex: 0 0 100%; /* Full width on small screens */
+  max-width: 55%; /* Up to 55% on larger screens */
+  margin-right: 20px; /* Add some spacing */
+  margin-bottom: 20px; /* Add spacing for small screens */
+}
+
+/* Project details */
+.project-details {
+  flex: 1; /* Allow details to take the remaining space */
+  text-align: left; /* Align text to the left */
+  margin-left: 20px; /* Space between image and details */
+  width: 100%; /* Full width on small screens */
+}
+
+/* Project image styling */
+.project-image {
+  max-width: 100%;
+  height: 350px; /* Fixed height for all images */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Image shadow */
+  transition: transform 0.3s ease;
+}
+
+/* Project title styling */
+.project-title {
+  font-size: 2.2em;
+  color: #c889e6; /* Purple color */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Project description */
+.project-description {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: white; /* White text for description */
+  margin-bottom: 25px;
+}
+
+/* Project date styling */
+.project-date {
+  font-size: 1em;
+  color: white; /* Purple text for date */
+  margin-bottom: 20px;
+}
+
+/* Skills and technologies container */
+.skills-container {
+  margin-bottom: 5px;
+  font-size: 1em;
+  color: #c889e6; /* Purple text for skills */
+}
+
+/* Project buttons */
+.project-buttons {
+  margin-top: 30px;
+}
+
+.demo-button,
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  margin: 10px;
+  font-size: 1.1em;
+  padding: 10px 20px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft button shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Demo button */
+.demo-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.demo-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* More shadow on hover */
+}
+
+/* GitHub button */
+.github-button {
+  background-color: #6f42c1; /* Purple color */
+  color: white;
+}
+
+.github-button:hover {
+  background-color: #563d7c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* More shadow on hover */
+}
+
+/* Key Features container */
+.key-features-container {
+  text-align: left;
+  margin-bottom: 30px; /* Remove bottom margin */
+}
+
+/* Key Features title */
+.key-features-title {
+  font-size: 1.8em;
+  color: #c889e6; /* Purple color for the title */
+  font-weight: bold;
+  margin-bottom: 20px; /* Keep margin for title */
+  text-align: center; 
+}
+
+/* Key Features list */
+.key-features-list {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 15px; /* Space between grid items */
+  padding: 0; /* Remove padding */
+  list-style: none; /* Remove default list styling */
+  margin: 0 auto; /* Center the list */
+}
+
+/* Individual feature styling */
+.key-features-list .list-group-item {
+  background-color: transparent; /* No background color */
+  border: 2px solid transparent; /* Initial transparent border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding for list items */
+  transition: border-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  position: relative; /* For positioning the pseudo-element */
+}
+
+/* Neon effect on hover for individual features */
+.key-features-list .list-group-item:hover {
+  border-color: #c889e6; /* Neon color on hover */
+}
+
+.key-features-list .list-group-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px; /* Match the border radius */
+  background: rgba(200, 137, 230, 0.2); /* Light neon background */
+  z-index: -1; /* Place behind the content */
+  transition: transform 0.3s ease;
+}
+
+/* Individual feature text styling */
+.key-features-list .list-group-item span {
+  display: block; /* Ensure spans are block elements */
+  color: white; /* White text for features */
+  line-height: 1.6; /* Line height for readability */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-detail-container {
+    padding: 20px;
+  }
+
+  .project-title {
+    font-size: 1.8em;
+  }
+
+  .project-description {
+    font-size: 1em;
+  }
+
+  .demo-button,
+  .github-button {
+    font-size: 1em;
+    padding: 8px 16px;
+  }
+
+  .project-image-container {
+    flex: 0 0 100%; /* Full width on small screens */
+    max-width: 100%; /* Ensure it doesn't exceed container */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .project-details {
+    margin-left: 0; /* Remove left margin */
+    width: 100%; /* Full width on small screens */
+  }
+
+  .key-features-list {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+
+  .key-features-title {
+    font-size: 1.5em;
+  }
+
+  .key-features-list .list-group-item {
+    font-size: 1em;
+  }
+}
+.navigation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px; /* Space between buttons and image */
+  flex-wrap: wrap; /* Allows wrapping of buttons on smaller screens */
+}
+
+.project-image-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Allows images to wrap in smaller screens */
+}
+
+.project-row-image {
+  max-width: 100%; /* Responsive size */
+  height: auto;
+  transition: transform 0.3s ease;
+  border-radius: 10px; /* Optional: adds rounded corners */
+  margin: 5px; /* Space between images */
+}
+
+.project-row-image:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .project-row-image {
+    max-width: 80%; /* Adjusts for smaller screens */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .project-row-image {
+    max-width: 45%; /* Adjusts for medium screens */
+  }
+}
+
+@media (min-width: 901px) {
+  .project-row-image {
+    max-width: 30%; /* Adjusts for larger screens */
+  }
+}
+
+.project-title {
+  color: #c889e6; /* Adjust color as needed */
+  margin-top: 5px; /* Space between image and title */
+  font-size: 1.2rem; /* Adjust font size as needed */
+}
+
+.project-title-row{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
