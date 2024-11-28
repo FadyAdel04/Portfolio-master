@@ -12,7 +12,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Certificates from "./components/Certificate/Certificates";
 import Footer from "./components/Footer";
-import Contact from "./components/Contact/Contact";  // Import Contact component
+import Contact from "./components/Contact/Contact"; // Import Contact component
 import Resume from "./components/Resume/ResumeNew";
 import ProjectDetail from "./components/Projects/ProjectDetail";
 import Preloader from "../src/components/Pre";
@@ -39,13 +39,25 @@ import holla from "./Assets/Projects/holla.png";
 import shopping from "./Assets/Projects/shopping.png";
 import bootstrap from "./Assets/Projects/bootstrap.png";
 import dash from "./Assets/Projects/dash.png";
-import spicial from "./Assets/Projects/spicial.png"
-import phone from "./Assets/Projects/phone.png"
-import dev from "./Assets/Projects/dev.png"
-import phlox from "./Assets/Projects/phlox.png"
-import edited from "./Assets/Projects/edited.png"
-import crud from "./Assets/Projects/crud.png"
-import crud1 from "./Assets/projectsImages/crud/2.png"
+import spicial from "./Assets/Projects/spicial.png";
+import phone from "./Assets/Projects/phone.png";
+import dev from "./Assets/Projects/dev.png";
+import phlox from "./Assets/Projects/phlox.png";
+import edited from "./Assets/Projects/edited.png";
+import crud from "./Assets/Projects/crud.png";
+import health from "./Assets/Projects/health.png";
+import crud1 from "./Assets/projectsImages/crud/2.png";
+
+// health image
+import health1 from "./Assets/projectsImages/health/2.png";
+import health2 from "./Assets/projectsImages/health/3.png";
+import health3 from "./Assets/projectsImages/health/4.png";
+import health4 from "./Assets/projectsImages/health/5.png";
+import health5 from "./Assets/projectsImages/health/6.png";
+import health6 from "./Assets/projectsImages/health/7.png";
+import health7 from "./Assets/projectsImages/health/8.png";
+import health8 from "./Assets/projectsImages/health/9.png";
+import health9 from "./Assets/projectsImages/health/10.png";
 
 // tech images
 import tech1 from "./Assets/projectsImages/TechTrove shop/2.png";
@@ -115,95 +127,95 @@ import novil12 from "./Assets/projectsImages/Nouvil/13.png";
 import novil13 from "./Assets/projectsImages/Nouvil/14.png";
 
 // gym
-import gym1 from "./Assets/projectsImages/gym/2.png"
-import gym2 from "./Assets/projectsImages/gym/3.png"
-import gym3 from "./Assets/projectsImages/gym/4.png"
-import gym4 from "./Assets/projectsImages/gym/5.png"
+import gym1 from "./Assets/projectsImages/gym/2.png";
+import gym2 from "./Assets/projectsImages/gym/3.png";
+import gym3 from "./Assets/projectsImages/gym/4.png";
+import gym4 from "./Assets/projectsImages/gym/5.png";
 
 // learning
-import learn1 from "./Assets/projectsImages/Learning/2.png"
-import learn2 from "./Assets/projectsImages/Learning/3.png"
-import learn3 from "./Assets/projectsImages/Learning/4.png"
-import learn4 from "./Assets/projectsImages/Learning/5.png"
-import learn5 from "./Assets/projectsImages/Learning/6.png"
-import learn6 from "./Assets/projectsImages/Learning/7.png"
-import learn7 from "./Assets/projectsImages/Learning/8.png"
-import learn8 from "./Assets/projectsImages/Learning/9.png"
+import learn1 from "./Assets/projectsImages/Learning/2.png";
+import learn2 from "./Assets/projectsImages/Learning/3.png";
+import learn3 from "./Assets/projectsImages/Learning/4.png";
+import learn4 from "./Assets/projectsImages/Learning/5.png";
+import learn5 from "./Assets/projectsImages/Learning/6.png";
+import learn6 from "./Assets/projectsImages/Learning/7.png";
+import learn7 from "./Assets/projectsImages/Learning/8.png";
+import learn8 from "./Assets/projectsImages/Learning/9.png";
 
 // Brain
-import brain1 from "./Assets/projectsImages/Brain/2.png"
-import brain2 from "./Assets/projectsImages/Brain/3.png"
-import brain3 from "./Assets/projectsImages/Brain/4.png"
-import brain4 from "./Assets/projectsImages/Brain/5.png"
-import brain5 from "./Assets/projectsImages/Brain/6.png"
-import brain6 from "./Assets/projectsImages/Brain/7.png"
-import brain7 from "./Assets/projectsImages/Brain/8.png"
-import brain8 from "./Assets/projectsImages/Brain/9.png"
-import brain9 from "./Assets/projectsImages/Brain/10.png"
+import brain1 from "./Assets/projectsImages/Brain/2.png";
+import brain2 from "./Assets/projectsImages/Brain/3.png";
+import brain3 from "./Assets/projectsImages/Brain/4.png";
+import brain4 from "./Assets/projectsImages/Brain/5.png";
+import brain5 from "./Assets/projectsImages/Brain/6.png";
+import brain6 from "./Assets/projectsImages/Brain/7.png";
+import brain7 from "./Assets/projectsImages/Brain/8.png";
+import brain8 from "./Assets/projectsImages/Brain/9.png";
+import brain9 from "./Assets/projectsImages/Brain/10.png";
 
 // Car
-import car1 from "./Assets/projectsImages/Car/1.png"
-import car2 from "./Assets/projectsImages/Car/2.png"
+import car1 from "./Assets/projectsImages/Car/1.png";
+import car2 from "./Assets/projectsImages/Car/2.png";
 
 // Space
-import space1 from "./Assets/projectsImages/Space/2.png"
-import space2 from "./Assets/projectsImages/Space/3.png"
-import space3 from "./Assets/projectsImages/Space/4.png"
-import space4 from "./Assets/projectsImages/Space/5.png"
+import space1 from "./Assets/projectsImages/Space/2.png";
+import space2 from "./Assets/projectsImages/Space/3.png";
+import space3 from "./Assets/projectsImages/Space/4.png";
+import space4 from "./Assets/projectsImages/Space/5.png";
 
 // Karama
-import karama1 from "./Assets/projectsImages/Karama/2.png"
-import karama2 from "./Assets/projectsImages/Karama/3.png"
-import karama3 from "./Assets/projectsImages/Karama/4.png"
-import karama4 from "./Assets/projectsImages/Karama/5.png"
-import karama5 from "./Assets/projectsImages/Karama/6.png"
-import karama6 from "./Assets/projectsImages/Karama/7.png"
-import karama7 from "./Assets/projectsImages/Karama/8.png"
-import karama8 from "./Assets/projectsImages/Karama/9.png"
-import karama9 from "./Assets/projectsImages/Karama/10.png"
-import karama10 from "./Assets/projectsImages/Karama/11.png"
-import karama11 from "./Assets/projectsImages/Karama/12.png"
-import karama12 from "./Assets/projectsImages/Karama/13.png"
-import karama13 from "./Assets/projectsImages/Karama/14.png"
-import karama14 from "./Assets/projectsImages/Karama/15.png"
+import karama1 from "./Assets/projectsImages/Karama/2.png";
+import karama2 from "./Assets/projectsImages/Karama/3.png";
+import karama3 from "./Assets/projectsImages/Karama/4.png";
+import karama4 from "./Assets/projectsImages/Karama/5.png";
+import karama5 from "./Assets/projectsImages/Karama/6.png";
+import karama6 from "./Assets/projectsImages/Karama/7.png";
+import karama7 from "./Assets/projectsImages/Karama/8.png";
+import karama8 from "./Assets/projectsImages/Karama/9.png";
+import karama9 from "./Assets/projectsImages/Karama/10.png";
+import karama10 from "./Assets/projectsImages/Karama/11.png";
+import karama11 from "./Assets/projectsImages/Karama/12.png";
+import karama12 from "./Assets/projectsImages/Karama/13.png";
+import karama13 from "./Assets/projectsImages/Karama/14.png";
+import karama14 from "./Assets/projectsImages/Karama/15.png";
 
 // Travel
-import travel1 from "./Assets/projectsImages/Travel/2.png"
-import travel2 from "./Assets/projectsImages/Travel/3.png"
-import travel3 from "./Assets/projectsImages/Travel/4.png"
-import travel4 from "./Assets/projectsImages/Travel/5.png"
+import travel1 from "./Assets/projectsImages/Travel/2.png";
+import travel2 from "./Assets/projectsImages/Travel/3.png";
+import travel3 from "./Assets/projectsImages/Travel/4.png";
+import travel4 from "./Assets/projectsImages/Travel/5.png";
 
 // Red
-import red1 from "./Assets/projectsImages/Red/2.png"
-import red2 from "./Assets/projectsImages/Red/3.png"
-import red3 from "./Assets/projectsImages/Red/4.png"
-import red4 from "./Assets/projectsImages/Red/5.png"
-import red5 from "./Assets/projectsImages/Red/6.png"
-import red6 from "./Assets/projectsImages/Red/7.png"
-import red7 from "./Assets/projectsImages/Red/8.png"
+import red1 from "./Assets/projectsImages/Red/2.png";
+import red2 from "./Assets/projectsImages/Red/3.png";
+import red3 from "./Assets/projectsImages/Red/4.png";
+import red4 from "./Assets/projectsImages/Red/5.png";
+import red5 from "./Assets/projectsImages/Red/6.png";
+import red6 from "./Assets/projectsImages/Red/7.png";
+import red7 from "./Assets/projectsImages/Red/8.png";
 
 // Zen
-import zen1 from "./Assets/projectsImages/Zen/2.png"
-import zen2 from "./Assets/projectsImages/Zen/3.png"
-import zen3 from "./Assets/projectsImages/Zen/4.png"
-import zen4 from "./Assets/projectsImages/Zen/5.png"
-import zen5 from "./Assets/projectsImages/Zen/6.png"
-import zen6 from "./Assets/projectsImages/Zen/7.png"
-import zen7 from "./Assets/projectsImages/Zen/8.png"
-import zen8 from "./Assets/projectsImages/Zen/9.png"
+import zen1 from "./Assets/projectsImages/Zen/2.png";
+import zen2 from "./Assets/projectsImages/Zen/3.png";
+import zen3 from "./Assets/projectsImages/Zen/4.png";
+import zen4 from "./Assets/projectsImages/Zen/5.png";
+import zen5 from "./Assets/projectsImages/Zen/6.png";
+import zen6 from "./Assets/projectsImages/Zen/7.png";
+import zen7 from "./Assets/projectsImages/Zen/8.png";
+import zen8 from "./Assets/projectsImages/Zen/9.png";
 
 // Shopping
-import shopping1 from "./Assets/projectsImages/Shopping/2.png"
-import shopping2 from "./Assets/projectsImages/Shopping/3.png"
-import shopping3 from "./Assets/projectsImages/Shopping/4.png"
-import shopping4 from "./Assets/projectsImages/Shopping/5.png"
-import shopping5 from "./Assets/projectsImages/Shopping/6.png"
-import shopping6 from "./Assets/projectsImages/Shopping/7.png"
-import shopping7 from "./Assets/projectsImages/Shopping/8.png"
-import shopping8 from "./Assets/projectsImages/Shopping/9.png"
-import shopping9 from "./Assets/projectsImages/Shopping/10.png"
-import shopping10 from "./Assets/projectsImages/Shopping/11.png"
-import shopping11 from "./Assets/projectsImages/Shopping/12.png"
+import shopping1 from "./Assets/projectsImages/Shopping/2.png";
+import shopping2 from "./Assets/projectsImages/Shopping/3.png";
+import shopping3 from "./Assets/projectsImages/Shopping/4.png";
+import shopping4 from "./Assets/projectsImages/Shopping/5.png";
+import shopping5 from "./Assets/projectsImages/Shopping/6.png";
+import shopping6 from "./Assets/projectsImages/Shopping/7.png";
+import shopping7 from "./Assets/projectsImages/Shopping/8.png";
+import shopping8 from "./Assets/projectsImages/Shopping/9.png";
+import shopping9 from "./Assets/projectsImages/Shopping/10.png";
+import shopping10 from "./Assets/projectsImages/Shopping/11.png";
+import shopping11 from "./Assets/projectsImages/Shopping/12.png";
 
 // bootstrap
 import bootstrap1 from "./Assets/projectsImages/Bootstrap/2.png";
@@ -252,10 +264,9 @@ import phlox7 from "./Assets/projectsImages/Phlox/8.png";
 import phlox8 from "./Assets/projectsImages/Phlox/9.png";
 import phlox9 from "./Assets/projectsImages/Phlox/10.png";
 import phlox10 from "./Assets/projectsImages/Phlox/11.png";
-    
 
 // edited
-import edited1 from "./Assets/projectsImages/edited/1.png"
+import edited1 from "./Assets/projectsImages/edited/1.png";
 
 function App() {
   const [load, updateLoad] = useState(true);
@@ -271,57 +282,43 @@ function App() {
   const projects = [
     {
       id: 1,
-      imgPath: techTrove,
+      imgPath: health,
       imagePaths: [
-        tech1,
-        tech2,
-        tech3,
-        tech4,
-        tech5,
-        tech6,
-        tech7,
-        tech8,
-        tech9,
-        tech10,
-        tech11,
-        tech12,
-        tech13,
-        tech14,
-        tech15,
+        health1,
+        health2,
+        health3,
+        health4,
+        health5,
+        health6,
+        health7,
+        health8,
+        health9,
       ],
-      title: "Tech Trove Shop",
+      title: "Care Pulse Health care",
       description:
-        "Tech Trove Shop is an online store specializing in electronic products and gadgets. It features a modern interface that allows users to browse a wide range of items, including laptops, smartphones, and accessories. The site typically includes product categories, detailed descriptions, and user-friendly navigation for seamless shopping experiences.",
-      ghLink: "https://github.com/FadyAdel04/Tech-Trove-Shop",
-      demoLink: "https://tech-trove-shop.vercel.app/",
+        "Care Pulse Health Care is a platform dedicated to providing comprehensive health services and wellness information. It offers users easy access to healthcare professionals, services, and resources tailored to their needs.",
+      ghLink: "https://github.com/FadyAdel04/CarePulesHealthCare",
+      demoLink: "https://care-pules-health-care.vercel.app/",
       skills: ["React", "Next.js", "TypeScript", "Tailwind"],
       technologies: [],
-      tools: ["VS Code", "API", "Strapi", "Vercel", "GitHub", "Firebase"], // Added tools
+      tools: ["VS Code", "API", "AppWrite", "Vercel", "GitHub", "SMS"], // Added tools
       keyFeatures: [
-        "Product Catalog: Organized display of electronic products such as laptops, smartphones, and accessories.",
-        "Product Search: A search bar to quickly find items by name or category.",
-        "Product Details: Detailed pages with price, description, images, specifications, and reviews for each product.",
-        "Shopping Cart: Add products to the cart and manage quantities before proceeding to checkout.",
-        "User Authentication: Account management with sign up, log in, and order history viewing options.",
-        "Responsive Design: Fully responsive for desktop, tablet, and mobile browsing.",
-        "Checkout Process: Secure and straightforward checkout with integrated payment options.",
-        "Wishlist: Option to save products for future purchases.",
-        "Customer Reviews: Feedback and ratings system for each product.",
+        "Healthcare Services: Comprehensive directory of medical services, including general practice, specialized care, and wellness programs.",
+        "Doctor Profiles: Detailed profiles of healthcare professionals, including specialties, qualifications, and availability.",
+        "Appointment Booking: User-friendly appointment scheduling system with real-time availability updates.",
+        "Health Articles: Access to a wide range of wellness and health-related articles.",
+        "User Authentication: Secure sign up and log in system for personalized services.",
+        "Responsive Design: Optimized for seamless use across desktop, tablet, and mobile devices.",
+        "Patient Reviews: A feedback system for patients to rate and review healthcare services.",
+        "Health Tips: Regular updates with tips and advice on maintaining a healthy lifestyle.",
+        "Contact and Support: Easy-to-access contact forms and support options for users.",
       ],
-      date: "March 20, 2024",
+      date: "Nov 27, 2024",
     },
     {
       id: 2,
       imgPath: imaginify, // Ensure you import this image in your projects.js file
-      imagePaths: [
-        ai1,
-        ai2,
-        ai3,
-        ai4,
-        ai5,
-        ai6,
-        ai7
-      ],
+      imagePaths: [ai1, ai2, ai3, ai4, ai5, ai6, ai7],
       title: "Imaginify AI Platform",
       description:
         "Imaginify is an innovative platform that offers customizable digital design services. Users can create unique designs tailored to their preferences, including logos, graphics, and marketing materials. The site features a user-friendly interface that simplifies the design process, allowing users to easily select templates and personalize them with various elements. Imaginify aims to empower individuals and businesses to express their brand identity creatively.",
@@ -378,6 +375,47 @@ function App() {
     },
     {
       id: 4,
+      imgPath: techTrove,
+      imagePaths: [
+        tech1,
+        tech2,
+        tech3,
+        tech4,
+        tech5,
+        tech6,
+        tech7,
+        tech8,
+        tech9,
+        tech10,
+        tech11,
+        tech12,
+        tech13,
+        tech14,
+        tech15,
+      ],
+      title: "Tech Trove Shop",
+      description:
+        "Tech Trove Shop is an online store specializing in electronic products and gadgets. It features a modern interface that allows users to browse a wide range of items, including laptops, smartphones, and accessories. The site typically includes product categories, detailed descriptions, and user-friendly navigation for seamless shopping experiences.",
+      ghLink: "https://github.com/FadyAdel04/Tech-Trove-Shop",
+      demoLink: "https://tech-trove-shop.vercel.app/",
+      skills: ["React", "Next.js", "TypeScript", "Tailwind"],
+      technologies: [],
+      tools: ["VS Code", "API", "Strapi", "Vercel", "GitHub", "Firebase"], // Added tools
+      keyFeatures: [
+        "Product Catalog: Organized display of electronic products such as laptops, smartphones, and accessories.",
+        "Product Search: A search bar to quickly find items by name or category.",
+        "Product Details: Detailed pages with price, description, images, specifications, and reviews for each product.",
+        "Shopping Cart: Add products to the cart and manage quantities before proceeding to checkout.",
+        "User Authentication: Account management with sign up, log in, and order history viewing options.",
+        "Responsive Design: Fully responsive for desktop, tablet, and mobile browsing.",
+        "Checkout Process: Secure and straightforward checkout with integrated payment options.",
+        "Wishlist: Option to save products for future purchases.",
+        "Customer Reviews: Feedback and ratings system for each product.",
+      ],
+      date: "March 20, 2024",
+    },
+    {
+      id: 5,
       imgPath: chat, // Ensure you import this image in your projects.js file
       imagePaths: [
         chat1,
@@ -408,7 +446,7 @@ function App() {
       date: "March 27, 2024",
     },
     {
-      id: 5,
+      id: 6,
       imgPath: novil, // Ensure you import this image in your projects.js file
       imagePaths: [
         novil1,
@@ -441,15 +479,10 @@ function App() {
       date: "June 23, 2023",
     },
     {
-      id: 6,
+      id: 7,
       imgPath: gym, // Ensure you import this image in your projects.js file
       title: "Fitness Gym",
-      imagePaths: [
-        gym1,
-        gym2,
-        gym3,
-        gym4
-      ],
+      imagePaths: [gym1, gym2, gym3, gym4],
       description:
         "Fitness Gym Sandy is a modern fitness center dedicated to helping individuals achieve their health and wellness goals. The website showcases various fitness programs, membership options, and facilities available to members. Users can explore workout plans, schedule classes, and get information about personal training services. With a focus on community and support, Fitness Gym Sandy provides a welcoming environment for all fitness levels.",
       ghLink: "https://github.com/FadyAdel04/Fitness-Gym",
@@ -469,7 +502,7 @@ function App() {
       date: "June 6, 2024",
     },
     {
-      id: 7,
+      id: 8,
       imgPath: courses, // Ensure you import this image in your projects.js file
       imagePaths: [
         learn1,
@@ -482,7 +515,8 @@ function App() {
         learn8,
       ],
       title: "Eclipseful Learning Platform",
-      description: "The Courses Next Seven website offers a variety of online courses designed to enhance skills in various subjects. The platform features user-friendly navigation, course descriptions, and the ability to enroll directly. It focuses on providing quality education with flexible learning options, catering to different learning styles. Users can easily access course materials and track their progress.",
+      description:
+        "The Courses Next Seven website offers a variety of online courses designed to enhance skills in various subjects. The platform features user-friendly navigation, course descriptions, and the ability to enroll directly. It focuses on providing quality education with flexible learning options, catering to different learning styles. Users can easily access course materials and track their progress.",
       ghLink: "https://github.com/FadyAdel04/Courses-next",
       demoLink: "https://courses-next-seven.vercel.app/",
       skills: ["React", "Next.js", "Tailwind", "Hooks", "Animation"],
@@ -499,7 +533,7 @@ function App() {
       date: "June 20, 2024",
     },
     {
-      id: 8,
+      id: 9,
       imgPath: brain, // Ensure you import this image in your projects.js file
       title: "BrainWave-AI",
       imagePaths: [
@@ -531,13 +565,10 @@ function App() {
       date: "March 17, 2024",
     },
     {
-      id: 9,
+      id: 10,
       imgPath: car, // Ensure you import this image in your projects.js file
       title: "CarRent-App",
-      imagePaths: [
-        car1,
-        car2,
-      ],
+      imagePaths: [car1, car2],
       description:
         "CarRent-App is a seamless and user-friendly platform for booking rental cars. The application offers an effortless booking process, allowing users to search for available vehicles, filter by car type, and manage reservations. The platform focuses on providing a hassle-free experience with real-time car availability, making it easier for users to find and book their desired vehicle. It includes features for user authentication, booking management, and a responsive design that adapts to any device, ensuring a smooth experience across both desktop and mobile platforms.",
       ghLink: "https://github.com/FadyAdel04/Car-RentApp",
@@ -556,14 +587,9 @@ function App() {
       date: "July 19, 2024",
     },
     {
-      id: 10,
+      id: 11,
       imgPath: space, // Ensure you import this image in your projects.js file
-      imagePaths: [
-        space1,
-        space2,
-        space3,
-        space4,
-      ],
+      imagePaths: [space1, space2, space3, space4],
       title: "TCJ-SPACE",
       description:
         "TCJ-SPACE is a platform that explores advancements in space technology and satellite innovations. The website provides information on the latest developments in space exploration, satellite technology, and other cutting-edge topics in the tech field. Built using modern web technologies, the platform is designed to engage users with informative content and a user-friendly interface. It offers an immersive experience with a clean layout and responsive design, making it accessible across all devices.",
@@ -583,7 +609,7 @@ function App() {
       date: "August 1, 2024",
     },
     {
-      id: 11,
+      id: 12,
       imgPath: store, // Ensure you import this image in your projects.js file
       imagePaths: [
         karama1,
@@ -620,14 +646,9 @@ function App() {
       date: "March 16, 2024",
     },
     {
-      id: 12,
+      id: 13,
       imgPath: travel, // Ensure you import this image in your projects.js file
-      imagePaths: [
-        travel1,
-        travel2,
-        travel3,
-        travel4,
-      ],
+      imagePaths: [travel1, travel2, travel3, travel4],
       title: "Travel App: Explore the World!",
       description:
         "Travel App is a dynamic platform designed to help adventurers explore nature and new destinations with ease. The app features offline maps, making it a reliable tool for hikers and travelers in remote areas without an internet connection. Users can search for trails, landmarks, and nature spots, and plan their journeys using the app's intuitive interface. With a focus on user experience, the app provides essential travel information and guidance for every adventure.",
@@ -647,17 +668,9 @@ function App() {
       date: "October 15, 2024",
     },
     {
-      id: 13,
+      id: 14,
       imgPath: red, // Ensure you import this image in your projects.js file
-      imagePaths: [
-        red1,
-        red2,
-        red3,
-        red4,
-        red5,
-        red6,
-        red7,
-      ],
+      imagePaths: [red1, red2, red3, red4, red5, red6, red7],
       title: "Red Store Online Shop",
       description:
         "Red Store Online Shop is a vibrant e-commerce platform that specializes in showcasing workout apparel and the latest fitness offerings. The website provides users with a comprehensive shopping experience, featuring a wide range of products, detailed descriptions, and high-quality images. Customers can easily browse through categories, filter by size and style, and make purchases with confidence. With a focus on user experience, the site is designed to be fast, responsive, and easy to navigate, ensuring that users can find exactly what they need for their fitness journey.",
@@ -677,18 +690,9 @@ function App() {
       date: "September 15, 2023",
     },
     {
-      id: 14,
+      id: 15,
       imgPath: zen, // Ensure you import this image in your projects.js file
-      imagePaths: [
-        zen1,
-        zen2,
-        zen3,
-        zen4,
-        zen5,
-        zen6,
-        zen7,
-        zen8,
-      ],
+      imagePaths: [zen1, zen2, zen3, zen4, zen5, zen6, zen7, zen8],
       title: "TBH-Zen Resort",
       description:
         "TBH-Zen Resort is a luxurious boutique hotel located in the beautiful coastal city of Hurghada. The website showcases the resort's exquisite accommodations, stunning views, and exceptional service. Visitors can explore the resort's amenities, book their stay, and learn about local attractions and activities. Designed with user experience in mind, the site features a visually appealing layout, easy navigation, and responsive design, ensuring that potential guests can easily find the information they need to plan their perfect getaway.",
@@ -708,7 +712,7 @@ function App() {
       date: "September 30, 2023",
     },
     {
-      id: 15,
+      id: 16,
       imgPath: shopping, // Replace with the actual path for the project image
       imagePaths: [
         shopping1,
@@ -728,9 +732,9 @@ function App() {
         "Shopping Bag is an online retail platform designed for easy browsing and purchasing of a variety of products. The site offers a clean layout with user-friendly navigation, allowing customers to explore categories, view detailed product descriptions, and add items to their shopping cart seamlessly. With a focus on providing a smooth shopping experience, Shopping Bag aims to cater to diverse consumer needs.",
       ghLink: "https://github.com/FadyAdel04/Tech-Trove-Shop",
       demoLink: "https://shopping-bag-weld.vercel.app/",
-      skills: ["HTML", "CSS", "Bootstrap", "Tailwind", "JavaScript", ],
+      skills: ["HTML", "CSS", "Bootstrap", "Tailwind", "JavaScript"],
       technologies: [],
-      tools: ["API", "GitHub", "Responsive",],
+      tools: ["API", "GitHub", "Responsive"],
       keyFeatures: [
         "Product Catalog: Organized display of electronic products such as laptops, smartphones, and accessories.",
         "Product Search: A search bar to quickly find items by name or category.",
@@ -740,12 +744,12 @@ function App() {
         "Responsive Design: Fully responsive for desktop, tablet, and mobile browsing.",
         "Checkout Process: Secure and straightforward checkout with integrated payment options.",
         "Wishlist: Option to save products for future purchases.",
-        "Customer Reviews: Feedback and ratings system for each product."
+        "Customer Reviews: Feedback and ratings system for each product.",
       ],
-      date: "March 20, 2023"
+      date: "March 20, 2023",
     },
     {
-      id: 16,
+      id: 17,
       imgPath: bootstrap, // Replace with the actual path for the main project image
       imagePaths: [
         bootstrap1,
@@ -762,7 +766,7 @@ function App() {
       demoLink: "https://fadyadel04.github.io/bootstrapDesign/",
       skills: ["HTML", "CSS", "Bootstrap", "JavaScript"],
       technologies: [],
-      tools: ["VS Code", "GitHub", "Responsive",],
+      tools: ["VS Code", "GitHub", "Responsive"],
       keyFeatures: [
         "Responsive Design: The website is fully responsive and optimized for viewing on desktops, tablets, and mobile devices.",
         "Clean UI/UX: Focused on providing a clean and user-friendly interface with intuitive navigation.",
@@ -771,16 +775,14 @@ function App() {
         "Multi-Section Layout: Organized sections for showcasing different portfolio pieces and designs.",
         "Contact Form: A simple, functional contact form integrated with form validation.",
         "Modern Typography: Using modern and visually appealing fonts to enhance the overall aesthetics.",
-        "Grid Layout: Utilizes Bootstrap’s grid system for flexible, responsive layouts across different screen sizes."
+        "Grid Layout: Utilizes Bootstrap’s grid system for flexible, responsive layouts across different screen sizes.",
       ],
-      date: "Jun 8, 2023"
+      date: "Jun 8, 2023",
     },
     {
-      id: 17,
+      id: 18,
       imgPath: dash, // Replace with the actual path for the main project image
-      imagePaths: [
-        dash1,
-      ],
+      imagePaths: [dash1],
       title: "AdminHub Dashboard",
       description:
         "The AdminHub project is a responsive admin dashboard template that utilizes modern design principles. It features a user-friendly interface with various components, including charts, tables, and forms, suitable for managing data and monitoring application performance. The design emphasizes usability",
@@ -788,7 +790,7 @@ function App() {
       demoLink: "https://fadyadel04.github.io/AdminHub/",
       skills: ["HTML", "CSS", "Bootstrap"],
       technologies: [],
-      tools: ["VS Code","GitHub", "Responsive",],
+      tools: ["VS Code", "GitHub", "Responsive"],
       keyFeatures: [
         "Responsive Admin Dashboard: Fully responsive dashboard layout for desktop, tablet, and mobile devices.",
         "User Management: Sections for managing users, including user profiles and settings.",
@@ -797,21 +799,14 @@ function App() {
         "Navigation Sidebar: Collapsible sidebar for easy access to different sections of the dashboard.",
         "Forms and Validation: Built-in form components with validation for user input.",
         "Dark/Light Mode: A toggle for switching between dark and light themes for better accessibility.",
-        "Widgets and Components: Various ready-made widgets like calendars, notifications, and progress bars."
+        "Widgets and Components: Various ready-made widgets like calendars, notifications, and progress bars.",
       ],
-      date: "January 15, 2022"
+      date: "January 15, 2022",
     },
     {
-      id: 18,
+      id: 19,
       imgPath: spicial, // Replace with the actual path for the main project image
-      imagePaths: [
-        special1,
-        special2,
-        special3,
-        special4,
-        special5,
-        special6,
-      ],
+      imagePaths: [special1, special2, special3, special4, special5, special6],
       title: "Special Design",
       description:
         "The Special Design project showcases a visually appealing and responsive web design template. It features modern layouts, vibrant colors, and various UI elements suitable for portfolios, personal websites, or creative projects. The design emphasizes aesthetics while ensuring a smooth user experience across devices.",
@@ -819,7 +814,7 @@ function App() {
       demoLink: "https://fadyadel04.github.io/special-design/",
       skills: ["HTML", "CSS", "Bootstrap", "JavaScript"],
       technologies: [],
-      tools: ["VS Code","Figma", "Animation", "Responsive", "GitHub"],
+      tools: ["VS Code", "Figma", "Animation", "Responsive", "GitHub"],
       keyFeatures: [
         "Modern UI Design: Sleek and creative design with attention to visual details.",
         "Responsive Layout: Fully responsive and adaptable for different screen sizes and devices.",
@@ -827,19 +822,14 @@ function App() {
         "Landing Page: An eye-catching landing section for attracting attention.",
         "Portfolio Display: Well-organized sections for showcasing work or products.",
         "Cross-Browser Compatibility: Works seamlessly across modern browsers.",
-        "Interactive Elements: Features like hover effects and interactive buttons for engaging user interaction."
+        "Interactive Elements: Features like hover effects and interactive buttons for engaging user interaction.",
       ],
-      date: "December 10, 2022"
+      date: "December 10, 2022",
     },
     {
-      id: 19,
+      id: 20,
       imgPath: phone, // Replace with the actual path for the main project image
-      imagePaths: [
-        phone1,
-        phone2,
-        phone3,
-        phone4,
-      ],
+      imagePaths: [phone1, phone2, phone3, phone4],
       title: "Apple Template",
       description:
         "The Apple Template project features a sleek and modern design inspired by Apple's aesthetic. It includes smooth transitions, clean layouts, and intuitive navigation, making it ideal for showcasing products or services. The template is responsive, ensuring an optimal experience on both desktop and mobile devices.",
@@ -855,45 +845,36 @@ function App() {
         "Product Features Display: Organized sections to showcase product features and details.",
         "Smooth Scroll: Added smooth scrolling for enhanced user navigation.",
         "Cross-Browser Compatibility: Fully compatible with major browsers.",
-        "Simple Navigation: Clear and intuitive navigation bar for a user-friendly experience."
+        "Simple Navigation: Clear and intuitive navigation bar for a user-friendly experience.",
       ],
-      date: "February 5, 2022"
+      date: "February 5, 2022",
     },
     {
-      "id": 20,
-      "imgPath": dev,
-      "imagePaths": [
-        dev1,
-        dev2,
-        dev3,
-        dev4,
-        dev5,
-        dev6,
-        dev7,
-        dev8,
-        dev9,
-      ],
-      "title": "DEVELOPMENT Template",
-      "description": "template showcases a modern, professional layout ideal for developers and tech businesses. It features responsive design, smooth scrolling, and clean navigation. The template emphasizes showcasing skills, services, and projects effectively. Users can easily customize it to fit their branding and content needs.",
-      "ghLink": "https://github.com/FadyAdel04/FADY-DEVELOPMENT-template",
-      "demoLink": "https://fadyadel04.github.io/FADY-DEVELOPMENT-template/",
-      "skills": ["HTML", "CSS", "JavaScript", "Bootstrap"],
-      "technologies": [],
-      "tools": ["VS Code","GitHub", "Animation", "Responsive"],
-      "keyFeatures": [
+      id: 21,
+      imgPath: dev,
+      imagePaths: [dev1, dev2, dev3, dev4, dev5, dev6, dev7, dev8, dev9],
+      title: "DEVELOPMENT Template",
+      description:
+        "template showcases a modern, professional layout ideal for developers and tech businesses. It features responsive design, smooth scrolling, and clean navigation. The template emphasizes showcasing skills, services, and projects effectively. Users can easily customize it to fit their branding and content needs.",
+      ghLink: "https://github.com/FadyAdel04/FADY-DEVELOPMENT-template",
+      demoLink: "https://fadyadel04.github.io/FADY-DEVELOPMENT-template/",
+      skills: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+      technologies: [],
+      tools: ["VS Code", "GitHub", "Animation", "Responsive"],
+      keyFeatures: [
         "Responsive Design: Fully compatible with mobile, tablet, and desktop devices.",
         "Modern Aesthetic: Clean and professional design for showcasing services or portfolios.",
         "Navigation Bar: Intuitive navigation for seamless user experience.",
         "Portfolio Section: A section to display work or projects with imagery.",
         "Footer: Includes social media links and contact information.",
-        "Smooth Animations: Subtle animations enhancing the user interaction."
+        "Smooth Animations: Subtle animations enhancing the user interaction.",
       ],
-      "date": "April 15, 2023"
+      date: "April 15, 2023",
     },
     {
-      "id": 21,
-      "imgPath": phlox,
-      "imagePaths": [
+      id: 22,
+      imgPath: phlox,
+      imagePaths: [
         phlox1,
         phlox2,
         phlox3,
@@ -905,71 +886,70 @@ function App() {
         phlox9,
         phlox10,
       ],
-      "title": "Phlox Template",
-      "description": "The Phlox template features a clean and modern design suitable for personal or professional portfolios. It emphasizes visual content with attractive layouts and smooth transitions, allowing users to showcase their work effectively. The responsive design ensures compatibility across devices, enhancing user experience. Customization options are available for branding and content adjustments.",
-      "ghLink": "https://github.com/FadyAdel04/Phlox",
-      "demoLink": "https://fadyadel04.github.io/Phlox/",
-      "skills": ["HTML", "CSS", "JavaScript", "Bootstrap"],
-      "technologies": ["Tailwind"],
-      "tools": ["VS Code","GitHub", "Responsive"],
-      "keyFeatures": [
+      title: "Phlox Template",
+      description:
+        "The Phlox template features a clean and modern design suitable for personal or professional portfolios. It emphasizes visual content with attractive layouts and smooth transitions, allowing users to showcase their work effectively. The responsive design ensures compatibility across devices, enhancing user experience. Customization options are available for branding and content adjustments.",
+      ghLink: "https://github.com/FadyAdel04/Phlox",
+      demoLink: "https://fadyadel04.github.io/Phlox/",
+      skills: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+      technologies: ["Tailwind"],
+      tools: ["VS Code", "GitHub", "Responsive"],
+      keyFeatures: [
         "Responsive Design: Optimized for mobile, tablet, and desktop viewing.",
         "Multi-Purpose Layout: Suitable for various industries like portfolio, services, and businesses.",
         "Smooth Scrolling: Integrated smooth scrolling for a better user experience.",
         "Interactive Animations: Hover and scroll animations that enhance the visual appeal.",
         "Navigation Menu: Sticky navigation bar for easy access to different sections.",
         "Contact Section: Simple contact form for user inquiries.",
-        "Footer: Contains social media links and business information."
+        "Footer: Contains social media links and business information.",
       ],
-      "date": "February 10, 2023"
+      date: "February 10, 2023",
     },
     {
-      "id": 22,
-      "imgPath": edited,
-      "imagePaths": [
-        edited1,
-      ],
-      "title": "Image Editor",
-      "description": "The Image Editor is a web-based application that allows users to upload and edit images with various tools. Users can adjust brightness, contrast, saturation, and apply filters to enhance their photos. The intuitive interface facilitates easy navigation, making it accessible for both beginners and experienced users. It supports multiple image formats, enabling versatile editing options.",
-      "ghLink": "https://github.com/FadyAdel04/img-editor",
-      "demoLink": "https://fadyadel04.github.io/img-editor/",
-      "skills": ["HTML", "CSS", "JavaScript"],
-      "technologies": [],
-      "tools": ["VS Code","GitHub"],
-      "keyFeatures": [
+      id: 23,
+      imgPath: edited,
+      imagePaths: [edited1],
+      title: "Image Editor",
+      description:
+        "The Image Editor is a web-based application that allows users to upload and edit images with various tools. Users can adjust brightness, contrast, saturation, and apply filters to enhance their photos. The intuitive interface facilitates easy navigation, making it accessible for both beginners and experienced users. It supports multiple image formats, enabling versatile editing options.",
+      ghLink: "https://github.com/FadyAdel04/img-editor",
+      demoLink: "https://fadyadel04.github.io/img-editor/",
+      skills: ["HTML", "CSS", "JavaScript"],
+      technologies: [],
+      tools: ["VS Code", "GitHub"],
+      keyFeatures: [
         "Image Cropping: Allows users to crop images to specific dimensions.",
         "Image Resizing: Users can resize images while maintaining aspect ratio.",
         "Filter Effects: Apply various filters like grayscale, sepia, and more.",
         "Brightness & Contrast: Adjust image brightness and contrast dynamically.",
         "Saturation Control: Fine-tune the saturation levels for vivid or muted colors.",
         "Undo/Redo: Basic undo and redo functionality for image edits.",
-        "Download Edited Image: Users can download the edited image with a single click."
+        "Download Edited Image: Users can download the edited image with a single click.",
       ],
-      "date": "April 5, 2023"
+      date: "April 5, 2023",
     },
     {
-      "id": 23,
-      "imgPath": crud,
-      "imagePaths": [
-        crud1,
-      ],
-      "title": "CRUDS",
-      "description": "The CRUDS application is a simple web-based platform that allows users to create, read, update, and delete entries. It features an intuitive interface for managing data effectively. Users can easily add new records, view existing ones, edit information, and remove entries as needed. This tool is beneficial for learning about CRUD operations and database management in web development.",
-      "ghLink": "https://github.com/FadyAdel04/CRUDS",
-      "demoLink": "https://fadyadel04.github.io/CRUDS/",
-      "skills": ["HTML", "CSS", "JavaScript"],
-      "technologies": [],
-      "tools": ["VS Code","GitHub"],
-      "keyFeatures": [
+      id: 24,
+      imgPath: crud,
+      imagePaths: [crud1],
+      title: "CRUDS",
+      description:
+        "The CRUDS application is a simple web-based platform that allows users to create, read, update, and delete entries. It features an intuitive interface for managing data effectively. Users can easily add new records, view existing ones, edit information, and remove entries as needed. This tool is beneficial for learning about CRUD operations and database management in web development.",
+      ghLink: "https://github.com/FadyAdel04/CRUDS",
+      demoLink: "https://fadyadel04.github.io/CRUDS/",
+      skills: ["HTML", "CSS", "JavaScript"],
+      technologies: [],
+      tools: ["VS Code", "GitHub"],
+      keyFeatures: [
         "Create Record: Add new records to the database using a form.",
         "Read Data: View the list of all created records in a tabular format.",
         "Update Record: Edit existing records with an easy-to-use interface.",
         "Delete Record: Remove records from the database with a single click.",
         "Validation: Form validation to ensure required fields are filled out.",
-        "Responsive Design: Fully responsive layout for a seamless experience on mobile and desktop."
+        "Responsive Design: Fully responsive layout for a seamless experience on mobile and desktop.",
       ],
-      "date": "April 10, 2023"
-    }
+      date: "April 10, 2023",
+    },
   ];
 
   return (
@@ -988,7 +968,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/certificates" element={<Certificates />} />
-          <Route path="/contact" element={<Contact />} /> {/* Add Contact Route */}
+          <Route path="/contact" element={<Contact />} />{" "}
+          {/* Add Contact Route */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />

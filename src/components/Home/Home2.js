@@ -11,6 +11,7 @@ import {
   AiFillFacebook,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { SiCodeforces } from "react-icons/si";
 
 function Home2() {
   useEffect(() => {
@@ -26,32 +27,35 @@ function Home2() {
           <Col
             md={8}
             className="home-about-description"
-            data-aos="fade-right" data-aos-duration="1200"
+            data-aos="fade-right"
+            data-aos-duration="1200"
           >
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
               A dedicated and enthusiastic student pursuing an undergraduate
-              degree in Computer Science with a focus on Artificial Intelligence 🤷‍♂️
+              degree in Computer Science with a focus on Artificial Intelligence
+              🤷‍♂️
               <br />
-              <br />Equipped with comprehensive web development skills like
+              <br />
+              Equipped with comprehensive web development skills like
               <i>
-                <b className="purple"> Javascript, React.js and Next.js and more..</b>
+                <b className="purple">
+                  {" "}
+                  Javascript, React.js and Next.js and more..
+                </b>
               </i>
               <br />
               <br />
               Along with strong ability to learn new technologies.&nbsp;
               <i>
                 <b className="purple">Programming and Web Technologies </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  AI tools.
-                </b>
+                also in areas related to <b className="purple">AI tools.</b>
               </i>
               <br />
-              <br />
-              I have more than two years of experience in the field of web applications
+              <br />I have more than two years of experience in the field of web
+              applications
               <b className="purple"> Node.js Environment</b> and
               <i>
                 <b className="purple">
@@ -65,14 +69,24 @@ function Home2() {
               </i>
             </p>
           </Col>
-          <Col md={4} className="myAvtar" data-aos="fade-left" data-aos-duration="1200">
+          <Col
+            md={4}
+            className="myAvtar"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+          >
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
         <Row>
-          <Col md={12} className="home-about-social" data-aos="fade-up" data-aos-duration="3000">
+          <Col
+            md={12}
+            className="home-about-social"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <h1>FIND ME ON</h1>
             <p>
               Feel free to <span className="purple">connect </span>with me
@@ -116,6 +130,16 @@ function Home2() {
                   className="icon-colour home-social-icons"
                 >
                   <AiFillInstagram />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://codeforces.com/profile/fadyadel1712"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <SiCodeforces />
                 </a>
               </li>
             </ul>

@@ -31,6 +31,9 @@ function AboutCard() {
             <li className="about-activity">
               <ImPointRight /> Travelling
             </li>
+            <li className="about-activity">
+              <ImPointRight /> Problem Solving ICPC
+            </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>

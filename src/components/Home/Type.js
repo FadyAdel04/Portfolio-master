@@ -9,7 +9,7 @@ function Type() {
           "Software Engineer",
           "Web Devloper",
           "Freelancer",
-          "Open Source Contributor",
+          "Problem Solving ICPC",
         ],
         autoStart: true,
         loop: true,

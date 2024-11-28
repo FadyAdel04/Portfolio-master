@@ -12,10 +12,10 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
-  AiOutlineMail, // Import the mail icon
+  AiOutlineMail,
 } from "react-icons/ai";
-
 import { CgFileDocument } from "react-icons/cg";
+import { SiCodeforces } from "react-icons/si"; // Import Codeforces icon
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -103,14 +103,13 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            {/* Add Contact link with the mail icon */}
             <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/contact"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineMail style={{ marginBottom: "2px" }} /> Contact Me
+                <AiOutlineMail style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
             </Nav.Item>
 
@@ -122,6 +121,19 @@ function NavBar() {
               >
                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
                 <AiFillStar style={{ fontSize: "1.1em" }} />
+              </Button>
+            </Nav.Item>
+
+            {/* Codeforces button */}
+            <Nav.Item className="fork-btn">
+              <Button
+                href="https://codeforces.com/profile/YourCodeforcesHandle"
+                target="_blank"
+                className="fork-btn-inner"
+                style={{ marginLeft: "10px" }} // Adjust spacing
+              >
+                <SiCodeforces style={{ fontSize: "1.2em" }} />{" "}
+                <span style={{ fontSize: "1.1em" }}>Codeforces</span>
               </Button>
             </Nav.Item>
           </Nav>

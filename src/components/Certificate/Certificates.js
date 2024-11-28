@@ -19,6 +19,8 @@ import vision from "../../Assets/cirtificate/vision.png";
 import fady from "../../Assets/cirtificate/fady.jpg";
 import esential from "../../Assets/cirtificate/essintial.png";
 import practice from "../../Assets/cirtificate/practice.png";
+import frank from "../../Assets/cirtificate/cib-frank.png"
+import cibwow from "../../Assets/cirtificate/cib.png"
 
 import cib from "../../Assets/company/cib.png"
 import linkedin from "../../Assets/company/linkedin.png"
@@ -28,6 +30,7 @@ import itii from "../../Assets/company/iti.jpg"
 import kaggle from "../../Assets/company/kaggle.png"
 import sololearn from "../../Assets/company/sololearn.png"
 import brain from "../../Assets/company/brain.png"
+import Frankfurt from "../../Assets/company/frankfort.png"
 
 
 // Add more certificates as needed
@@ -43,6 +46,13 @@ function Certificates() {
 
   const certificates = [
     {
+      imgPath: frank,
+      title: "CIB - Frankfurt Summer training 2024",
+      description:
+        "This program focused on the principles, approaches, enhancing the participant's ability to effectively engage and collaborate within a professional environment.",
+      orgLogos: [cib, Frankfurt],
+    },
+    {
       imgPath: linked,
       title: "CIB - LinkedIn Summer training 2024",
       description:
@@ -55,6 +65,13 @@ function Certificates() {
       description:
       "ocusing on data analytics and business intelligence. Gained hands-on experience with SaS software, learning advanced techniques in data analysis, reporting, and visualization. ",
       orgLogos: [cib, sasa],
+    },
+    {
+      imgPath: cibwow,
+      title: "CIB - LinkedIn Summer training 2024",
+      description:
+        "HR Learning & Development program. This comprehensive course covered essential topics such as talent management, employee engagement.",
+      orgLogos: [cib],
     },
     {
       imgPath: ai,

@@ -13,6 +13,8 @@ import {
   SiPostgresql,
   SiFigma 
 } from "react-icons/si";
+import { SiAppwrite } from "react-icons/si";
+import { FaSms } from "react-icons/fa";
 import { MdAnimation } from "react-icons/md";
 import { SiAxios } from "react-icons/si";
 import { GiArtificialIntelligence } from "react-icons/gi";
@@ -45,7 +47,9 @@ const toolIconMapping = {
   "Axios" : <SiAxios />,
   "Animation" :<MdAnimation />,
   "MapIntegration" :<FaMapMarkedAlt />,
-  "Responsive" :<DiResponsive />
+  "Responsive" :<DiResponsive />,
+  "AppWrite" : <SiAppwrite />, // Custom icon for Appwrite
+  "SMS" :<FaSms />,
 };
 
 function Toolstack({ tools }) {
