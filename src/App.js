@@ -47,6 +47,17 @@ import edited from "./Assets/Projects/edited.png";
 import crud from "./Assets/Projects/crud.png";
 import health from "./Assets/Projects/health.png";
 import crud1 from "./Assets/projectsImages/crud/2.png";
+import hospital from "./Assets/Projects/hospital.png";
+
+// hospital images
+import hospital1 from "./Assets/projectsImages/hospital/2.png";
+import hospital2 from "./Assets/projectsImages/hospital/3.png";
+import hospital3 from "./Assets/projectsImages/hospital/4.png";
+import hospital4 from "./Assets/projectsImages/hospital/5.png";
+import hospital5 from "./Assets/projectsImages/hospital/6.png";
+import hospital6 from "./Assets/projectsImages/hospital/7.png";
+import hospital7 from "./Assets/projectsImages/hospital/8.png";
+import hospital8 from "./Assets/projectsImages/hospital/9.png";
 
 // health image
 import health1 from "./Assets/projectsImages/health/2.png";
@@ -478,6 +489,39 @@ function App() {
       ],
       date: "June 23, 2023",
     },
+    {
+      id: 25,
+      imgPath: hospital,
+      imagePaths: [
+        hospital1,
+        hospital2,
+        hospital3,
+        hospital4,
+        hospital5,
+        hospital6,
+        hospital7,
+        hospital8,
+      ],
+      title: "Healthcare Management System",
+      description:
+        "The Healthcare Management System is a comprehensive application designed to manage hospital operations, including patient records, appointments, staff, and billing.",
+      ghLink: "https://github.com/FadyAdel04/HealthcareSystem/tree/main/HealthcareSystem",
+      demoLink: "", // Add demo link if available
+      skills: ["HTML", "CSS", "JavaScript", "C#", "Net", "MySQL"],
+      technologies: ["Bootstrap"],
+      tools: ["VS Community", "GitHub", "API"],
+      keyFeatures: [
+        "Patient Management: Register, update, and view patient details efficiently.",
+        "Appointment Scheduling: Manage doctor-patient appointments with ease.",
+        "Staff Management: Organize and oversee hospital staff roles and data.",
+        "Billing System: Generate and manage invoices and payments.",
+        "Admin Dashboard: Centralized control panel for managing all operations.",
+        "Reports: Generate detailed reports on hospital performance and operations.",
+        "Secure Access: Authentication system to ensure secure data handling.",
+        "Responsive Design: Ensures usability across devices, including mobile and desktop."
+      ],
+      date: "December 26, 2024",
+    },    
     {
       id: 7,
       imgPath: gym, // Ensure you import this image in your projects.js file

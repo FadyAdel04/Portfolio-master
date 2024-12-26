@@ -127,7 +127,7 @@ function NavBar() {
             {/* Codeforces button */}
             <Nav.Item className="fork-btn">
               <Button
-                href="https://codeforces.com/profile/YourCodeforcesHandle"
+                href="https://codeforces.com/profile/fadyadel1712"
                 target="_blank"
                 className="fork-btn-inner"
                 style={{ marginLeft: "10px" }} // Adjust spacing

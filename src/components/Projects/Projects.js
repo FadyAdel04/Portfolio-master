@@ -30,6 +30,7 @@ import phlox from "../../Assets/Projects/phlox.png";
 import edited from "../../Assets/Projects/edited.png";
 import crud from "../../Assets/Projects/crud.png";
 import health from "../../Assets/Projects/health.png";
+import hospital from "../../Assets/Projects/hospital.png";
 
 function Projects() {
   useEffect(() => {
@@ -169,6 +170,29 @@ function Projects() {
       ],
       date: "June 23, 2023",
     },
+    {
+      id: 25,
+      imgPath: hospital,
+      title: "Healthcare Management System",
+      description:
+        "The Healthcare Management System is a comprehensive application designed to manage hospital operations, including patient records, appointments, staff, and billing.",
+      ghLink: "https://github.com/FadyAdel04/HealthcareSystem",
+      demoLink: "", // Add demo link if available
+      skills: ["HTML", "CSS", "JavaScript", "Net", "MySQL"],
+      technologies: ["Laravel", "Bootstrap"],
+      tools: ["VS Code", "GitHub"],
+      keyFeatures: [
+        "Patient Management: Register, update, and view patient details efficiently.",
+        "Appointment Scheduling: Manage doctor-patient appointments with ease.",
+        "Staff Management: Organize and oversee hospital staff roles and data.",
+        "Billing System: Generate and manage invoices and payments.",
+        "Admin Dashboard: Centralized control panel for managing all operations.",
+        "Reports: Generate detailed reports on hospital performance and operations.",
+        "Secure Access: Authentication system to ensure secure data handling.",
+        "Responsive Design: Ensures usability across devices, including mobile and desktop."
+      ],
+      date: "December 26, 2024",
+    },    
     {
       id: 7,
       imgPath: gym, // Ensure you import this image in your projects.js file

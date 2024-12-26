@@ -21,6 +21,9 @@ import { MdDynamicFeed } from "react-icons/md";
 import { MdOutlinePayments } from "react-icons/md";
 import { FaMapMarkedAlt } from "react-icons/fa";
 import { DiResponsive } from "react-icons/di";
+import { SiDotnet } from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
+
 
 // Mapping of technology names to icons
 const iconMapping = {
@@ -47,7 +50,9 @@ const iconMapping = {
   "Dynamic Root" : <MdDynamicFeed />,
   "Payment": <MdOutlinePayments />,
   "MapIntegration" :<FaMapMarkedAlt />,
-  "Responsive" :<DiResponsive />
+  "Responsive" :<DiResponsive />,
+  "Net" :<SiDotnet />,
+  "C#" : <TbBrandCSharp />
 };
 
 function Techstack({ skills, technologies }) {

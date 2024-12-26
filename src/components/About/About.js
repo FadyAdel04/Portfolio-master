@@ -11,12 +11,13 @@ import Toolstack from "./Toolstack"; // Adjusted import path
 
 function About() {
   // Define the skills and technologies you want to show on the About page
-  const skills = ["HTML", "CSS", "Bootstrap", "Tailwind", "JavaScript","TypeScript", "React", "Next.js", "PHP", "MySQL", "Python", "Java", "C++", "Open Ai"];
+  const skills = ["HTML", "CSS", "Bootstrap", "Tailwind", "JavaScript","TypeScript", "React", "Next.js", "PHP", "MySQL", "Python", "Java", "C++", "C#", "Net", "Open Ai"];
   const technologies = [ ];
 
   // Define the tools you want to show on the About page
   const tools = [
     "VS Code",
+    "VS Community",
     "Postman",
     "Slack",
     "Vercel",

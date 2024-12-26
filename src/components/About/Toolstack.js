@@ -23,16 +23,20 @@ import { FaCcStripe, FaWindows } from "react-icons/fa";
 import { TbApi } from "react-icons/tb";
 import { FaMapMarkedAlt } from "react-icons/fa";
 import { DiResponsive } from "react-icons/di";
+import { TbBrandSupabase } from "react-icons/tb";
+import { DiVisualstudio } from "react-icons/di";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 // Mapping of tool names to icons
 const toolIconMapping = {
   "VS Code": <SiVisualstudiocode />,
+  "VS Community": <DiVisualstudio />,
   "Postman": <SiPostman />,
   "Slack": <SiSlack />,
   "Vercel": <SiVercel />,
   "Firebase": <SiFirebase />,
+  "Supabase:": <TbBrandSupabase />,
   "Strapi": <SiStrapi />,
   "GitHub": <SiGithub />,
   "Netlify": <SiNetlify />,
