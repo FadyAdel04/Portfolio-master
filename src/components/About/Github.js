@@ -12,9 +12,9 @@ function Github() {
   }, []);
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "10px", color:"#fff" }} data-aos="fade-up" data-aos-duration="3000">
-      <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
-        Days I <strong className="purple">Code</strong>
-      </h1>
+    <h1 className="project-heading" style={{ color: "#c889e6", textAlign: "center", marginBottom: "20px" }}>
+    <strong className="purple">Day's i</strong> Code
+  </h1>
       <GitHubCalendar
         username="FadyAdel04"
         blockSize={15}

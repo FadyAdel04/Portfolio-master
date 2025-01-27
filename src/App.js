@@ -276,6 +276,14 @@ import phlox8 from "./Assets/projectsImages/Phlox/9.png";
 import phlox9 from "./Assets/projectsImages/Phlox/10.png";
 import phlox10 from "./Assets/projectsImages/Phlox/11.png";
 
+// blog
+import blog1 from "./Assets/projectsImages/blog/1.png";
+import blog2 from "./Assets/projectsImages/blog/2.png";
+import blog3 from "./Assets/projectsImages/blog/3.png";
+import blog4 from "./Assets/projectsImages/blog/4.png";
+import blog5 from "./Assets/projectsImages/blog/5.png";
+import blog6 from "./Assets/projectsImages/blog/6.png";
+
 // edited
 import edited1 from "./Assets/projectsImages/edited/1.png";
 
@@ -385,6 +393,38 @@ function App() {
       date: "September 25, 2024",
     },
     {
+      id: 26,
+      imgPath: blog1, // Replace with the appropriate image path
+      imagePaths: [
+        blog2,
+        blog3,
+        blog4,
+        blog5,
+        blog6,
+      ],
+      title: "YC Directory",
+      description: 
+        "A Next.js 15 platform where entrepreneurs can submit their startup ideas for virtual pitch competitions, browse other pitches, and gain exposure through a clean minimalistic design for a smooth user experience. If you're getting started and need assistance or face any bugs, join our active Discord community with over 34k+ members. It's a place where people help each other out.",
+      ghLink: "https://github.com/FadyAdel04/YC_Directory",
+      demoLink: "https://yc-directory-nine-zeta.vercel.app/",
+      skills: ["React", "Next.js", "Sanity", "Tailwind", "ShadCN", "TypeScript"],
+      technologies: [], // Add any additional technologies here
+      tools: ["VS Code", "GitHub", "API", "Vercel"], // Added tools
+      keyFeatures: [
+        "Live Content API: Displays the latest startup ideas dynamically on the homepage using Sanity's Content API.",
+        "GitHub Authentication: Allows users to log in easily using their GitHub account.",
+        "Pitch Submission: Users can submit startup ideas, including title, description, category, and multimedia links (image or video).",
+        "View Pitches: Browse through submitted ideas with filtering options by category.",
+        "Pitch Details Page: Click on any pitch to view its details, with multimedia and description displayed.",
+        "Profile Page: Users can view the list of pitches they've submitted.",
+        "Editor Picks: Admins can highlight top startup ideas using the 'Editor Picks' feature managed via Sanity Studio.",
+        "Views Counter: Tracks the number of views for each pitch instead of an upvote system.",
+        "Search: Search functionality to load and view pitches efficiently.",
+        "Minimalistic Design: Fresh and simple UI with only the essential pages for ease of use and a clean aesthetic.",
+      ],
+      date: "Nov 26, 2024",
+    },    
+    {
       id: 4,
       imgPath: techTrove,
       imagePaths: [
@@ -426,37 +466,6 @@ function App() {
       date: "March 20, 2024",
     },
     {
-      id: 5,
-      imgPath: chat, // Ensure you import this image in your projects.js file
-      imagePaths: [
-        chat1,
-        chat2,
-        chat3,
-        chat4,
-        chat5,
-        chat6,
-        chat7,
-        chat8,
-        chat9,
-      ],
-      title: "Chat 2 Chat App",
-      description:
-        "Chat-2-Chat is an interactive platform designed for real-time messaging, allowing users to connect with others seamlessly. The website features a clean interface that facilitates easy conversations and includes options for group chats and private messaging. Users can create accounts, manage their contacts, and engage in meaningful discussions. The goal of Chat-2-Chat is to enhance communication and foster connections among users in a friendly environment.",
-      ghLink: "https://github.com/FadyAdel04/chat-2-chat",
-      demoLink: "https://chat-2-chat.vercel.app/",
-      skills: ["Tailwind", "React", "Next.js", "Node.js"],
-      technologies: [], // Add any other relevant technologies
-      tools: ["GitHub", "Vercel", "Postman", "Firebase"], // Added tools
-      keyFeatures: [
-        "Real-Time Messaging: Users can send and receive messages instantly.",
-        "User Authentication: Secure login and signup options.",
-        "Responsive Design: Works well on both desktop and mobile devices.",
-        "Chat History: Keeps a record of previous conversations.",
-        "Group Chat: Users can create and join group chats.",
-      ],
-      date: "March 27, 2024",
-    },
-    {
       id: 6,
       imgPath: novil, // Ensure you import this image in your projects.js file
       imagePaths: [
@@ -488,6 +497,37 @@ function App() {
         "User-Friendly Design: Easy to navigate for users of all levels.",
       ],
       date: "June 23, 2023",
+    },
+    {
+      id: 5,
+      imgPath: chat, // Ensure you import this image in your projects.js file
+      imagePaths: [
+        chat1,
+        chat2,
+        chat3,
+        chat4,
+        chat5,
+        chat6,
+        chat7,
+        chat8,
+        chat9,
+      ],
+      title: "Chat 2 Chat App",
+      description:
+        "Chat-2-Chat is an interactive platform designed for real-time messaging, allowing users to connect with others seamlessly. The website features a clean interface that facilitates easy conversations and includes options for group chats and private messaging. Users can create accounts, manage their contacts, and engage in meaningful discussions. The goal of Chat-2-Chat is to enhance communication and foster connections among users in a friendly environment.",
+      ghLink: "https://github.com/FadyAdel04/chat-2-chat",
+      demoLink: "https://chat-2-chat.vercel.app/",
+      skills: ["Tailwind", "React", "Next.js", "Node.js"],
+      technologies: [], // Add any other relevant technologies
+      tools: ["GitHub", "Vercel", "Postman", "Firebase"], // Added tools
+      keyFeatures: [
+        "Real-Time Messaging: Users can send and receive messages instantly.",
+        "User Authentication: Secure login and signup options.",
+        "Responsive Design: Works well on both desktop and mobile devices.",
+        "Chat History: Keeps a record of previous conversations.",
+        "Group Chat: Users can create and join group chats.",
+      ],
+      date: "March 27, 2024",
     },
     {
       id: 25,

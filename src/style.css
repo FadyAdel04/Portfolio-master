@@ -418,6 +418,144 @@ button:focus {
   color: #700c86 !important;
 }
 
+/* work expeince styles */
+.work-experience-container {
+  padding: 50px 20px;
+  background-color: #0d1117;
+  color: #ffffff;
+}
+
+.timeline-heading {
+  text-align: center;
+  font-size: 2.5em;
+  color: #c889e6;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  position: relative;
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-card {
+  background: #161b22;
+  border: 1px solid #c889e6;
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  animation: fadeIn 1s ease-in-out;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+
+  /* Center content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center text */
+  height: 100%; /* Ensures full height alignment */
+}
+
+.timeline-card:hover {
+  transform: scale(1.05);
+  background: #161b22; /* Keep background consistent */
+  box-shadow: 0 0 15px #c889e6, 0 0 30px #c889e6, 0 0 45px #c889e6;
+  border-color: #c889e6;
+}
+
+.timeline-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.timeline-role {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style: disc; /* Adds dots to each item */
+}
+
+.timeline-role li {
+  margin-bottom: 8px; /* Space between points */
+  font-size: 1em;
+  color: #a1a1a1;
+}
+
+.timeline-type {
+  margin-top: 5px;
+  font-size: 1em;
+  color: #c889e6;
+}
+
+.timeline-company {
+  font-size: 1.2em;
+  color: #a1a1a1;
+  margin-bottom: 10px;
+}
+
+.timeline-duration {
+  font-size: 1em;
+  color: #a1a1a1;
+  margin-bottom: 15px;
+}
+
+.timeline-role {
+  font-size: 1em;
+  color: #ffffff;
+  text-align: justify;
+}
+
+.timeline-item.left::before,
+.timeline-item.right::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 10px;
+  height: 10px;
+  background: #c889e6;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item.left::before {
+  right: -5px;
+}
+
+.timeline-item.right::before {
+  left: -5px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
 /* --------- */
 /* Footer */
 /* --------- */

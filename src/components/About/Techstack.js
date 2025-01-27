@@ -23,6 +23,8 @@ import { FaMapMarkedAlt } from "react-icons/fa";
 import { DiResponsive } from "react-icons/di";
 import { SiDotnet } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
+import { HiTemplate } from "react-icons/hi";
+import { MdDashboardCustomize } from "react-icons/md";
 
 
 // Mapping of technology names to icons
@@ -52,7 +54,9 @@ const iconMapping = {
   "MapIntegration" :<FaMapMarkedAlt />,
   "Responsive" :<DiResponsive />,
   "Net" :<SiDotnet />,
-  "C#" : <TbBrandCSharp />
+  "C#" : <TbBrandCSharp />,
+  "ShadCN": <HiTemplate />,
+  "Sanity":<MdDashboardCustomize />,
 };
 
 function Techstack({ skills, technologies }) {

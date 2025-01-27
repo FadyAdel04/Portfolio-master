@@ -31,6 +31,7 @@ import edited from "../../Assets/Projects/edited.png";
 import crud from "../../Assets/Projects/crud.png";
 import health from "../../Assets/Projects/health.png";
 import hospital from "../../Assets/Projects/hospital.png";
+import blog1 from "../../Assets/Projects/blog.png";
 
 function Projects() {
   useEffect(() => {
@@ -65,6 +66,7 @@ function Projects() {
         "Contact and Support: Easy-to-access contact forms and support options for users.",
       ],
       date: "Nov 27, 2024",
+      views: 0,
     },
     {
       id: 2,
@@ -133,24 +135,29 @@ function Projects() {
       date: "March 20, 2024",
     },
     {
-      id: 5,
-      imgPath: chat, // Ensure you import this image in your projects.js file
-      title: "Chat 2 Chat App",
-      description:
-        "A chat room where users can exchange messages in real-time. The application uses WebSocket technology for live messaging, enabling seamless communication.",
-      ghLink: "https://github.com/FadyAdel04/chat-2-chat",
-      demoLink: "https://chat-2-chat.vercel.app/",
-      skills: ["Tailwind", "React", "Next.js", "Node.js"],
-      technologies: [], // Add any other relevant technologies
-      tools: ["GitHub", "Vercel", "Postman", "Firebase"], // Added tools
+      id: 26,
+      imgPath: blog1,
+      title: "YC Directory",
+      description: 
+        "A Next.js 15 platform where entrepreneurs can submit their startup ideas for virtual pitch competitions,gain exposure through a clean design for a smooth user experience",
+      ghLink: "https://github.com/FadyAdel04/YC_Directory",
+      demoLink: "https://yc-directory-nine-zeta.vercel.app/",
+      skills: ["React", "Next.js", "Sanity", "Tailwind", "ShadCN", "TypeScript"],
+      technologies: [], // Add any additional technologies here
+      tools: ["VS Code", "GitHub", "Sanity Studio", "API", "Vercel"], // Added tools
       keyFeatures: [
-        "Real-Time Messaging: Users can send and receive messages instantly.",
-        "User Authentication: Secure login and signup options.",
-        "Responsive Design: Works well on both desktop and mobile devices.",
-        "Chat History: Keeps a record of previous conversations.",
-        "Group Chat: Users can create and join group chats.",
+        "Live Content API: Displays the latest startup ideas dynamically on the homepage using Sanity's Content API.",
+        "GitHub Authentication: Allows users to log in easily using their GitHub account.",
+        "Pitch Submission: Users can submit startup ideas, including title, description, category, and multimedia links (image or video).",
+        "View Pitches: Browse through submitted ideas with filtering options by category.",
+        "Pitch Details Page: Click on any pitch to view its details, with multimedia and description displayed.",
+        "Profile Page: Users can view the list of pitches they've submitted.",
+        "Editor Picks: Admins can highlight top startup ideas using the 'Editor Picks' feature managed via Sanity Studio.",
+        "Views Counter: Tracks the number of views for each pitch instead of an upvote system.",
+        "Search: Search functionality to load and view pitches efficiently.",
+        "Minimalistic Design: Fresh and simple UI with only the essential pages for ease of use and a clean aesthetic.",
       ],
-      date: "March 27, 2024",
+      date: "Nov 26, 2024",
     },
     {
       id: 6,
@@ -169,6 +176,26 @@ function Projects() {
         "User-Friendly Design: Easy to navigate for users of all levels.",
       ],
       date: "June 23, 2023",
+    },
+    {
+      id: 5,
+      imgPath: chat, // Ensure you import this image in your projects.js file
+      title: "Chat 2 Chat App",
+      description:
+        "A chat room where users can exchange messages in real-time. The application uses WebSocket technology for live messaging, enabling seamless communication.",
+      ghLink: "https://github.com/FadyAdel04/chat-2-chat",
+      demoLink: "https://chat-2-chat.vercel.app/",
+      skills: ["Tailwind", "React", "Next.js", "Node.js"],
+      technologies: [], // Add any other relevant technologies
+      tools: ["GitHub", "Vercel", "Postman", "Firebase"], // Added tools
+      keyFeatures: [
+        "Real-Time Messaging: Users can send and receive messages instantly.",
+        "User Authentication: Secure login and signup options.",
+        "Responsive Design: Works well on both desktop and mobile devices.",
+        "Chat History: Keeps a record of previous conversations.",
+        "Group Chat: Users can create and join group chats.",
+      ],
+      date: "March 27, 2024",
     },
     {
       id: 25,

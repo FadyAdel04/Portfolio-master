@@ -16,7 +16,12 @@ function CertificateCard(props) {
         {/* Organization logos and View Certificate button in the same row */}
         <div
           className="org-logos-and-button"
-          style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            marginBottom: "10px",
+          }}
         >
           {/* Display organization logos */}
           {props.orgLogos && (
@@ -44,6 +49,7 @@ function CertificateCard(props) {
             </Button>
           )}
         </div>
+
       </Card.Body>
     </Card>
   );

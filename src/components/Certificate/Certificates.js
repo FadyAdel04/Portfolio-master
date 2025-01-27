@@ -20,7 +20,8 @@ import fady from "../../Assets/cirtificate/fady.jpg";
 import esential from "../../Assets/cirtificate/essintial.png";
 import practice from "../../Assets/cirtificate/practice.png";
 import frank from "../../Assets/cirtificate/cib-frank.png"
-import cibwow from "../../Assets/cirtificate/cib.png"
+import cibwow from "../../Assets/cirtificate/cib.png";
+import mongo from "../../Assets/cirtificate/mongoDB.png";
 
 import cib from "../../Assets/company/cib.png"
 import linkedin from "../../Assets/company/linkedin.png"
@@ -31,6 +32,7 @@ import kaggle from "../../Assets/company/kaggle.png"
 import sololearn from "../../Assets/company/sololearn.png"
 import brain from "../../Assets/company/brain.png"
 import Frankfurt from "../../Assets/company/frankfort.png"
+import mahara from "../../Assets/company/mahara.png"
 
 
 // Add more certificates as needed
@@ -45,6 +47,14 @@ function Certificates() {
   }, []);
 
   const certificates = [
+    {
+      imgPath: mongo,
+      title: "Introduction to MongoDB",
+      description:
+      "This course introduces you to NoSql databases and Mongo DB capabilities as one of NoSql DBMS to create your flexible, lightweight and cloud adaptive database.",
+      orgLogos: [mahara],
+      liveLink: "https://maharatech.gov.eg/mod/customcert/view.php?id=8665&downloadown=1",
+    },
     {
       imgPath: frank,
       title: "CIB - Frankfurt Summer training 2024",
