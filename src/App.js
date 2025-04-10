@@ -22,6 +22,10 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // Import your project images here
+import papa from "./Assets/Projects/papa.png"
+import vivaDecor from "./Assets/Projects/viva.png";
+import amazon from "./Assets/Projects/amazone.png";
+import moviesApp from "./Assets/Projects/movie.png";
 import imaginify from "./Assets/Projects/imaginify.png";
 import gym from "./Assets/Projects/gym.png";
 import techTrove from "./Assets/Projects/techTrove.png";
@@ -48,6 +52,54 @@ import crud from "./Assets/Projects/crud.png";
 import health from "./Assets/Projects/health.png";
 import crud1 from "./Assets/projectsImages/crud/2.png";
 import hospital from "./Assets/Projects/hospital.png";
+import solar from "./Assets/Projects/solar.png";
+import register from "./Assets/Projects/login.png";
+
+
+// papa John’s
+import papa1 from "./Assets/projectsImages/papa/2.png";
+import papa2 from "./Assets/projectsImages/papa/3.png";
+import papa3 from "./Assets/projectsImages/papa/4.png";
+import papa4 from "./Assets/projectsImages/papa/5.png";
+import papa5 from "./Assets/projectsImages/papa/6.png";
+import papa6 from "./Assets/projectsImages/papa/7.png";
+import papa7 from "./Assets/projectsImages/papa/8.png";
+import papa8 from "./Assets/projectsImages/papa/9.png";
+
+// viva decor
+import viva1 from "./Assets/projectsImages/viva/1.png";
+import viva2 from "./Assets/projectsImages/viva/2.png";
+import viva3 from "./Assets/projectsImages/viva/3.png";
+import viva4 from "./Assets/projectsImages/viva/4.png";
+import viva5 from "./Assets/projectsImages/viva/5.png";
+
+// Amazon images
+import amazon1 from "./Assets/projectsImages/amazon/1.png";
+import amazon2 from "./Assets/projectsImages/amazon/2.png";
+import amazon3 from "./Assets/projectsImages/amazon/3.png";
+import amazon4 from "./Assets/projectsImages/amazon/4.png";
+import amazon5 from "./Assets/projectsImages/amazon/5.png";
+import amazon6 from "./Assets/projectsImages/amazon/6.png";
+import amazon7 from "./Assets/projectsImages/amazon/7.png";
+
+// movie images
+import movies1 from "./Assets/projectsImages/movie/1.png";
+import movies2 from "./Assets/projectsImages/movie/2.png";
+import movies3 from "./Assets/projectsImages/movie/3.png";
+
+// register images
+import register1 from "./Assets/projectsImages/register/1.png";
+import register2 from "./Assets/projectsImages/register/2.png";
+import register3 from "./Assets/projectsImages/register/3.png";
+
+// solar images
+import solar1 from "./Assets/projectsImages/solar/1.png";
+import solar2 from "./Assets/projectsImages/solar/2.png";
+import solar3 from "./Assets/projectsImages/solar/3.png";
+import solar4 from "./Assets/projectsImages/solar/4.png";
+import solar5 from "./Assets/projectsImages/solar/5.png";
+import solar6 from "./Assets/projectsImages/solar/6.png";
+
 
 // hospital images
 import hospital1 from "./Assets/projectsImages/hospital/2.png";
@@ -464,6 +516,176 @@ function App() {
         "Customer Reviews: Feedback and ratings system for each product.",
       ],
       date: "March 20, 2024",
+    },
+    {
+      id: 27,
+      imgPath: solar, 
+      imagePaths: [
+        solar1,
+        solar2,
+        solar3,
+        solar4,
+        solar5,
+        solar6,
+      ],
+      title: "Solidarity Solar",
+      description:
+        "Solidarity Solar is a clean energy company offering solar panel installation and consultation services. Their website showcases the company's mission for sustainability, available solar solutions, and customer-focused services. It is designed to be informative, accessible, and visually engaging, making it easy for users to learn about the benefits of solar energy and get in touch with the team.",
+      ghLink: "https://github.com/FadyAdel04/Solar-Company",
+      demoLink: "https://solar-company-one.vercel.app/",
+      skills: [],
+      technologies: ["JavaScript", "HTML", "CSS"],
+      tools: ["GitHub", "Vercel"],
+      keyFeatures: [
+        "Clean Modern UI: A well-structured and visually appealing layout.",
+        "Responsive Design: Optimized for all screen sizes and devices.",
+        "Service Overview: Detailed sections explaining their solar services.",
+        "Eco-Focused Messaging: Highlights their mission for sustainable energy.",
+        "Contact Options: Easy ways for users to reach out or request services."
+      ],
+      date: "April 9, 2025"
+    },
+    {
+      id: 28,
+      imgPath: register, 
+      imagePaths: [
+        register1,
+        register2,
+        register3,
+      ],
+      title: "Login/Register System",
+      description:
+        "This is a clean and responsive authentication interface featuring login and registration forms with animated transitions. Built with HTML, CSS, and JavaScript, the site focuses on intuitive UX and mobile-first design, making it ideal for starter projects and front-end auth demos.",
+      ghLink: "https://github.com/FadyAdel04/Login-Register-System",
+      demoLink: "https://login-register-system.vercel.app/",
+      skills: [],
+      technologies: ["JavaScript", "HTML", "CSS"],
+      tools: ["GitHub", "Vercel"],
+      keyFeatures: [
+        "Animated Transitions: Smooth switch between login and register views.",
+        "Responsive Design: Adapted for seamless experience across devices.",
+        "Form Validation: Basic validation for input fields.",
+        "User-Friendly Interface: Clean, accessible layout and UI elements.",
+        "Starter Auth Template: Great base for adding real authentication logic."
+      ],
+      date: "April 9, 2025"
+    },
+    {
+      id: 29,
+      imgPath: moviesApp, 
+      imagePaths: [
+        movies1,
+        movies2,
+        movies3,
+      ],
+      title: "Movies App",
+      description:
+        "The Movies App is a visually rich movie browser that enables users to explore trending and top-rated movies with full details, trailers, and search functionality. It delivers a clean UX and modern design while leveraging real-time data from a movie API.",
+      ghLink: "https://github.com/FadyAdel04/Movies-App",
+      demoLink: "https://movies-app-six-tau.vercel.app/",
+      skills: [],
+      technologies: ["JavaScript", "HTML", "CSS", "Bootstrap"],
+      tools: ["GitHub", "Vercel"],
+      keyFeatures: [
+        "Dynamic Movie Listing: Pulls trending and top-rated movies via API.",
+        "Detailed Movie Pages: Includes trailers, ratings, and overviews.",
+        "Interactive UI: Hover effects and transitions enhance the experience.",
+        "Fully Responsive: Optimized for phones, tablets, and desktops.",
+        "Smooth Navigation: Fast loading pages with structured layout."
+      ],
+      date: "April 10, 2025"
+    },
+    {
+      id: 32,
+      imgPath: papa, // Main preview image
+      imagePaths: [
+        papa1,
+        papa2,
+        papa3,
+        papa4,
+        papa5,
+        papa6,
+        papa7,
+        papa8,
+
+      ],
+      title: "Papa John's Pizza Website",
+      description:
+        "This is a frontend clone of the official Papa John’s Pizza website, crafted to replicate the structure, layout, and user interface of a real food ordering platform. The design showcases pizzas, promotions, and an engaging browsing experience, ideal for practicing responsive UI development.",
+      ghLink: "https://github.com/FadyAdel04/Papa-John-s",
+      demoLink: "https://fadyadel04.github.io/Papa-John-s/",
+      skills: [],
+      technologies: ["JavaScript", "HTML", "CSS"],
+      tools: ["GitHub"],
+      keyFeatures: [
+        "Homepage Clone: Faithfully mirrors Papa John’s real site design.",
+        "Pizza Menu Showcase: Display of product categories with thumbnails and pricing.",
+        "Promotional Banners: Highlights ongoing deals and combos.",
+        "Hero Section Carousel: Auto-sliding feature banner for user engagement.",
+        "Mobile Menu Toggle: Hamburger menu functionality for smaller screens.",
+        "Sticky Navbar: Header stays visible during scroll for quick access.",
+        "Call to Action Buttons: Order now and menu navigation links clearly styled.",
+        "Structured Layout: Sectioned design makes it easy to read and browse.",
+        "Font and Color Scheme: Matches the branding of Papa John’s.",
+        "Fully Responsive Design: Smooth experience across device sizes."
+      ],
+      date: "March 20, 2025"
+    },
+    {
+      id: 30,
+      imgPath: amazon,
+      imagePaths: [
+        amazon1,
+        amazon2,
+        amazon3,
+        amazon4,
+        amazon5,
+        amazon6,
+        amazon7,
+      ], 
+      title: "E-commerce Frontend",
+      description:
+        "This is a stylish and responsive frontend for an e-commerce platform. It showcases product listings, category filters, and a cart UI — all wrapped in a clean layout. Perfect for presenting a functional shopping experience.",
+      ghLink: "https://github.com/FadyAdel04/intern-ecommerce-front-end2",
+      demoLink: "https://intern-ecommerce-front-end2.vercel.app/",
+      skills: [],
+      technologies: ["JavaScript", "Bootstrap", "React" ,"React Router" ,"Responsive"],
+      tools: ["GitHub", "Vercel" , "Figma"],
+      keyFeatures: [
+        "Responsive Product Grid: Adjustable layout with cards for each product.",
+        "Interactive Cart Sidebar: Add, remove, and view cart items dynamically.",
+        "Category Filtering: Users can browse by product type or brand.",
+        "User-Focused Design: Clean, modern, and easy-to-navigate UI.",
+        "Performance Optimized: Fast-loading and mobile-friendly experience."
+      ],
+      date: "March 4, 2025"
+    },
+    {
+      id: 31,
+      imgPath: vivaDecor, // Main preview image
+      imagePaths: [
+        viva1,
+        viva2,
+        viva3,
+        viva4,
+        viva5,
+      ],
+      title: "VivaDecor Website",
+      description:
+        "VivaDecor is a branding website for an interior design studio, designed to present its style and services with elegance. With a strong focus on layout, visuals, and user experience, it gives potential clients an insight into the brand's identity.",
+      ghLink: "https://github.com/FadyAdel04/VivaDecor",
+      demoLink: "https://fadyadel04.github.io/VivaDecor/",
+      skills: [],
+      technologies: ["JavaScript", "HTML", "CSS"],
+      tools: ["GitHub"],
+      keyFeatures: [
+        "Branding Focus: Highlights the company’s design philosophy.",
+        "Sleek Visuals: High-quality design with clean structure.",
+        "Sectioned Layout: Easy navigation between service areas.",
+        "Fully Responsive: Designed to adapt across screen sizes.",
+        "Clean Codebase: Organized, readable HTML/CSS/JS structure."
+      ],
+      date: "March 11, 2025"
     },
     {
       id: 6,

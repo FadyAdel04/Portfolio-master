@@ -6,6 +6,10 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 
 // Import your project images here
+import papa from "../../Assets/Projects/papa.png";
+import vivaDecor from "../../Assets/Projects/viva.png";
+import amazon from "../../Assets/Projects/amazone.png";
+import moviesApp from "../../Assets/Projects/movie.png";
 import imaginify from "../../Assets/Projects/imaginify.png";
 import gym from "../../Assets/Projects/gym.png";
 import techTrove from "../../Assets/Projects/techTrove.png";
@@ -32,6 +36,8 @@ import crud from "../../Assets/Projects/crud.png";
 import health from "../../Assets/Projects/health.png";
 import hospital from "../../Assets/Projects/hospital.png";
 import blog1 from "../../Assets/Projects/blog.png";
+import solar from "../../Assets/Projects/solar.png";
+import register from "../../Assets/Projects/login.png";
 
 function Projects() {
   useEffect(() => {
@@ -138,11 +144,18 @@ function Projects() {
       id: 26,
       imgPath: blog1,
       title: "YC Directory",
-      description: 
+      description:
         "A Next.js 15 platform where entrepreneurs can submit their startup ideas for virtual pitch competitions,gain exposure through a clean design for a smooth user experience",
       ghLink: "https://github.com/FadyAdel04/YC_Directory",
       demoLink: "https://yc-directory-nine-zeta.vercel.app/",
-      skills: ["React", "Next.js", "Sanity", "Tailwind", "ShadCN", "TypeScript"],
+      skills: [
+        "React",
+        "Next.js",
+        "Sanity",
+        "Tailwind",
+        "ShadCN",
+        "TypeScript",
+      ],
       technologies: [], // Add any additional technologies here
       tools: ["VS Code", "GitHub", "Sanity Studio", "API", "Vercel"], // Added tools
       keyFeatures: [
@@ -178,8 +191,73 @@ function Projects() {
       date: "June 23, 2023",
     },
     {
+      id: 32,
+      imgPath: papa, 
+      title: "Papa John's Pizza Website",
+      description:
+        "A front-end clone of the Papa John’s pizza website, showcasing the menu, offers, and ordering layout. Designed with responsiveness and clean visuals",
+      ghLink: "https://github.com/FadyAdel04/Papa-John-s",
+      demoLink: "https://fadyadel04.github.io/Papa-John-s/",
+      skills: ["HTML", "CSS", "JavaScript"],
+      technologies: [],
+      tools: ["GitHub"],
+      keyFeatures: [
+        "Full Homepage Clone: Visually similar to the official Papa John's website.",
+        "Responsive Navigation: Menu adapts to desktop and mobile devices.",
+        "Menu Display: Showcases pizzas, sides, drinks, and deals.",
+        "Offer Sections: Highlights current discounts and promotional bundles.",
+        "Hero Slider: Engaging carousel for featured items or promotions.",
+        "Sticky Header: Easy access to navigation as the user scrolls.",
+        "Consistent Branding: Fonts, colors, and layout inspired by the brand.",
+        "Order CTA Buttons: Prominent call-to-action buttons to simulate ordering flow.",
+        "Responsive Design: Optimized for phones, tablets, and desktops.",
+        "Modern Layout: Clean HTML/CSS structure for easy scalability."
+      ],
+      date: "March 20, 2025"
+    },
+    {
+      id: 27,
+      imgPath: solar,
+      title: "Solar System Website",
+      description:
+        "A website for Solidarity Solar, a solar panel installation company based in Plymouth, UK. The site provides information about their services, products, and values.",
+      ghLink: "https://github.com/FadyAdel04/Solar-Company",
+      demoLink: "https://solar-company-one.vercel.app/",
+      skills: ["HTML", "CSS", "JavaScript"],
+      technologies: [],
+      tools: ["Vercel", "GitHub"],
+      keyFeatures: [
+        "Comprehensive Service Information: Details about solar panel installation services and customer support.",
+        "Product Listings: Showcases various solar kits and related products.",
+        "Sustainability Focus: Emphasizes the company's commitment to environmental sustainability and customer care.",
+        "Responsive Design: Ensures optimal viewing on various devices, including desktops and mobiles.",
+        "Contact Options: Provides multiple ways for customers to get in touch, including call requests.",
+      ],
+      date: "February 3, 2025",
+    },
+    {
+      id: 30,
+      imgPath: amazon, 
+      title: "Amazon Clone",
+      description:
+        "A fully responsive e-commerce frontend.The design includes product grids, filtering, and cart UI, perfect for showcasing products in a clean and intuitive layout.",
+      ghLink: "https://github.com/FadyAdel04/intern-ecommerce-front-end2",
+      demoLink: "https://intern-ecommerce-front-end2.vercel.app/",
+      skills: ["React", "Bootstrap", "React Router"],
+      technologies: [],
+      tools: ["Vercel", "GitHub"],
+      keyFeatures: [
+        "Product Display: Organized product cards with pricing and hover effects.",
+        "Category Filter: Allows users to filter products by type.",
+        "Shopping Cart UI: Cart sidebar for easy item management.",
+        "Modern UI/UX: Clean design with smooth transitions.",
+        "Responsive Design: Fully functional across all screen sizes.",
+      ],
+      date: "March 4, 2025"
+    },
+    {
       id: 5,
-      imgPath: chat, // Ensure you import this image in your projects.js file
+      imgPath: chat,
       title: "Chat 2 Chat App",
       description:
         "A chat room where users can exchange messages in real-time. The application uses WebSocket technology for live messaging, enabling seamless communication.",
@@ -216,10 +294,10 @@ function Projects() {
         "Admin Dashboard: Centralized control panel for managing all operations.",
         "Reports: Generate detailed reports on hospital performance and operations.",
         "Secure Access: Authentication system to ensure secure data handling.",
-        "Responsive Design: Ensures usability across devices, including mobile and desktop."
+        "Responsive Design: Ensures usability across devices, including mobile and desktop.",
       ],
       date: "December 26, 2024",
-    },    
+    },
     {
       id: 7,
       imgPath: gym, // Ensure you import this image in your projects.js file
@@ -369,6 +447,26 @@ function Projects() {
       date: "October 15, 2024",
     },
     {
+      id: 31,
+      imgPath: vivaDecor, 
+      title: "VivaDecor Website",
+      description:
+        "A landing page for VivaDecor, an interior design and decoration brand. The website highlights the brand's vision, services, and design expertise using modern web design principles.",
+      ghLink: "https://github.com/FadyAdel04/VivaDecor",
+      demoLink: "https://fadyadel04.github.io/VivaDecor/",
+      skills: ["HTML", "CSS", "JavaScript"],
+      technologies: [],
+      tools: ["GitHub"],
+      keyFeatures: [
+        "Hero Section: Stylish intro with call-to-action for brand awareness.",
+        "Service Highlights: Clean layout for showcasing design offerings.",
+        "Modern Aesthetic: Sleek typography and engaging visuals.",
+        "Responsive Layout: Works well on desktop and mobile devices.",
+        "Smooth Navigation: Sections transition clearly for great UX."
+      ],
+      date: "February 12, 2025"
+    },    
+    {
       id: 14,
       imgPath: red, // Ensure you import this image in your projects.js file
       title: "Red Store Online Shop",
@@ -409,6 +507,26 @@ function Projects() {
         "Stunning Visuals: High-quality images that capture the beauty of the resort and its surroundings.",
       ],
       date: "September 30, 2023",
+    },
+    {
+      id: 29,
+      imgPath: moviesApp, 
+      title: "Movies App",
+      description:
+        "A sleek and modern movie discovery app that allows users to browse top-rated films, view detailed movie information, and watch trailers.",
+      ghLink: "https://github.com/FadyAdel04/Movies-App",
+      demoLink: "https://movies-app-six-tau.vercel.app/",
+      skills: ["HTML", "CSS", "JavaScript"],
+      technologies: [],
+      tools: ["Vercel", "GitHub"],
+      keyFeatures: [
+        "Movie Search: Easily search for your favorite movies.",
+        "Movie Details Page: Displays rating, overview, and trailers.",
+        "Responsive Design: Fully functional on mobile and desktop.",
+        "API Integration: Fetches data dynamically from a movie API.",
+        "Modern UI: Stylish interface with engaging layout and visuals.",
+      ],
+      date: "February 11, 2025",
     },
     {
       id: 16,
@@ -458,8 +576,28 @@ function Projects() {
       date: "February 10, 2024",
     },
     {
+      id: 28,
+      imgPath: register, 
+      title: "Login/Register System",
+      description:
+        "A responsive login and registration web app built with modern UI, user-friendly authentication flow, and smooth transitions.",
+      ghLink: "https://github.com/FadyAdel04/-Login-Register-System",
+      demoLink: "https://login-register-system.vercel.app/",
+      skills: ["HTML", "CSS", "JavaScript"],
+      technologies: [],
+      tools: ["Vercel", "GitHub"],
+      keyFeatures: [
+        "Authentication Flow: Clean and functional login and registration forms.",
+        "Form Validation: Basic client-side form validation for user input.",
+        "Smooth Transitions: Animated form switch between login and register.",
+        "Responsive Design: Fully optimized for both desktop and mobile users.",
+        "Minimalist UI: Focused on simplicity and user experience.",
+      ],
+      date: "February 9, 2025",
+    },
+    {
       id: 18,
-      imgPath: dash, // Replace with the actual path for the main project image
+      imgPath: dash, 
       title: "AdminHub Dashboard",
       description:
         "AdminHub is a responsive admin dashboard template built with Bootstrap. It provides a comprehensive layout for managing web applications",
