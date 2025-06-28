@@ -67,7 +67,7 @@ function WorkExperience() {
           <div
             key={exp.id}
             className={`timeline-item ${index % 2 === 0 ? "left" : "right"}`}
-            data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+            data-aos={index % 2 === 0 ? "fade-up" : "fade-down"}
           >
             <div className="timeline-card">
               <h3 className="timeline-title">{exp.title}</h3>

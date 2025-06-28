@@ -38,6 +38,10 @@ import hospital from "../../Assets/Projects/hospital.png";
 import blog1 from "../../Assets/Projects/blog.png";
 import solar from "../../Assets/Projects/solar.png";
 import register from "../../Assets/Projects/login.png";
+import souq from "../../Assets/Projects/souq.png";
+import rawafed from "../../Assets/Projects/rawafed.png";
+import golden from "../../Assets/Projects/golden.png";
+import cafeBloom from "../../Assets/Projects/cafe.png";
 
 function Projects() {
   useEffect(() => {
@@ -73,6 +77,84 @@ function Projects() {
       ],
       date: "Nov 27, 2024",
       views: 0,
+    },
+    {
+      id: 25,
+      imgPath: souq,
+      title: "Suk Arabia E-Commerce Store",
+      description:
+        "Suk Arabia is a modern, responsive e-commerce platform designed for selling electronics and gadgets in the Gulf region. The store features an elegant Arabic-right-to-left ",
+      ghLink: "https://github.com/FadyAdel04/Suk-Arabia-Store",
+      demoLink: "https://suk-arabia-store.vercel.app/",
+      skills: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+      technologies: ["RTL Layout", "Responsive Design"],
+      tools: ["VS Code", "Vercel", "Figma", "Photoshop"],
+      keyFeatures: [
+        "RTL Support: Fully designed for Arabic users with a right-to-left interface.",
+        "Product Display: Clean product cards with pricing, discounts, and CTAs.",
+        "Modern UI: Sleek design inspired by top e-commerce trends.",
+        "Mobile Optimization: Fully responsive layout for phones and tablets.",
+        "Multi-Image Gallery: Each product showcases multiple high-quality images.",
+        "Localization Ready: Arabic typography and formatting tailored to the Gulf market.",
+      ],
+      date: "June 27, 2024",
+    },
+    {
+      id: 26,
+      imgPath: rawafed,
+      title: "Rawafed Academy Online Platform",
+      description:
+        "Rawafed Academy is a comprehensive Arabic online learning platform offering educational content and programs for students across various levels. ",
+      ghLink: "https://github.com/FadyAdel04/rawafed-academy-online",
+      demoLink: "https://rawafed-academy-online.vercel.app/",
+      skills: [
+        "React",
+        "Next.js",
+        "Tailwind",
+        "ShadCN",
+        "TypeScript",
+        "Responsive",
+        "Framer Motion",
+      ],
+      technologies: ["Firebase", "VideoJS", "App Router"],
+      tools: ["VS Code", "Vercel", "Figma"],
+      keyFeatures: [
+        "RTL Arabic Support: Designed specifically for Arabic-speaking users.",
+        "Structured Learning: Organized by subjects, programs, and video lessons.",
+        "Dynamic Video Playback: Integrated video player for course delivery.",
+        "User Profiles: Each student has a dedicated learning dashboard.",
+        "Modern UI/UX: Clean educational layout with smooth animations.",
+        "Fully Responsive: Optimized for desktop, tablet, and mobile devices.",
+      ],
+      date: "June 28, 2025",
+    },
+    {
+      id: 27,
+      imgPath: golden,
+      title: "Golden Escape Tourism Portal",
+      description:
+        "Golden Escape is a dynamic tourism booking portal tailored for showcasing rural tourism, farm stays, and unique travel experiences in Egypt and the Gulf.",
+      ghLink: "https://github.com/FadyAdel04/golden-escape-portal",
+      demoLink: "https://golden-escape-portal.vercel.app/", // update if hosted elsewhere
+      skills: [
+        "React",
+        "Next.js",
+        "Tailwind",
+        "TypeScript",
+        "ShadCN",
+        "Responsive",
+      ],
+      technologies: [],
+      tools: ["VS Code", "Vercel", "Figma", ],
+      keyFeatures: [
+        "Tourism-Focused UI: Tailored to promote rural, agricultural, and cultural destinations.",
+        "Responsive Booking System: Users can explore and book experiences easily.",
+        "Multilingual Support: Includes language switcher for Arabic and English.",
+        "Event & Activity Showcase: Highlight farm events and seasonal activities.",
+        "Natural Color Scheme: Uses green, sky blue, brown, and beige to reflect the environment.",
+        "Clean Layout: Optimized for performance and accessibility across all devices.",
+      ],
+      date: "June 29, 2025",
     },
     {
       id: 2,
@@ -115,6 +197,39 @@ function Projects() {
         "User Reviews: Read and submit reviews for movies and series.",
       ],
       date: "September 25, 2024",
+    },
+        {
+      id: 28,
+      imgPath: cafeBloom, 
+      title: "Café Bloom Bistro Website",
+      description:
+        "Café Bloom is a modern, elegant website built to showcase the unique charm of a local bistro or café. Designed with a warm and inviting aesthetic",
+      ghLink: "https://github.com/FadyAdel04/cafe-bloom-bistro-site", // update if different
+      demoLink: "https://cafe-bloom-bistro-site.vercel.app/",
+      skills: [
+        "React",
+        "Next.js",
+        "Tailwind",
+        "ShadCN",
+        "Responsive",
+        "Framer Motion",
+      ],
+      technologies: [
+        "App Router",
+        "Static Site Generation",
+        "i18n",
+        "Custom Animations",
+      ],
+      tools: ["VS Code", "Vercel", "Figma", "Canva"],
+      keyFeatures: [
+        "Beautiful UI: Warm and cozy design reflecting a café atmosphere.",
+        "Responsive Design: Seamlessly adapts to phones, tablets, and desktops.",
+        "Gallery Showcase: Image-driven layout featuring café interiors and dishes.",
+        "Animated Transitions: Smooth scroll and entrance animations using Framer Motion.",
+        "Multilingual Ready: Designed to support multiple languages including Arabic.",
+        "Optimized Performance: Fast loading with minimal layout shifts.",
+      ],
+      date: "June 30, 2025",
     },
     {
       id: 4,
@@ -192,7 +307,7 @@ function Projects() {
     },
     {
       id: 32,
-      imgPath: papa, 
+      imgPath: papa,
       title: "Papa John's Pizza Website",
       description:
         "A front-end clone of the Papa John’s pizza website, showcasing the menu, offers, and ordering layout. Designed with responsiveness and clean visuals",
@@ -211,9 +326,9 @@ function Projects() {
         "Consistent Branding: Fonts, colors, and layout inspired by the brand.",
         "Order CTA Buttons: Prominent call-to-action buttons to simulate ordering flow.",
         "Responsive Design: Optimized for phones, tablets, and desktops.",
-        "Modern Layout: Clean HTML/CSS structure for easy scalability."
+        "Modern Layout: Clean HTML/CSS structure for easy scalability.",
       ],
-      date: "March 20, 2025"
+      date: "March 20, 2025",
     },
     {
       id: 27,
@@ -237,7 +352,7 @@ function Projects() {
     },
     {
       id: 30,
-      imgPath: amazon, 
+      imgPath: amazon,
       title: "Amazon Clone",
       description:
         "A fully responsive e-commerce frontend.The design includes product grids, filtering, and cart UI, perfect for showcasing products in a clean and intuitive layout.",
@@ -253,7 +368,7 @@ function Projects() {
         "Modern UI/UX: Clean design with smooth transitions.",
         "Responsive Design: Fully functional across all screen sizes.",
       ],
-      date: "March 4, 2025"
+      date: "March 4, 2025",
     },
     {
       id: 5,
@@ -448,7 +563,7 @@ function Projects() {
     },
     {
       id: 31,
-      imgPath: vivaDecor, 
+      imgPath: vivaDecor,
       title: "VivaDecor Website",
       description:
         "A landing page for VivaDecor, an interior design and decoration brand. The website highlights the brand's vision, services, and design expertise using modern web design principles.",
@@ -462,10 +577,10 @@ function Projects() {
         "Service Highlights: Clean layout for showcasing design offerings.",
         "Modern Aesthetic: Sleek typography and engaging visuals.",
         "Responsive Layout: Works well on desktop and mobile devices.",
-        "Smooth Navigation: Sections transition clearly for great UX."
+        "Smooth Navigation: Sections transition clearly for great UX.",
       ],
-      date: "February 12, 2025"
-    },    
+      date: "February 12, 2025",
+    },
     {
       id: 14,
       imgPath: red, // Ensure you import this image in your projects.js file
@@ -510,7 +625,7 @@ function Projects() {
     },
     {
       id: 29,
-      imgPath: moviesApp, 
+      imgPath: moviesApp,
       title: "Movies App",
       description:
         "A sleek and modern movie discovery app that allows users to browse top-rated films, view detailed movie information, and watch trailers.",
@@ -577,7 +692,7 @@ function Projects() {
     },
     {
       id: 28,
-      imgPath: register, 
+      imgPath: register,
       title: "Login/Register System",
       description:
         "A responsive login and registration web app built with modern UI, user-friendly authentication flow, and smooth transitions.",
@@ -597,7 +712,7 @@ function Projects() {
     },
     {
       id: 18,
-      imgPath: dash, 
+      imgPath: dash,
       title: "AdminHub Dashboard",
       description:
         "AdminHub is a responsive admin dashboard template built with Bootstrap. It provides a comprehensive layout for managing web applications",

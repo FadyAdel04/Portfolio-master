@@ -16,7 +16,7 @@ import { SiCodeforces } from "react-icons/si";
 function Home2() {
   useEffect(() => {
     AOS.init({
-      duration: 3000, // Animation duration
+      duration: 3000,
     });
   }, []);
 
@@ -34,45 +34,42 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              A dedicated and enthusiastic student pursuing an undergraduate
-              degree in Computer Science with a focus on Artificial Intelligence
-              🤷‍♂️
+              I’m a passionate <b className="purple">Frontend Web Developer</b>{" "}
+              with a strong foundation in <b className="purple">React.js</b> and{" "}
+              <b className="purple">Next.js</b>, and experience delivering modern, fast, and responsive websites.
               <br />
               <br />
-              Equipped with comprehensive web development skills like
+              I'm currently pursuing a degree in <b className="purple">Computer Science</b> with a focus on{" "}
+              <b className="purple">Artificial Intelligence</b>, and I enjoy combining tech with creativity.
+              <br />
+              <br />
+              I specialize in building dynamic UIs, animations, and performance-optimized apps using{" "}
               <i>
-                <b className="purple">
-                  {" "}
-                  Javascript, React.js and Next.js and more..
-                </b>
-              </i>
+                <b className="purple">Tailwind CSS, Shadcn, TypeScript, Supabase</b>
+              </i>{" "}
+              and more.
               <br />
               <br />
-              Along with strong ability to learn new technologies.&nbsp;
-              <i>
-                <b className="purple">Programming and Web Technologies </b> and
-                also in areas related to <b className="purple">AI tools.</b>
-              </i>
+              I'm also the creator of{" "}
+              <a
+                href="https://www.facebook.com/profile.php?id=61575214027590"
+                target="_blank"
+                rel="noreferrer"
+                className="purple"
+              >
+                Crafted Web Solutions
+              </a>
+              , a brand focused on offering professional websites like portfolios, e-commerce stores,
+              digital menus, wedding invitations, and educational platforms — all with local pricing and modern design.
               <br />
-              <br />I have more than two years of experience in the field of web
-              applications
-              <b className="purple"> Node.js Environment</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              <br />
+              My passion lies in using the web to build solutions that are clean, fast, and user-friendly 🚀
             </p>
           </Col>
           <Col
             md={4}
             className="myAvtar"
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-duration="1200"
           >
             <Tilt>

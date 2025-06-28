@@ -22,7 +22,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // Import your project images here
-import papa from "./Assets/Projects/papa.png"
+import papa from "./Assets/Projects/papa.png";
 import vivaDecor from "./Assets/Projects/viva.png";
 import amazon from "./Assets/Projects/amazone.png";
 import moviesApp from "./Assets/Projects/movie.png";
@@ -54,7 +54,64 @@ import crud1 from "./Assets/projectsImages/crud/2.png";
 import hospital from "./Assets/Projects/hospital.png";
 import solar from "./Assets/Projects/solar.png";
 import register from "./Assets/Projects/login.png";
+import souq from "./Assets/Projects/souq.png";
+import rawafed from "./Assets/Projects/rawafed.png";
+import golden from "./Assets/Projects/golden.png";
+import cafeBloom from "./Assets/Projects/cafe.png";
 
+// cafe images
+import cafe1 from "./Assets/projectsImages/cafe/2.png";
+import cafe2 from "./Assets/projectsImages/cafe/3.png";
+import cafe3 from "./Assets/projectsImages/cafe/4.png";
+import cafe4 from "./Assets/projectsImages/cafe/5.png";
+
+// golden images
+import golden1 from "./Assets/projectsImages/golden/2.png";
+import golden2 from "./Assets/projectsImages/golden/3.png";
+import golden3 from "./Assets/projectsImages/golden/4.png";
+import golden4 from "./Assets/projectsImages/golden/5.png";
+import golden5 from "./Assets/projectsImages/golden/6.png";
+import golden6 from "./Assets/projectsImages/golden/7.png";
+import golden7 from "./Assets/projectsImages/golden/8.png";
+import golden8 from "./Assets/projectsImages/golden/9.png";
+import golden9 from "./Assets/projectsImages/golden/10.png";
+import golden10 from "./Assets/projectsImages/golden/11.png";
+import golden11 from "./Assets/projectsImages/golden/12.png";
+import golden12 from "./Assets/projectsImages/golden/13.png";
+import golden13 from "./Assets/projectsImages/golden/14.png";
+import golden14 from "./Assets/projectsImages/golden/15.png";
+
+//rawafed images
+import rawafed1 from "./Assets/projectsImages/rawafed/2.png";
+import rawafed2 from "./Assets/projectsImages/rawafed/3.png";
+import rawafed3 from "./Assets/projectsImages/rawafed/4.png";
+import rawafed4 from "./Assets/projectsImages/rawafed/5.png";
+import rawafed5 from "./Assets/projectsImages/rawafed/6.png";
+import rawafed6 from "./Assets/projectsImages/rawafed/7.png";
+import rawafed7 from "./Assets/projectsImages/rawafed/8.png";
+import rawafed8 from "./Assets/projectsImages/rawafed/9.png";
+import rawafed9 from "./Assets/projectsImages/rawafed/10.png";
+import rawafed10 from "./Assets/projectsImages/rawafed/11.png";
+import rawafed11 from "./Assets/projectsImages/rawafed/12.png";
+import rawafed12 from "./Assets/projectsImages/rawafed/13.png";
+import rawafed13 from "./Assets/projectsImages/rawafed/14.png";
+import rawafed14 from "./Assets/projectsImages/rawafed/15.png";
+import rawafed15 from "./Assets/projectsImages/rawafed/16.png";
+import rawafed16 from "./Assets/projectsImages/rawafed/17.png";
+import rawafed17 from "./Assets/projectsImages/rawafed/18.png";
+import rawafed18 from "./Assets/projectsImages/rawafed/19.png";
+
+// souq
+import souq1 from "./Assets/projectsImages/souq/2.png";
+import souq2 from "./Assets/projectsImages/souq/3.png";
+import souq3 from "./Assets/projectsImages/souq/4.png";
+import souq4 from "./Assets/projectsImages/souq/5.png";
+import souq5 from "./Assets/projectsImages/souq/6.png";
+import souq6 from "./Assets/projectsImages/souq/7.png";
+import souq7 from "./Assets/projectsImages/souq/8.png";
+import souq8 from "./Assets/projectsImages/souq/9.png";
+import souq9 from "./Assets/projectsImages/souq/10.png";
+import souq10 from "./Assets/projectsImages/souq/11.png";
 
 // papa John’s
 import papa1 from "./Assets/projectsImages/papa/2.png";
@@ -99,7 +156,6 @@ import solar3 from "./Assets/projectsImages/solar/3.png";
 import solar4 from "./Assets/projectsImages/solar/4.png";
 import solar5 from "./Assets/projectsImages/solar/5.png";
 import solar6 from "./Assets/projectsImages/solar/6.png";
-
 
 // hospital images
 import hospital1 from "./Assets/projectsImages/hospital/2.png";
@@ -387,6 +443,94 @@ function App() {
       date: "Nov 27, 2024",
     },
     {
+      id: 25,
+      imgPath: souq, // Ensure you import this image in your projects.js file
+      imagePaths: [
+        souq1,
+        souq2,
+        souq3,
+        souq4,
+        souq5,
+        souq6,
+        souq7,
+        souq8,
+        souq9,
+        souq10,
+      ],
+      title: "Suk Arabia E-Commerce Store",
+      description:
+        "Suk Arabia is a modern, responsive e-commerce platform designed for selling electronics and gadgets in the Gulf region. The store features an elegant Arabic-right-to-left (RTL) interface, localized content, and an intuitive user experience. Customers can browse through a curated selection of high-quality tech products and seamlessly add items to their cart, explore product details, and complete purchases with ease. The site prioritizes speed, usability, and accessibility, offering an optimized experience across desktop and mobile devices.",
+      ghLink: "https://github.com/FadyAdel04/Suk-Arabia-Store",
+      demoLink: "https://suk-arabia-store.vercel.app/",
+      skills: [
+        "React",
+        "Next.js",
+        "Tailwind",
+        "ShadCN",
+        "TypeScript",
+        "Responsive",
+      ],
+      technologies: [],
+      tools: ["VS Code", "Vercel", "Figma"],
+      keyFeatures: [
+        "RTL Support: Fully designed for Arabic users with a right-to-left interface.",
+        "Product Display: Clean product cards with pricing, discounts, and CTAs.",
+        "Modern UI: Sleek design inspired by top e-commerce trends.",
+        "Mobile Optimization: Fully responsive layout for phones and tablets.",
+        "Multi-Image Gallery: Each product showcases multiple high-quality images.",
+        "Localization Ready: Arabic typography and formatting tailored to the Gulf market.",
+      ],
+      date: "June 16, 2025",
+    },
+    {
+      id: 26,
+      imgPath: rawafed,
+      imagePaths: [
+        rawafed1,
+        rawafed2,
+        rawafed3,
+        rawafed4,
+        rawafed5,
+        rawafed6,
+        rawafed7,
+        rawafed8,
+        rawafed9,
+        rawafed10,
+        rawafed11,
+        rawafed12,
+        rawafed13,
+        rawafed14,
+        rawafed15,
+        rawafed16,
+        rawafed17,
+        rawafed18,
+      ],
+      title: "Rawafed Academy Online Platform",
+      description:
+        "Rawafed Academy is a comprehensive Arabic online learning platform offering educational content and programs for students across various levels. The platform provides an intuitive RTL interface, categorized courses, lesson videos, instructor profiles, and interactive learning experiences. Designed with accessibility and responsiveness in mind, the site helps learners easily navigate through educational materials and participate in structured academic programs.",
+      ghLink: "https://github.com/FadyAdel04/rawafed-academy-online",
+      demoLink: "https://rawafed-academy-online.vercel.app/",
+      skills: [
+        "React",
+        "Next.js",
+        "Tailwind",
+        "ShadCN",
+        "TypeScript",
+        "Responsive",
+      ],
+      technologies: [],
+      tools: ["VS Code", "Vercel", "Figma"],
+      keyFeatures: [
+        "RTL Arabic Support: Designed specifically for Arabic-speaking users.",
+        "Structured Learning: Organized by subjects, programs, and video lessons.",
+        "Dynamic Video Playback: Integrated video player for course delivery.",
+        "User Profiles: Each student has a dedicated learning dashboard.",
+        "Modern UI/UX: Clean educational layout with smooth animations.",
+        "Fully Responsive: Optimized for desktop, tablet, and mobile devices.",
+      ],
+      date: "June 28, 2025",
+    },
+    {
       id: 2,
       imgPath: imaginify, // Ensure you import this image in your projects.js file
       imagePaths: [ai1, ai2, ai3, ai4, ai5, ai6, ai7],
@@ -407,6 +551,50 @@ function App() {
         "Tutorials and Resources: Comprehensive guides to help users maximize the platform's potential.",
       ],
       date: "june 3, 2024",
+    },
+    {
+      id: 27,
+      imgPath: golden,
+      imagePaths: [
+        golden1,
+        golden2,
+        golden3,
+        golden4,
+        golden5,
+        golden6,
+        golden7,
+        golden8,
+        golden9,
+        golden10,
+        golden11,
+        golden12,
+        golden13,
+        golden14,
+      ],
+      title: "Golden Escape Tourism Portal",
+      description:
+        "Golden Escape is a dynamic tourism booking portal tailored for showcasing rural tourism, farm stays, and unique travel experiences in Egypt and the Gulf. The platform features beautifully categorized services including agricultural tours, livestock farming, and leisure stays. Users can explore destinations, check event details, and book directly through the site. Built with a natural earthy design palette, it reflects the essence of eco-tourism while maintaining a modern, responsive UI.",
+      ghLink: "https://github.com/FadyAdel04/golden-escape-portal",
+      demoLink: "https://golden-escape-portal.vercel.app/", // update if hosted elsewhere
+      skills: [
+        "React",
+        "Next.js",
+        "Tailwind",
+        "TypeScript",
+        "ShadCN",
+        "Responsive",
+      ],
+      technologies: [],
+      tools: ["VS Code", "Vercel", "Figma"],
+      keyFeatures: [
+        "Tourism-Focused UI: Tailored to promote rural, agricultural, and cultural destinations.",
+        "Responsive Booking System: Users can explore and book experiences easily.",
+        "Multilingual Support: Includes language switcher for Arabic and English.",
+        "Event & Activity Showcase: Highlight farm events and seasonal activities.",
+        "Natural Color Scheme: Uses green, sky blue, brown, and beige to reflect the environment.",
+        "Clean Layout: Optimized for performance and accessibility across all devices.",
+      ],
+      date: "June 29, 2025",
     },
     {
       id: 3,
@@ -445,21 +633,51 @@ function App() {
       date: "September 25, 2024",
     },
     {
+      id: 28,
+      imgPath: cafeBloom, 
+      imagePaths: [cafe1, cafe2, cafe3, cafe4], // Replace with actual imported image paths
+      title: "Café Bloom Bistro Website",
+      description:
+        "Café Bloom is a modern, elegant website built to showcase the unique charm of a local bistro or café. Designed with a warm and inviting aesthetic, the platform highlights the café’s menu, ambiance, events, and customer experience. With its responsive layout and visually appealing design, Café Bloom ensures smooth navigation across all devices. Visitors can browse the gallery, discover daily specials, and learn about the café's story and services.",
+      ghLink: "https://github.com/FadyAdel04/cafe-bloom-bistro-site", // update if different
+      demoLink: "https://cafe-bloom-bistro-site.vercel.app/",
+      skills: [
+        "React",
+        "Next.js",
+        "Tailwind",
+        "ShadCN",
+        "Responsive",
+      ],
+      technologies: [
+      ],
+      tools: ["VS Code", "Vercel", "Figma"],
+      keyFeatures: [
+        "Beautiful UI: Warm and cozy design reflecting a café atmosphere.",
+        "Responsive Design: Seamlessly adapts to phones, tablets, and desktops.",
+        "Gallery Showcase: Image-driven layout featuring café interiors and dishes.",
+        "Animated Transitions: Smooth scroll and entrance animations using Framer Motion.",
+        "Multilingual Ready: Designed to support multiple languages including Arabic.",
+        "Optimized Performance: Fast loading with minimal layout shifts.",
+      ],
+      date: "June 1, 2025",
+    },
+    {
       id: 26,
       imgPath: blog1, // Replace with the appropriate image path
-      imagePaths: [
-        blog2,
-        blog3,
-        blog4,
-        blog5,
-        blog6,
-      ],
+      imagePaths: [blog2, blog3, blog4, blog5, blog6],
       title: "YC Directory",
-      description: 
+      description:
         "A Next.js 15 platform where entrepreneurs can submit their startup ideas for virtual pitch competitions, browse other pitches, and gain exposure through a clean minimalistic design for a smooth user experience. If you're getting started and need assistance or face any bugs, join our active Discord community with over 34k+ members. It's a place where people help each other out.",
       ghLink: "https://github.com/FadyAdel04/YC_Directory",
       demoLink: "https://yc-directory-nine-zeta.vercel.app/",
-      skills: ["React", "Next.js", "Sanity", "Tailwind", "ShadCN", "TypeScript"],
+      skills: [
+        "React",
+        "Next.js",
+        "Sanity",
+        "Tailwind",
+        "ShadCN",
+        "TypeScript",
+      ],
       technologies: [], // Add any additional technologies here
       tools: ["VS Code", "GitHub", "API", "Vercel"], // Added tools
       keyFeatures: [
@@ -475,7 +693,7 @@ function App() {
         "Minimalistic Design: Fresh and simple UI with only the essential pages for ease of use and a clean aesthetic.",
       ],
       date: "Nov 26, 2024",
-    },    
+    },
     {
       id: 4,
       imgPath: techTrove,
@@ -519,15 +737,8 @@ function App() {
     },
     {
       id: 27,
-      imgPath: solar, 
-      imagePaths: [
-        solar1,
-        solar2,
-        solar3,
-        solar4,
-        solar5,
-        solar6,
-      ],
+      imgPath: solar,
+      imagePaths: [solar1, solar2, solar3, solar4, solar5, solar6],
       title: "Solidarity Solar",
       description:
         "Solidarity Solar is a clean energy company offering solar panel installation and consultation services. Their website showcases the company's mission for sustainability, available solar solutions, and customer-focused services. It is designed to be informative, accessible, and visually engaging, making it easy for users to learn about the benefits of solar energy and get in touch with the team.",
@@ -541,18 +752,14 @@ function App() {
         "Responsive Design: Optimized for all screen sizes and devices.",
         "Service Overview: Detailed sections explaining their solar services.",
         "Eco-Focused Messaging: Highlights their mission for sustainable energy.",
-        "Contact Options: Easy ways for users to reach out or request services."
+        "Contact Options: Easy ways for users to reach out or request services.",
       ],
-      date: "April 9, 2025"
+      date: "April 9, 2025",
     },
     {
       id: 28,
-      imgPath: register, 
-      imagePaths: [
-        register1,
-        register2,
-        register3,
-      ],
+      imgPath: register,
+      imagePaths: [register1, register2, register3],
       title: "Login/Register System",
       description:
         "This is a clean and responsive authentication interface featuring login and registration forms with animated transitions. Built with HTML, CSS, and JavaScript, the site focuses on intuitive UX and mobile-first design, making it ideal for starter projects and front-end auth demos.",
@@ -566,18 +773,14 @@ function App() {
         "Responsive Design: Adapted for seamless experience across devices.",
         "Form Validation: Basic validation for input fields.",
         "User-Friendly Interface: Clean, accessible layout and UI elements.",
-        "Starter Auth Template: Great base for adding real authentication logic."
+        "Starter Auth Template: Great base for adding real authentication logic.",
       ],
-      date: "April 9, 2025"
+      date: "April 9, 2025",
     },
     {
       id: 29,
-      imgPath: moviesApp, 
-      imagePaths: [
-        movies1,
-        movies2,
-        movies3,
-      ],
+      imgPath: moviesApp,
+      imagePaths: [movies1, movies2, movies3],
       title: "Movies App",
       description:
         "The Movies App is a visually rich movie browser that enables users to explore trending and top-rated movies with full details, trailers, and search functionality. It delivers a clean UX and modern design while leveraging real-time data from a movie API.",
@@ -591,24 +794,14 @@ function App() {
         "Detailed Movie Pages: Includes trailers, ratings, and overviews.",
         "Interactive UI: Hover effects and transitions enhance the experience.",
         "Fully Responsive: Optimized for phones, tablets, and desktops.",
-        "Smooth Navigation: Fast loading pages with structured layout."
+        "Smooth Navigation: Fast loading pages with structured layout.",
       ],
-      date: "April 10, 2025"
+      date: "April 10, 2025",
     },
     {
       id: 32,
       imgPath: papa, // Main preview image
-      imagePaths: [
-        papa1,
-        papa2,
-        papa3,
-        papa4,
-        papa5,
-        papa6,
-        papa7,
-        papa8,
-
-      ],
+      imagePaths: [papa1, papa2, papa3, papa4, papa5, papa6, papa7, papa8],
       title: "Papa John's Pizza Website",
       description:
         "This is a frontend clone of the official Papa John’s Pizza website, crafted to replicate the structure, layout, and user interface of a real food ordering platform. The design showcases pizzas, promotions, and an engaging browsing experience, ideal for practicing responsive UI development.",
@@ -627,9 +820,9 @@ function App() {
         "Call to Action Buttons: Order now and menu navigation links clearly styled.",
         "Structured Layout: Sectioned design makes it easy to read and browse.",
         "Font and Color Scheme: Matches the branding of Papa John’s.",
-        "Fully Responsive Design: Smooth experience across device sizes."
+        "Fully Responsive Design: Smooth experience across device sizes.",
       ],
-      date: "March 20, 2025"
+      date: "March 20, 2025",
     },
     {
       id: 30,
@@ -642,34 +835,34 @@ function App() {
         amazon5,
         amazon6,
         amazon7,
-      ], 
+      ],
       title: "E-commerce Frontend",
       description:
         "This is a stylish and responsive frontend for an e-commerce platform. It showcases product listings, category filters, and a cart UI — all wrapped in a clean layout. Perfect for presenting a functional shopping experience.",
       ghLink: "https://github.com/FadyAdel04/intern-ecommerce-front-end2",
       demoLink: "https://intern-ecommerce-front-end2.vercel.app/",
       skills: [],
-      technologies: ["JavaScript", "Bootstrap", "React" ,"React Router" ,"Responsive"],
-      tools: ["GitHub", "Vercel" , "Figma"],
+      technologies: [
+        "JavaScript",
+        "Bootstrap",
+        "React",
+        "React Router",
+        "Responsive",
+      ],
+      tools: ["GitHub", "Vercel", "Figma"],
       keyFeatures: [
         "Responsive Product Grid: Adjustable layout with cards for each product.",
         "Interactive Cart Sidebar: Add, remove, and view cart items dynamically.",
         "Category Filtering: Users can browse by product type or brand.",
         "User-Focused Design: Clean, modern, and easy-to-navigate UI.",
-        "Performance Optimized: Fast-loading and mobile-friendly experience."
+        "Performance Optimized: Fast-loading and mobile-friendly experience.",
       ],
-      date: "March 4, 2025"
+      date: "March 4, 2025",
     },
     {
       id: 31,
       imgPath: vivaDecor, // Main preview image
-      imagePaths: [
-        viva1,
-        viva2,
-        viva3,
-        viva4,
-        viva5,
-      ],
+      imagePaths: [viva1, viva2, viva3, viva4, viva5],
       title: "VivaDecor Website",
       description:
         "VivaDecor is a branding website for an interior design studio, designed to present its style and services with elegance. With a strong focus on layout, visuals, and user experience, it gives potential clients an insight into the brand's identity.",
@@ -683,9 +876,9 @@ function App() {
         "Sleek Visuals: High-quality design with clean structure.",
         "Sectioned Layout: Easy navigation between service areas.",
         "Fully Responsive: Designed to adapt across screen sizes.",
-        "Clean Codebase: Organized, readable HTML/CSS/JS structure."
+        "Clean Codebase: Organized, readable HTML/CSS/JS structure.",
       ],
-      date: "March 11, 2025"
+      date: "March 11, 2025",
     },
     {
       id: 6,
@@ -767,7 +960,8 @@ function App() {
       title: "Healthcare Management System",
       description:
         "The Healthcare Management System is a comprehensive application designed to manage hospital operations, including patient records, appointments, staff, and billing.",
-      ghLink: "https://github.com/FadyAdel04/HealthcareSystem/tree/main/HealthcareSystem",
+      ghLink:
+        "https://github.com/FadyAdel04/HealthcareSystem/tree/main/HealthcareSystem",
       demoLink: "", // Add demo link if available
       skills: ["HTML", "CSS", "JavaScript", "C#", "Net", "MySQL"],
       technologies: ["Bootstrap"],
@@ -780,10 +974,10 @@ function App() {
         "Admin Dashboard: Centralized control panel for managing all operations.",
         "Reports: Generate detailed reports on hospital performance and operations.",
         "Secure Access: Authentication system to ensure secure data handling.",
-        "Responsive Design: Ensures usability across devices, including mobile and desktop."
+        "Responsive Design: Ensures usability across devices, including mobile and desktop.",
       ],
       date: "December 26, 2024",
-    },    
+    },
     {
       id: 7,
       imgPath: gym, // Ensure you import this image in your projects.js file

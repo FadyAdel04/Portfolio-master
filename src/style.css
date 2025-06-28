@@ -967,6 +967,6 @@ button:focus {
 }
 
 .home-image {
-  animation: slideInRight 3s ease-out;
+  animation: slideInLeft 3s ease-out;
 }
 
