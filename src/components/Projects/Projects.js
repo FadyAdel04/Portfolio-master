@@ -42,6 +42,8 @@ import souq from "../../Assets/Projects/souq.png";
 import rawafed from "../../Assets/Projects/rawafed.png";
 import golden from "../../Assets/Projects/golden.png";
 import cafeBloom from "../../Assets/Projects/cafe.png";
+import aurora from "../../Assets/Projects/aurora.png";
+import tabeaa from "../../Assets/Projects/tapeaa.png";
 
 function Projects() {
   useEffect(() => {
@@ -79,7 +81,7 @@ function Projects() {
       views: 0,
     },
     {
-      id: 25,
+      id: 2,
       imgPath: souq,
       title: "Suk Arabia E-Commerce Store",
       description:
@@ -100,7 +102,7 @@ function Projects() {
       date: "June 27, 2024",
     },
     {
-      id: 26,
+      id: 3,
       imgPath: rawafed,
       title: "Rawafed Academy Online Platform",
       description:
@@ -129,7 +131,36 @@ function Projects() {
       date: "June 28, 2025",
     },
     {
-      id: 27,
+      id: 4,
+      imgPath: aurora, // replace with your actual image import variable
+      title: "Aurora Brand Store",
+      description:
+        "Aurora Brand Store is a modern, visually engaging e-commerce website designed to showcase stylish fashion products and deliver a smooth online shopping experience.",
+      ghLink: "https://github.com/FadyAdel04/stitch-showcase-static",
+      demoLink: "https://aurora-brand-store.vercel.app/",
+      skills: [
+        "React",
+        "Next.js",
+        "Tailwind",
+        "TypeScript",
+        "Responsive",
+        "UI/UX",
+      ],
+      technologies: [],
+      tools: ["VS Code", "Vercel", "Figma"],
+      keyFeatures: [
+        "Elegant UI Design: Minimal and stylish interface reflecting a premium fashion brand.",
+        "Product Showcase: Clean grid layout to display product collections effectively.",
+        "Responsive Layout: Fully optimized for desktops, tablets, and mobile devices.",
+        "Fast Performance: Built with Next.js for optimized loading and SEO-friendly pages.",
+        "Brand Identity: Uses a refined color palette and typography for a luxurious feel.",
+        "Smooth Navigation: Ensures intuitive browsing and a seamless shopping experience.",
+      ],
+      date: "July 10, 2025",
+    },
+
+    {
+      id: 5,
       imgPath: golden,
       title: "Golden Escape Tourism Portal",
       description:
@@ -145,7 +176,7 @@ function Projects() {
         "Responsive",
       ],
       technologies: [],
-      tools: ["VS Code", "Vercel", "Figma", ],
+      tools: ["VS Code", "Vercel", "Figma"],
       keyFeatures: [
         "Tourism-Focused UI: Tailored to promote rural, agricultural, and cultural destinations.",
         "Responsive Booking System: Users can explore and book experiences easily.",
@@ -157,7 +188,7 @@ function Projects() {
       date: "June 29, 2025",
     },
     {
-      id: 2,
+      id: 6,
       imgPath: imaginify, // Ensure you import this image in your projects.js file
       title: "Imaginify AI Platform",
       description:
@@ -178,7 +209,7 @@ function Projects() {
       date: "june 3, 2024",
     },
     {
-      id: 3,
+      id: 7,
       imgPath: holla, // Ensure you import this image in your projects.js file
       title: "Holla Movies Platform",
       description:
@@ -198,9 +229,37 @@ function Projects() {
       ],
       date: "September 25, 2024",
     },
-        {
-      id: 28,
-      imgPath: cafeBloom, 
+    {
+      id: 38,
+      imgPath: tabeaa, // replace with your actual image import variable
+      title: "Tabia E-Commerce Store",
+      description:
+        "Tabia is a modern e-commerce platform designed for agricultural, animal, and tourism investment products. It offers a clean, nature-inspired design with seamless shopping and booking experiences.",
+      ghLink: "https://github.com/FadyAdel04/tabia-ecom-store",
+      demoLink: "https://tabia-ecom-store.vercel.app/",
+      skills: [
+        "React",
+        "Next.js",
+        "Tailwind",
+        "TypeScript",
+        "ShadCN",
+        "Responsive",
+      ],
+      technologies: [],
+      tools: ["VS Code", "Vercel", "Figma"],
+      keyFeatures: [
+        "Multi-Category Platform: Showcases agricultural, animal, and rural tourism products.",
+        "Responsive Design: Optimized for all screen sizes with a modern UI layout.",
+        "Booking & Inquiry System: Allows users to reserve experiences and request details.",
+        "Natural Color Palette: Combines green, brown, sky blue, and beige for a rural theme.",
+        "Multilingual Support: Enables users to switch between Arabic and English.",
+        "SEO Optimized & Fast: Built with Next.js for high performance and fast page loading.",
+      ],
+      date: "August 15, 2025",
+    },
+    {
+      id: 8,
+      imgPath: cafeBloom,
       title: "Café Bloom Bistro Website",
       description:
         "Café Bloom is a modern, elegant website built to showcase the unique charm of a local bistro or café. Designed with a warm and inviting aesthetic",
@@ -232,7 +291,7 @@ function Projects() {
       date: "June 30, 2025",
     },
     {
-      id: 4,
+      id: 9,
       imgPath: techTrove,
       title: "Tech Trove Shop",
       description:
@@ -256,7 +315,7 @@ function Projects() {
       date: "March 20, 2024",
     },
     {
-      id: 26,
+      id: 10,
       imgPath: blog1,
       title: "YC Directory",
       description:
@@ -288,7 +347,7 @@ function Projects() {
       date: "Nov 26, 2024",
     },
     {
-      id: 6,
+      id: 11,
       imgPath: novil, // Ensure you import this image in your projects.js file
       title: "Novil Academy",
       description:
@@ -306,7 +365,7 @@ function Projects() {
       date: "June 23, 2023",
     },
     {
-      id: 32,
+      id: 12,
       imgPath: papa,
       title: "Papa John's Pizza Website",
       description:
@@ -331,7 +390,7 @@ function Projects() {
       date: "March 20, 2025",
     },
     {
-      id: 27,
+      id: 13,
       imgPath: solar,
       title: "Solar System Website",
       description:
@@ -351,7 +410,7 @@ function Projects() {
       date: "February 3, 2025",
     },
     {
-      id: 30,
+      id: 14,
       imgPath: amazon,
       title: "Amazon Clone",
       description:
@@ -371,7 +430,7 @@ function Projects() {
       date: "March 4, 2025",
     },
     {
-      id: 5,
+      id: 15,
       imgPath: chat,
       title: "Chat 2 Chat App",
       description:
@@ -391,7 +450,7 @@ function Projects() {
       date: "March 27, 2024",
     },
     {
-      id: 25,
+      id: 16,
       imgPath: hospital,
       title: "Healthcare Management System",
       description:
@@ -414,7 +473,7 @@ function Projects() {
       date: "December 26, 2024",
     },
     {
-      id: 7,
+      id: 17,
       imgPath: gym, // Ensure you import this image in your projects.js file
       title: "Fitness Gym",
       description:
@@ -436,7 +495,7 @@ function Projects() {
       date: "June 6, 2024",
     },
     {
-      id: 8,
+      id: 18,
       imgPath: courses, // Ensure you import this image in your projects.js file
       title: "Eclipseful Learning Platform",
       description:
@@ -457,7 +516,7 @@ function Projects() {
       date: "June 20, 2024",
     },
     {
-      id: 9,
+      id: 19,
       imgPath: brain, // Ensure you import this image in your projects.js file
       title: "BrainWave-AI",
       description:
@@ -478,7 +537,7 @@ function Projects() {
       date: "March 17, 2024",
     },
     {
-      id: 10,
+      id: 20,
       imgPath: car, // Ensure you import this image in your projects.js file
       title: "CarRent-App",
       description:
@@ -499,7 +558,7 @@ function Projects() {
       date: "July 19, 2024",
     },
     {
-      id: 11,
+      id: 21,
       imgPath: space, // Ensure you import this image in your projects.js file
       title: "TCJ-SPACE",
       description:
@@ -520,7 +579,7 @@ function Projects() {
       date: "August 1, 2024",
     },
     {
-      id: 12,
+      id: 22,
       imgPath: store, // Ensure you import this image in your projects.js file
       title: "Karma Master E-commerce",
       description:
@@ -541,7 +600,7 @@ function Projects() {
       date: "March 16, 2024",
     },
     {
-      id: 13,
+      id: 23,
       imgPath: travel, // Ensure you import this image in your projects.js file
       title: "Travel App: Explore the World!",
       description:
@@ -562,7 +621,7 @@ function Projects() {
       date: "October 15, 2024",
     },
     {
-      id: 31,
+      id: 24,
       imgPath: vivaDecor,
       title: "VivaDecor Website",
       description:
@@ -582,7 +641,7 @@ function Projects() {
       date: "February 12, 2025",
     },
     {
-      id: 14,
+      id: 25,
       imgPath: red, // Ensure you import this image in your projects.js file
       title: "Red Store Online Shop",
       description:
@@ -603,7 +662,7 @@ function Projects() {
       date: "September 15, 2023",
     },
     {
-      id: 15,
+      id: 26,
       imgPath: zen, // Ensure you import this image in your projects.js file
       title: "TBH-Zen Resort",
       description:
@@ -624,7 +683,7 @@ function Projects() {
       date: "September 30, 2023",
     },
     {
-      id: 29,
+      id: 27,
       imgPath: moviesApp,
       title: "Movies App",
       description:
@@ -644,7 +703,7 @@ function Projects() {
       date: "February 11, 2025",
     },
     {
-      id: 16,
+      id: 28,
       imgPath: shopping, // Replace with the actual path for the project image
       title: "Shopping Bag Shop",
       description:
@@ -668,7 +727,7 @@ function Projects() {
       date: "March 20, 2024",
     },
     {
-      id: 17,
+      id: 29,
       imgPath: bootstrap, // Replace with the actual path for the main project image
       title: "Bootstrap Design Portfolio",
       description:
@@ -691,7 +750,7 @@ function Projects() {
       date: "February 10, 2024",
     },
     {
-      id: 28,
+      id: 30,
       imgPath: register,
       title: "Login/Register System",
       description:
@@ -711,7 +770,7 @@ function Projects() {
       date: "February 9, 2025",
     },
     {
-      id: 18,
+      id: 31,
       imgPath: dash,
       title: "AdminHub Dashboard",
       description:
@@ -734,7 +793,7 @@ function Projects() {
       date: "January 15, 2024",
     },
     {
-      id: 19,
+      id: 32,
       imgPath: spicial, // Replace with the actual path for the main project image
       title: "Special Design",
       description:
@@ -756,7 +815,7 @@ function Projects() {
       date: "December 10, 2023",
     },
     {
-      id: 20,
+      id: 33,
       imgPath: phone, // Replace with the actual path for the main project image
       title: "Apple Template",
       description:
@@ -778,7 +837,7 @@ function Projects() {
       date: "February 5, 2022",
     },
     {
-      id: 21,
+      id: 34,
       imgPath: dev,
       title: "DEVELOPMENT Template",
       description:
@@ -799,7 +858,7 @@ function Projects() {
       date: "April 15, 2023",
     },
     {
-      id: 22,
+      id: 35,
       imgPath: phlox,
       title: "Phlox Template",
       description:
@@ -821,7 +880,7 @@ function Projects() {
       date: "February 10, 2023",
     },
     {
-      id: 23,
+      id: 36,
       imgPath: edited,
       title: "Image Editor",
       description:
@@ -843,7 +902,7 @@ function Projects() {
       date: "April 5, 2023",
     },
     {
-      id: 24,
+      id: 37,
       imgPath: crud,
       title: "CRUDS",
       description:

@@ -41,12 +41,24 @@ const experiences = [
     id: 4,
     title: "React.js Internship",
     company: "Web Masters Company",
-    duration: "january 2025– present",
+    duration: "january 2025– July 2025",
     type: "Internship Remotly",
     role: [
       "Developed and maintained responsive web applications using React.js.",
       "Implemented state management using Redux Toolkit for more efficient data flow and predictable state.",
       "Assisted in the integration of third-party APIs to enhance functionality.",
+    ],
+  },
+  {
+    id: 5,
+    title: "Freelance Web Developer",
+    company: "ITIDA Gigs",
+    duration: "july 2025– present",
+    type: "Internship Remotly",
+    role: [
+      "Strengthened problem-solving and analytical thinking through debugging and optimizing web applications.",
+      "Enhanced team collaboration and communication by working with peers and mentors on real client projects.",
+      "Improved time management and task prioritization to meet project deadlines efficiently."
     ],
   },
 ];

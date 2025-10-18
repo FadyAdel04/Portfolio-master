@@ -58,6 +58,41 @@ import souq from "./Assets/Projects/souq.png";
 import rawafed from "./Assets/Projects/rawafed.png";
 import golden from "./Assets/Projects/golden.png";
 import cafeBloom from "./Assets/Projects/cafe.png";
+import aurora from "./Assets/Projects/aurora.png";
+import tabeaa from "./Assets/Projects/tapeaa.png";
+
+// tabeaa images
+import tabeaa1 from "./Assets/projectsImages/tapeaa/2.png";
+import tabeaa2 from "./Assets/projectsImages/tapeaa/3.png";
+import tabeaa3 from "./Assets/projectsImages/tapeaa/4.png";
+import tabeaa4 from "./Assets/projectsImages/tapeaa/5.png";
+import tabeaa5 from "./Assets/projectsImages/tapeaa/6.png";
+import tabeaa6 from "./Assets/projectsImages/tapeaa/7.png";
+import tabeaa7 from "./Assets/projectsImages/tapeaa/8.png";
+import tabeaa8 from "./Assets/projectsImages/tapeaa/9.png";
+import tabeaa9 from "./Assets/projectsImages/tapeaa/10.png";
+import tabeaa10 from "./Assets/projectsImages/tapeaa/11.png";
+import tabeaa11 from "./Assets/projectsImages/tapeaa/12.png";
+import tabeaa12 from "./Assets/projectsImages/tapeaa/13.png";
+import tabeaa13 from "./Assets/projectsImages/tapeaa/14.png";
+import tabeaa14 from "./Assets/projectsImages/tapeaa/15.png";
+import tabeaa15 from "./Assets/projectsImages/tapeaa/16.png";
+import tabeaa16 from "./Assets/projectsImages/tapeaa/17.png";
+import tabeaa17 from "./Assets/projectsImages/tapeaa/18.png";
+import tabeaa18 from "./Assets/projectsImages/tapeaa/19.png";
+
+
+// aurora images
+import aurora1 from "./Assets/projectsImages/aurora/2.png";
+import aurora2 from "./Assets/projectsImages/aurora/3.png";
+import aurora3 from "./Assets/projectsImages/aurora/4.png";
+import aurora4 from "./Assets/projectsImages/aurora/5.png";
+import aurora5 from "./Assets/projectsImages/aurora/6.png";
+import aurora6 from "./Assets/projectsImages/aurora/7.png";
+import aurora7 from "./Assets/projectsImages/aurora/8.png";
+import aurora8 from "./Assets/projectsImages/aurora/9.png";
+import aurora9 from "./Assets/projectsImages/aurora/10.png";
+
 
 // cafe images
 import cafe1 from "./Assets/projectsImages/cafe/2.png";
@@ -443,7 +478,7 @@ function App() {
       date: "Nov 27, 2024",
     },
     {
-      id: 25,
+      id: 2,
       imgPath: souq, // Ensure you import this image in your projects.js file
       imagePaths: [
         souq1,
@@ -483,7 +518,7 @@ function App() {
       date: "June 16, 2025",
     },
     {
-      id: 26,
+      id: 3,
       imgPath: rawafed,
       imagePaths: [
         rawafed1,
@@ -531,7 +566,45 @@ function App() {
       date: "June 28, 2025",
     },
     {
-      id: 2,
+      id: 4,
+      imgPath: aurora, // replace with your actual image import variable
+      title: "Aurora Brand Store",
+      imagePaths: [
+        aurora1,
+        aurora2,
+        aurora3,
+        aurora4,
+        aurora5,
+        aurora6,
+        aurora7,
+        aurora8,
+        aurora9,
+      ],
+      description:
+        "Aurora Brand Store is a modern, visually engaging e-commerce website designed to showcase stylish fashion products and deliver a smooth online shopping experience.",
+      ghLink: "https://github.com/FadyAdel04/stitch-showcase-static",
+      demoLink: "https://aurora-brand-store.vercel.app/",
+      skills: [
+        "React",
+        "Next.js",
+        "Tailwind",
+        "TypeScript",
+        "Responsive",
+      ],
+      technologies: [],
+      tools: ["VS Code", "Vercel", "Figma"],
+      keyFeatures: [
+        "Elegant UI Design: Minimal and stylish interface reflecting a premium fashion brand.",
+        "Product Showcase: Clean grid layout to display product collections effectively.",
+        "Responsive Layout: Fully optimized for desktops, tablets, and mobile devices.",
+        "Fast Performance: Built with Next.js for optimized loading and SEO-friendly pages.",
+        "Brand Identity: Uses a refined color palette and typography for a luxurious feel.",
+        "Smooth Navigation: Ensures intuitive browsing and a seamless shopping experience.",
+      ],
+      date: "July 10, 2025",
+    },
+    {
+      id: 6,
       imgPath: imaginify, // Ensure you import this image in your projects.js file
       imagePaths: [ai1, ai2, ai3, ai4, ai5, ai6, ai7],
       title: "Imaginify AI Platform",
@@ -553,7 +626,7 @@ function App() {
       date: "june 3, 2024",
     },
     {
-      id: 27,
+      id: 5,
       imgPath: golden,
       imagePaths: [
         golden1,
@@ -597,7 +670,7 @@ function App() {
       date: "June 29, 2025",
     },
     {
-      id: 3,
+      id: 7,
       imgPath: holla, // Ensure you import this image in your projects.js file
       imagePaths: [
         holla1,
@@ -633,7 +706,7 @@ function App() {
       date: "September 25, 2024",
     },
     {
-      id: 28,
+      id: 8,
       imgPath: cafeBloom, 
       imagePaths: [cafe1, cafe2, cafe3, cafe4], // Replace with actual imported image paths
       title: "Café Bloom Bistro Website",
@@ -662,7 +735,7 @@ function App() {
       date: "June 1, 2025",
     },
     {
-      id: 26,
+      id: 10,
       imgPath: blog1, // Replace with the appropriate image path
       imagePaths: [blog2, blog3, blog4, blog5, blog6],
       title: "YC Directory",
@@ -695,7 +768,7 @@ function App() {
       date: "Nov 26, 2024",
     },
     {
-      id: 4,
+      id: 9,
       imgPath: techTrove,
       imagePaths: [
         tech1,
@@ -736,7 +809,7 @@ function App() {
       date: "March 20, 2024",
     },
     {
-      id: 27,
+      id: 13,
       imgPath: solar,
       imagePaths: [solar1, solar2, solar3, solar4, solar5, solar6],
       title: "Solidarity Solar",
@@ -757,7 +830,7 @@ function App() {
       date: "April 9, 2025",
     },
     {
-      id: 28,
+      id: 30,
       imgPath: register,
       imagePaths: [register1, register2, register3],
       title: "Login/Register System",
@@ -778,7 +851,7 @@ function App() {
       date: "April 9, 2025",
     },
     {
-      id: 29,
+      id: 27,
       imgPath: moviesApp,
       imagePaths: [movies1, movies2, movies3],
       title: "Movies App",
@@ -799,7 +872,7 @@ function App() {
       date: "April 10, 2025",
     },
     {
-      id: 32,
+      id: 12,
       imgPath: papa, // Main preview image
       imagePaths: [papa1, papa2, papa3, papa4, papa5, papa6, papa7, papa8],
       title: "Papa John's Pizza Website",
@@ -825,7 +898,7 @@ function App() {
       date: "March 20, 2025",
     },
     {
-      id: 30,
+      id: 14,
       imgPath: amazon,
       imagePaths: [
         amazon1,
@@ -860,7 +933,7 @@ function App() {
       date: "March 4, 2025",
     },
     {
-      id: 31,
+      id: 24,
       imgPath: vivaDecor, // Main preview image
       imagePaths: [viva1, viva2, viva3, viva4, viva5],
       title: "VivaDecor Website",
@@ -881,7 +954,7 @@ function App() {
       date: "March 11, 2025",
     },
     {
-      id: 6,
+      id: 11,
       imgPath: novil, // Ensure you import this image in your projects.js file
       imagePaths: [
         novil1,
@@ -914,7 +987,7 @@ function App() {
       date: "June 23, 2023",
     },
     {
-      id: 5,
+      id: 15,
       imgPath: chat, // Ensure you import this image in your projects.js file
       imagePaths: [
         chat1,
@@ -945,7 +1018,7 @@ function App() {
       date: "March 27, 2024",
     },
     {
-      id: 25,
+      id: 16,
       imgPath: hospital,
       imagePaths: [
         hospital1,
@@ -979,7 +1052,7 @@ function App() {
       date: "December 26, 2024",
     },
     {
-      id: 7,
+      id: 17,
       imgPath: gym, // Ensure you import this image in your projects.js file
       title: "Fitness Gym",
       imagePaths: [gym1, gym2, gym3, gym4],
@@ -1002,7 +1075,7 @@ function App() {
       date: "June 6, 2024",
     },
     {
-      id: 8,
+      id: 18,
       imgPath: courses, // Ensure you import this image in your projects.js file
       imagePaths: [
         learn1,
@@ -1033,7 +1106,7 @@ function App() {
       date: "June 20, 2024",
     },
     {
-      id: 9,
+      id: 19,
       imgPath: brain, // Ensure you import this image in your projects.js file
       title: "BrainWave-AI",
       imagePaths: [
@@ -1065,7 +1138,7 @@ function App() {
       date: "March 17, 2024",
     },
     {
-      id: 10,
+      id: 20,
       imgPath: car, // Ensure you import this image in your projects.js file
       title: "CarRent-App",
       imagePaths: [car1, car2],
@@ -1087,7 +1160,7 @@ function App() {
       date: "July 19, 2024",
     },
     {
-      id: 11,
+      id: 21,
       imgPath: space, // Ensure you import this image in your projects.js file
       imagePaths: [space1, space2, space3, space4],
       title: "TCJ-SPACE",
@@ -1109,7 +1182,7 @@ function App() {
       date: "August 1, 2024",
     },
     {
-      id: 12,
+      id: 22,
       imgPath: store, // Ensure you import this image in your projects.js file
       imagePaths: [
         karama1,
@@ -1146,7 +1219,7 @@ function App() {
       date: "March 16, 2024",
     },
     {
-      id: 13,
+      id: 23,
       imgPath: travel, // Ensure you import this image in your projects.js file
       imagePaths: [travel1, travel2, travel3, travel4],
       title: "Travel App: Explore the World!",
@@ -1168,7 +1241,7 @@ function App() {
       date: "October 15, 2024",
     },
     {
-      id: 14,
+      id: 25,
       imgPath: red, // Ensure you import this image in your projects.js file
       imagePaths: [red1, red2, red3, red4, red5, red6, red7],
       title: "Red Store Online Shop",
@@ -1190,7 +1263,7 @@ function App() {
       date: "September 15, 2023",
     },
     {
-      id: 15,
+      id: 26,
       imgPath: zen, // Ensure you import this image in your projects.js file
       imagePaths: [zen1, zen2, zen3, zen4, zen5, zen6, zen7, zen8],
       title: "TBH-Zen Resort",
@@ -1212,7 +1285,7 @@ function App() {
       date: "September 30, 2023",
     },
     {
-      id: 16,
+      id: 28,
       imgPath: shopping, // Replace with the actual path for the project image
       imagePaths: [
         shopping1,
@@ -1249,7 +1322,7 @@ function App() {
       date: "March 20, 2023",
     },
     {
-      id: 17,
+      id: 29,
       imgPath: bootstrap, // Replace with the actual path for the main project image
       imagePaths: [
         bootstrap1,
@@ -1280,7 +1353,7 @@ function App() {
       date: "Jun 8, 2023",
     },
     {
-      id: 18,
+      id: 31,
       imgPath: dash, // Replace with the actual path for the main project image
       imagePaths: [dash1],
       title: "AdminHub Dashboard",
@@ -1304,7 +1377,7 @@ function App() {
       date: "January 15, 2022",
     },
     {
-      id: 19,
+      id: 32,
       imgPath: spicial, // Replace with the actual path for the main project image
       imagePaths: [special1, special2, special3, special4, special5, special6],
       title: "Special Design",
@@ -1327,7 +1400,7 @@ function App() {
       date: "December 10, 2022",
     },
     {
-      id: 20,
+      id: 33,
       imgPath: phone, // Replace with the actual path for the main project image
       imagePaths: [phone1, phone2, phone3, phone4],
       title: "Apple Template",
@@ -1350,7 +1423,7 @@ function App() {
       date: "February 5, 2022",
     },
     {
-      id: 21,
+      id: 34,
       imgPath: dev,
       imagePaths: [dev1, dev2, dev3, dev4, dev5, dev6, dev7, dev8, dev9],
       title: "DEVELOPMENT Template",
@@ -1372,7 +1445,7 @@ function App() {
       date: "April 15, 2023",
     },
     {
-      id: 22,
+      id: 35,
       imgPath: phlox,
       imagePaths: [
         phlox1,
@@ -1406,7 +1479,7 @@ function App() {
       date: "February 10, 2023",
     },
     {
-      id: 23,
+      id: 36,
       imgPath: edited,
       imagePaths: [edited1],
       title: "Image Editor",
@@ -1429,7 +1502,7 @@ function App() {
       date: "April 5, 2023",
     },
     {
-      id: 24,
+      id: 37,
       imgPath: crud,
       imagePaths: [crud1],
       title: "CRUDS",
@@ -1449,6 +1522,54 @@ function App() {
         "Responsive Design: Fully responsive layout for a seamless experience on mobile and desktop.",
       ],
       date: "April 10, 2023",
+    },
+    {
+      id: 38,
+      imgPath: tabeaa, // replace with your actual image import variable
+      title: "Tabia E-Commerce Store",
+      imagePaths: [
+        tabeaa1,
+        tabeaa2,
+        tabeaa3,
+        tabeaa4,
+        tabeaa5,
+        tabeaa6,
+        tabeaa7,
+        tabeaa8,
+        tabeaa9,
+        tabeaa10,
+        tabeaa11,
+        tabeaa12,
+        tabeaa13,
+        tabeaa14,
+        tabeaa15,
+        tabeaa16,
+        tabeaa17,
+        tabeaa18,
+      ],
+      description:
+        "Tabia is a modern e-commerce platform designed for agricultural, animal, and tourism investment products. It offers a clean, nature-inspired design with seamless shopping and booking experiences.",
+      ghLink: "https://github.com/FadyAdel04/tabia-ecom-store",
+      demoLink: "https://tabia-ecom-store.vercel.app/",
+      skills: [
+        "React",
+        "Next.js",
+        "Tailwind",
+        "TypeScript",
+        "ShadCN",
+        "Responsive",
+      ],
+      technologies: [],
+      tools: ["VS Code", "Vercel", "Figma"],
+      keyFeatures: [
+        "Multi-Category Platform: Showcases agricultural, animal, and rural tourism products.",
+        "Responsive Design: Optimized for all screen sizes with a modern UI layout.",
+        "Booking & Inquiry System: Allows users to reserve experiences and request details.",
+        "Natural Color Palette: Combines green, brown, sky blue, and beige for a rural theme.",
+        "Multilingual Support: Enables users to switch between Arabic and English.",
+        "SEO Optimized & Fast: Built with Next.js for high performance and fast page loading.",
+      ],
+      date: "August 15, 2025",
     },
   ];
 

@@ -22,6 +22,7 @@ import practice from "../../Assets/cirtificate/practice.png";
 import frank from "../../Assets/cirtificate/cib-frank.png"
 import cibwow from "../../Assets/cirtificate/cib.png";
 import mongo from "../../Assets/cirtificate/mongoDB.png";
+import itida from "../../Assets/cirtificate/itida.jpg";
 
 import cib from "../../Assets/company/cib.png"
 import linkedin from "../../Assets/company/linkedin.png"
@@ -33,6 +34,7 @@ import sololearn from "../../Assets/company/sololearn.png"
 import brain from "../../Assets/company/brain.png"
 import Frankfurt from "../../Assets/company/frankfort.png"
 import mahara from "../../Assets/company/mahara.png"
+import gigs from "../../Assets/company/itida.jpg"
 
 
 // Add more certificates as needed
@@ -47,6 +49,13 @@ function Certificates() {
   }, []);
 
   const certificates = [
+    {
+      imgPath: itida, // replace with your actual ITIDA image import variable
+      title: "ITIDA Gigs – Web Development Training",
+      description:
+        "A professional freelancing and web development training program by ITIDA, focused on enhancing technical expertise,",
+      orgLogos: [gigs], // replace with your actual ITIDA logo variable if available
+    },    
     {
       imgPath: mongo,
       title: "Introduction to MongoDB",
