@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { Container, Row, Col, Button, ButtonGroup } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import "aos/dist/aos.css";
@@ -46,14 +46,6 @@ import aurora from "../../Assets/Projects/aurora.png";
 import tabeaa from "../../Assets/Projects/tapeaa.png";
 
 function Projects() {
-  useEffect(() => {
-    AOS.init({
-      duration: 2000,
-      once: true,
-      easing: "ease-in-out",
-    });
-  }, []);
-
   const projects = [
     {
       id: 1,
@@ -79,6 +71,7 @@ function Projects() {
       ],
       date: "Nov 27, 2024",
       views: 0,
+      category: "Healthcare",
     },
     {
       id: 2,
@@ -100,6 +93,7 @@ function Projects() {
         "Localization Ready: Arabic typography and formatting tailored to the Gulf market.",
       ],
       date: "June 27, 2024",
+      category: "E-commerce",
     },
     {
       id: 3,
@@ -129,6 +123,7 @@ function Projects() {
         "Fully Responsive: Optimized for desktop, tablet, and mobile devices.",
       ],
       date: "June 28, 2025",
+      category: "Education",
     },
     {
       id: 4,
@@ -157,6 +152,7 @@ function Projects() {
         "Smooth Navigation: Ensures intuitive browsing and a seamless shopping experience.",
       ],
       date: "July 10, 2025",
+      category: "E-commerce",
     },
 
     {
@@ -186,6 +182,7 @@ function Projects() {
         "Clean Layout: Optimized for performance and accessibility across all devices.",
       ],
       date: "June 29, 2025",
+      category: "Travel & Tourism",
     },
     {
       id: 6,
@@ -207,6 +204,7 @@ function Projects() {
         "Tutorials and Resources: Comprehensive guides to help users maximize the platform's potential.",
       ],
       date: "june 3, 2024",
+      category: "AI & Technology",
     },
     {
       id: 7,
@@ -228,6 +226,7 @@ function Projects() {
         "User Reviews: Read and submit reviews for movies and series.",
       ],
       date: "September 25, 2024",
+      category: "Entertainment",
     },
     {
       id: 38,
@@ -256,6 +255,7 @@ function Projects() {
         "SEO Optimized & Fast: Built with Next.js for high performance and fast page loading.",
       ],
       date: "August 15, 2025",
+      category: "E-commerce",
     },
     {
       id: 8,
@@ -289,6 +289,7 @@ function Projects() {
         "Optimized Performance: Fast loading with minimal layout shifts.",
       ],
       date: "June 30, 2025",
+      category: "Food & Restaurant",
     },
     {
       id: 9,
@@ -313,6 +314,7 @@ function Projects() {
         "Customer Reviews: Feedback and ratings system for each product.",
       ],
       date: "March 20, 2024",
+      category: "E-commerce",
     },
     {
       id: 10,
@@ -345,6 +347,7 @@ function Projects() {
         "Minimalistic Design: Fresh and simple UI with only the essential pages for ease of use and a clean aesthetic.",
       ],
       date: "Nov 26, 2024",
+      category: "Business & Startup",
     },
     {
       id: 11,
@@ -363,6 +366,7 @@ function Projects() {
         "User-Friendly Design: Easy to navigate for users of all levels.",
       ],
       date: "June 23, 2023",
+      category: "Education",
     },
     {
       id: 12,
@@ -388,6 +392,7 @@ function Projects() {
         "Modern Layout: Clean HTML/CSS structure for easy scalability.",
       ],
       date: "March 20, 2025",
+      category: "Food & Restaurant",
     },
     {
       id: 13,
@@ -408,6 +413,7 @@ function Projects() {
         "Contact Options: Provides multiple ways for customers to get in touch, including call requests.",
       ],
       date: "February 3, 2025",
+      category: "Business & Startup",
     },
     {
       id: 14,
@@ -428,6 +434,7 @@ function Projects() {
         "Responsive Design: Fully functional across all screen sizes.",
       ],
       date: "March 4, 2025",
+      category: "E-commerce",
     },
     {
       id: 15,
@@ -448,6 +455,7 @@ function Projects() {
         "Group Chat: Users can create and join group chats.",
       ],
       date: "March 27, 2024",
+      category: "Communication",
     },
     {
       id: 16,
@@ -471,6 +479,7 @@ function Projects() {
         "Responsive Design: Ensures usability across devices, including mobile and desktop.",
       ],
       date: "December 26, 2024",
+      category: "Healthcare",
     },
     {
       id: 17,
@@ -493,6 +502,7 @@ function Projects() {
         "Calorie Tracker: Integrated tool to track calories burned during workouts.",
       ],
       date: "June 6, 2024",
+      category: "Health & Fitness",
     },
     {
       id: 18,
@@ -514,6 +524,7 @@ function Projects() {
         "API Integration: Fetches course data dynamically from a backend API.",
       ],
       date: "June 20, 2024",
+      category: "Education",
     },
     {
       id: 19,
@@ -535,6 +546,7 @@ function Projects() {
         "API Request Logging: Tracks user interactions for analysis and improvement.",
       ],
       date: "March 17, 2024",
+      category: "AI & Technology",
     },
     {
       id: 20,
@@ -556,6 +568,7 @@ function Projects() {
         "Booking Management: Provides users the ability to track and modify their bookings.",
       ],
       date: "July 19, 2024",
+      category: "Car Rental & Services",
     },
     {
       id: 21,
@@ -577,6 +590,7 @@ function Projects() {
         "Optimized Performance: Fast load times with efficient performance optimization.",
       ],
       date: "August 1, 2024",
+      category: "Technology & Innovation",
     },
     {
       id: 22,
@@ -598,6 +612,7 @@ function Projects() {
         "Customer Support: Integrated customer service chat for seamless assistance.",
       ],
       date: "March 16, 2024",
+      category: "E-commerce",
     },
     {
       id: 23,
@@ -619,6 +634,7 @@ function Projects() {
         "User-Friendly Interface: Simple navigation and intuitive UI for ease of use.",
       ],
       date: "October 15, 2024",
+      category: "Travel & Tourism",
     },
     {
       id: 24,
@@ -639,6 +655,7 @@ function Projects() {
         "Smooth Navigation: Sections transition clearly for great UX.",
       ],
       date: "February 12, 2025",
+      category: "Interior Design",
     },
     {
       id: 25,
@@ -660,6 +677,7 @@ function Projects() {
         "Secure Transactions: Ensures user data protection during the checkout process.",
       ],
       date: "September 15, 2023",
+      category: "E-commerce",
     },
     {
       id: 26,
@@ -681,6 +699,7 @@ function Projects() {
         "Stunning Visuals: High-quality images that capture the beauty of the resort and its surroundings.",
       ],
       date: "September 30, 2023",
+      category: "Travel & Tourism",
     },
     {
       id: 27,
@@ -701,6 +720,7 @@ function Projects() {
         "Modern UI: Stylish interface with engaging layout and visuals.",
       ],
       date: "February 11, 2025",
+      category: "Entertainment",
     },
     {
       id: 28,
@@ -725,6 +745,7 @@ function Projects() {
         "Customer Reviews: Feedback and ratings system for each product.",
       ],
       date: "March 20, 2024",
+      category: "E-commerce",
     },
     {
       id: 29,
@@ -748,6 +769,7 @@ function Projects() {
         "Grid Layout: Utilizes Bootstrap’s grid system for flexible, responsive layouts across different screen sizes.",
       ],
       date: "February 10, 2024",
+      category: "Portfolio & Design",
     },
     {
       id: 30,
@@ -768,6 +790,7 @@ function Projects() {
         "Minimalist UI: Focused on simplicity and user experience.",
       ],
       date: "February 9, 2025",
+      category: "Authentication & Security",
     },
     {
       id: 31,
@@ -791,6 +814,7 @@ function Projects() {
         "Widgets and Components: Various ready-made widgets like calendars, notifications, and progress bars.",
       ],
       date: "January 15, 2024",
+      category: "Dashboard & Admin",
     },
     {
       id: 32,
@@ -813,6 +837,7 @@ function Projects() {
         "Interactive Elements: Features like hover effects and interactive buttons for engaging user interaction.",
       ],
       date: "December 10, 2023",
+      category: "Portfolio & Design",
     },
     {
       id: 33,
@@ -835,6 +860,7 @@ function Projects() {
         "Simple Navigation: Clear and intuitive navigation bar for a user-friendly experience.",
       ],
       date: "February 5, 2022",
+      category: "Portfolio & Design",
     },
     {
       id: 34,
@@ -856,6 +882,7 @@ function Projects() {
         "Smooth Animations: Subtle animations enhancing the user interaction.",
       ],
       date: "April 15, 2023",
+      category: "Portfolio & Design",
     },
     {
       id: 35,
@@ -878,6 +905,7 @@ function Projects() {
         "Footer: Contains social media links and business information.",
       ],
       date: "February 10, 2023",
+      category: "Portfolio & Design",
     },
     {
       id: 36,
@@ -900,6 +928,7 @@ function Projects() {
         "Download Edited Image: Users can download the edited image with a single click.",
       ],
       date: "April 5, 2023",
+      category: "Tools & Utilities",
     },
     {
       id: 37,
@@ -921,8 +950,57 @@ function Projects() {
         "Responsive Design: Fully responsive layout for a seamless experience on mobile and desktop.",
       ],
       date: "April 10, 2023",
+      category: "Tools & Utilities",
     },
   ];
+
+  const [activeFilter, setActiveFilter] = useState("All");
+  const [filteredProjects, setFilteredProjects] = useState(projects);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
+
+  // Filter projects based on active filter
+  useEffect(() => {
+    if (activeFilter === "All") {
+      setFilteredProjects(projects);
+    } else {
+      setFilteredProjects(projects.filter(project => project.category === activeFilter));
+    }
+  }, [activeFilter]);
+
+  // Focus management for accessibility
+  useEffect(() => {
+    const activeButton = document.querySelector('.filter-button.active');
+    if (activeButton) {
+      activeButton.focus();
+    }
+    
+    // Announce filter change to screen readers
+    const announcement = document.createElement('div');
+    announcement.setAttribute('aria-live', 'polite');
+    announcement.setAttribute('aria-atomic', 'true');
+    announcement.style.position = 'absolute';
+    announcement.style.left = '-10000px';
+    announcement.style.width = '1px';
+    announcement.style.height = '1px';
+    announcement.style.overflow = 'hidden';
+    announcement.textContent = `Filter changed to ${activeFilter}. Showing ${filteredProjects.length} projects.`;
+    document.body.appendChild(announcement);
+    
+    // Clean up after announcement
+    setTimeout(() => {
+      document.body.removeChild(announcement);
+    }, 1000);
+  }, [activeFilter, filteredProjects.length]);
+
+  // Get unique categories
+  const categories = ["All", ...new Set(projects.map(project => project.category))];
 
   return (
     <Container fluid className="project-section">
@@ -934,8 +1012,148 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          {projects.map((project, index) => (
+        
+        {/* Filter Buttons */}
+        <div className="filter-container" style={{ 
+          marginBottom: "40px", 
+          textAlign: "center",
+          position: "relative",
+          overflow: "hidden"
+        }}>
+          <div 
+            className="filter-scroll-container" 
+            role="tablist"
+            aria-label="Project category filters"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexWrap: "wrap",
+              gap: "12px",
+              padding: "20px 0",
+              position: "relative",
+              overflowX: "auto",
+              overflowY: "hidden",
+              scrollbarWidth: "none",
+              msOverflowStyle: "none",
+              WebkitScrollbar: { display: "none" }
+            }}
+          >
+            {categories.map((category, index) => (
+              <button
+                key={category}
+                onClick={() => setActiveFilter(category)}
+                className={`filter-button ${activeFilter === category ? 'active' : ''}`}
+                role="tab"
+                id={`filter-${category.toLowerCase().replace(/\s+/g, '-')}`}
+                aria-selected={activeFilter === category}
+                aria-controls={`projects-${category.toLowerCase().replace(/\s+/g, '-')}`}
+                tabIndex={activeFilter === category ? 0 : -1}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    setActiveFilter(category);
+                  } else if (e.key === 'ArrowLeft' && index > 0) {
+                    e.preventDefault();
+                    setActiveFilter(categories[index - 1]);
+                  } else if (e.key === 'ArrowRight' && index < categories.length - 1) {
+                    e.preventDefault();
+                    setActiveFilter(categories[index + 1]);
+                  }
+                }}
+                style={{
+                  padding: "12px 24px",
+                  borderRadius: "50px",
+                  border: "2px solid transparent",
+                  backgroundColor: activeFilter === category 
+                    ? "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" 
+                    : "rgba(255, 255, 255, 0.1)",
+                  color: activeFilter === category ? "white" : "#b8b8b8",
+                  fontSize: "14px",
+                  fontWeight: activeFilter === category ? "600" : "500",
+                  cursor: "pointer",
+                  transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+                  backdropFilter: "blur(10px)",
+                  boxShadow: activeFilter === category 
+                    ? "0 8px 32px rgba(102, 126, 234, 0.4)" 
+                    : "0 4px 16px rgba(0, 0, 0, 0.1)",
+                  transform: activeFilter === category ? "translateY(-2px)" : "translateY(0)",
+                  minWidth: "fit-content",
+                  whiteSpace: "nowrap",
+                  position: "relative",
+                  overflow: "hidden"
+                }}
+                onMouseEnter={(e) => {
+                  if (activeFilter !== category) {
+                    e.target.style.backgroundColor = "rgba(102, 126, 234, 0.2)";
+                    e.target.style.color = "#ffffff";
+                    e.target.style.transform = "translateY(-1px)";
+                    e.target.style.boxShadow = "0 6px 24px rgba(102, 126, 234, 0.3)";
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (activeFilter !== category) {
+                    e.target.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+                    e.target.style.color = "#b8b8b8";
+                    e.target.style.transform = "translateY(0)";
+                    e.target.style.boxShadow = "0 4px 16px rgba(0, 0, 0, 0.1)";
+                  }
+                }}
+              >
+                <span style={{
+                  position: "relative",
+                  zIndex: 2,
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "8px"
+                }}>
+                  {category}
+                  {activeFilter === category && (
+                    <span style={{
+                      width: "6px",
+                      height: "6px",
+                      borderRadius: "50%",
+                      backgroundColor: "white",
+                      animation: "pulse 2s infinite"
+                    }}></span>
+                  )}
+                </span>
+                {activeFilter === category && (
+                  <div style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                    borderRadius: "50px",
+                    zIndex: 1
+                  }}></div>
+                )}
+              </button>
+            ))}
+          </div>
+          
+          {/* Mobile scroll indicator */}
+          <div style={{
+            position: "absolute",
+            right: "0",
+            top: "50%",
+            transform: "translateY(-50%)",
+            background: "linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.3) 100%)",
+            width: "30px",
+            height: "100%",
+            pointerEvents: "none",
+            display: "none"
+          }} className="scroll-indicator"></div>
+        </div>
+        <Row 
+          style={{ justifyContent: "center", paddingBottom: "10px" }}
+          role="tabpanel"
+          id={`projects-${activeFilter.toLowerCase().replace(/\s+/g, '-')}`}
+          aria-labelledby={`filter-${activeFilter.toLowerCase().replace(/\s+/g, '-')}`}
+        >
+          {filteredProjects.map((project, index) => (
             <Col
               md={4}
               className="project-card"

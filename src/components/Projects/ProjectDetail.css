@@ -281,3 +281,152 @@
   justify-content: space-evenly;
   width: 100%;
 }
+
+/* Filter Container Styles */
+.filter-container {
+  position: relative;
+  margin-bottom: 40px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.filter-scroll-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 20px 0;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.filter-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Filter Button Styles */
+.filter-button {
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  background: rgba(255, 255, 255, 0.1);
+  color: #b8b8b8;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  min-width: fit-content;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  transform: translateY(0);
+}
+
+.filter-button:hover {
+  background: rgba(102, 126, 234, 0.2);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 24px rgba(102, 126, 234, 0.3);
+}
+
+.filter-button.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 600;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.4);
+}
+
+.filter-button span {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-button.active span::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: white;
+  animation: pulse 2s infinite;
+}
+
+/* Pulse animation for active indicator */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .filter-scroll-container {
+    justify-content: flex-start;
+    padding: 15px 0;
+    gap: 8px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .filter-button {
+    padding: 10px 20px;
+    font-size: 13px;
+    flex-shrink: 0;
+  }
+  
+  .scroll-indicator {
+    display: block !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-scroll-container {
+    padding: 10px 0;
+    gap: 6px;
+  }
+  
+  .filter-button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .filter-button {
+    padding: 14px 24px;
+    font-size: 15px;
+  }
+  
+  .filter-button:hover {
+    transform: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #b8b8b8;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filter-button.active:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.4);
+  }
+}
