@@ -25,6 +25,10 @@ import { SiDotnet } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
 import { HiTemplate } from "react-icons/hi";
 import { MdDashboardCustomize } from "react-icons/md";
+import { SiRedux, SiWordpress, SiWoocommerce, SiFramer, SiMongodb, SiSupabase, SiRedis } from "react-icons/si";
+import { TbSql } from "react-icons/tb";
+import { SiExpress } from "react-icons/si";
+
 
 
 // Mapping of technology names to icons
@@ -56,7 +60,16 @@ const iconMapping = {
   "Net" :<SiDotnet />,
   "C#" : <TbBrandCSharp />,
   "ShadCN": <HiTemplate />,
-  "Sanity":<MdDashboardCustomize />,
+  "Sanity": <MdDashboardCustomize />,
+  "Redux": <SiRedux />,
+  "WordPress": <SiWordpress />,
+  "WooCommerce": <SiWoocommerce />,
+  "Framer Motion": <SiFramer />,
+  "MongoDB": <SiMongodb />,
+  "Supabase": <SiSupabase />,
+  "SQL": <TbSql />,
+  "Redis": <SiRedis />,
+  "Express.js": <SiExpress />,
 };
 
 function Techstack({ skills, technologies }) {

@@ -34,20 +34,25 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m a passionate <b className="purple">Frontend Web Developer</b>{" "}
-              with a strong foundation in <b className="purple">React.js</b> and{" "}
-              <b className="purple">Next.js</b>, and experience delivering modern, fast, and responsive websites.
+              I’m a passionate <b className="purple">Full Stack Web Developer</b>{" "}
+              with a strong foundation in <b className="purple">React.js</b>,{" "}
+              <b className="purple">Next.js</b>, and modern backend technologies like{" "}
+              <b className="purple">Node.js, Express.js, and MongoDB</b>.
+              <br />
+              <br />
+              I embrace <b className="purple">"Vibe Coding"</b>—using AI-powered tools like{" "}
+              <b className="purple">Lovable ,Cursor and Antigravity</b> to accelerate development and bring creative ideas to life efficiently.
+              <br />
+              <br />
+              I specialize in building dynamic UIs, animations, and scalable full-stack applications using{" "}
+              <i>
+                <b className="purple">Tailwind CSS, TypeScript, and Supabase</b>
+              </i>
+              .
               <br />
               <br />
               I'm currently pursuing a degree in <b className="purple">Computer Science</b> with a focus on{" "}
               <b className="purple">Artificial Intelligence</b>, and I enjoy combining tech with creativity.
-              <br />
-              <br />
-              I specialize in building dynamic UIs, animations, and performance-optimized apps using{" "}
-              <i>
-                <b className="purple">Tailwind CSS, Shadcn, TypeScript, Supabase</b>
-              </i>{" "}
-              and more.
               <br />
               <br />
               I'm also the creator of{" "}

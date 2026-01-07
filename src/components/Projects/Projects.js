@@ -1017,135 +1017,48 @@ function Projects() {
         <div className="filter-container" style={{ 
           marginBottom: "40px", 
           textAlign: "center",
-          position: "relative",
-          overflow: "hidden"
+          display: "flex",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          gap: "15px"
         }}>
-          <div 
-            className="filter-scroll-container" 
-            role="tablist"
-            aria-label="Project category filters"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              flexWrap: "wrap",
-              gap: "12px",
-              padding: "20px 0",
-              position: "relative",
-              overflowX: "auto",
-              overflowY: "hidden",
-              scrollbarWidth: "none",
-              msOverflowStyle: "none",
-              WebkitScrollbar: { display: "none" }
-            }}
-          >
-            {categories.map((category, index) => (
-              <button
-                key={category}
-                onClick={() => setActiveFilter(category)}
-                className={`filter-button ${activeFilter === category ? 'active' : ''}`}
-                role="tab"
-                id={`filter-${category.toLowerCase().replace(/\s+/g, '-')}`}
-                aria-selected={activeFilter === category}
-                aria-controls={`projects-${category.toLowerCase().replace(/\s+/g, '-')}`}
-                tabIndex={activeFilter === category ? 0 : -1}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    setActiveFilter(category);
-                  } else if (e.key === 'ArrowLeft' && index > 0) {
-                    e.preventDefault();
-                    setActiveFilter(categories[index - 1]);
-                  } else if (e.key === 'ArrowRight' && index < categories.length - 1) {
-                    e.preventDefault();
-                    setActiveFilter(categories[index + 1]);
-                  }
-                }}
-                style={{
-                  padding: "12px 24px",
-                  borderRadius: "50px",
-                  border: "2px solid transparent",
-                  backgroundColor: activeFilter === category 
-                    ? "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" 
-                    : "rgba(255, 255, 255, 0.1)",
-                  color: activeFilter === category ? "white" : "#b8b8b8",
-                  fontSize: "14px",
-                  fontWeight: activeFilter === category ? "600" : "500",
-                  cursor: "pointer",
-                  transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
-                  backdropFilter: "blur(10px)",
-                  boxShadow: activeFilter === category 
-                    ? "0 8px 32px rgba(102, 126, 234, 0.4)" 
-                    : "0 4px 16px rgba(0, 0, 0, 0.1)",
-                  transform: activeFilter === category ? "translateY(-2px)" : "translateY(0)",
-                  minWidth: "fit-content",
-                  whiteSpace: "nowrap",
-                  position: "relative",
-                  overflow: "hidden"
-                }}
-                onMouseEnter={(e) => {
-                  if (activeFilter !== category) {
-                    e.target.style.backgroundColor = "rgba(102, 126, 234, 0.2)";
-                    e.target.style.color = "#ffffff";
-                    e.target.style.transform = "translateY(-1px)";
-                    e.target.style.boxShadow = "0 6px 24px rgba(102, 126, 234, 0.3)";
-                  }
-                }}
-                onMouseLeave={(e) => {
-                  if (activeFilter !== category) {
-                    e.target.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
-                    e.target.style.color = "#b8b8b8";
-                    e.target.style.transform = "translateY(0)";
-                    e.target.style.boxShadow = "0 4px 16px rgba(0, 0, 0, 0.1)";
-                  }
-                }}
-              >
-                <span style={{
-                  position: "relative",
-                  zIndex: 2,
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "8px"
-                }}>
-                  {category}
-                  {activeFilter === category && (
-                    <span style={{
-                      width: "6px",
-                      height: "6px",
-                      borderRadius: "50%",
-                      backgroundColor: "white",
-                      animation: "pulse 2s infinite"
-                    }}></span>
-                  )}
-                </span>
-                {activeFilter === category && (
-                  <div style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                    borderRadius: "50px",
-                    zIndex: 1
-                  }}></div>
-                )}
-              </button>
-            ))}
-          </div>
-          
-          {/* Mobile scroll indicator */}
-          <div style={{
-            position: "absolute",
-            right: "0",
-            top: "50%",
-            transform: "translateY(-50%)",
-            background: "linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.3) 100%)",
-            width: "30px",
-            height: "100%",
-            pointerEvents: "none",
-            display: "none"
-          }} className="scroll-indicator"></div>
+          {categories.map((category, index) => (
+            <button
+              key={category}
+              onClick={() => setActiveFilter(category)}
+              className={`filter-button ${activeFilter === category ? 'active' : ''}`}
+              style={{
+                padding: "10px 20px",
+                borderRadius: "30px",
+                border: activeFilter === category ? "2px solid #c770f0" : "2px solid rgba(199, 112, 240, 0.3)",
+                backgroundColor: activeFilter === category ? "rgba(199, 112, 240, 0.2)" : "transparent",
+                color: activeFilter === category ? "white" : "rgba(255, 255, 255, 0.8)",
+                fontSize: "15px",
+                fontWeight: "600",
+                cursor: "pointer",
+                transition: "all 0.3s ease-in-out",
+                boxShadow: activeFilter === category ? "0 0 15px rgba(199, 112, 240, 0.4)" : "none",
+                backdropFilter: "blur(5px)",
+                outline: "none",
+              }}
+              onMouseEnter={(e) => {
+                if (activeFilter !== category) {
+                  e.target.style.borderColor = "#c770f0";
+                  e.target.style.color = "white";
+                  e.target.style.transform = "scale(1.05)";
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (activeFilter !== category) {
+                  e.target.style.borderColor = "rgba(199, 112, 240, 0.3)";
+                  e.target.style.color = "rgba(255, 255, 255, 0.8)";
+                  e.target.style.transform = "scale(1)";
+                }
+              }}
+            >
+              {category}
+            </button>
+          ))}
         </div>
         <Row 
           style={{ justifyContent: "center", paddingBottom: "10px" }}

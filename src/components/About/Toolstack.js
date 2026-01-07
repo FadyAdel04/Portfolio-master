@@ -25,6 +25,9 @@ import { FaMapMarkedAlt } from "react-icons/fa";
 import { DiResponsive } from "react-icons/di";
 import { TbBrandSupabase } from "react-icons/tb";
 import { DiVisualstudio } from "react-icons/di";
+import { BsCursorFill } from "react-icons/bs";
+import { FaHeart } from "react-icons/fa";
+import { TbBrandGraphql } from "react-icons/tb";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -54,6 +57,9 @@ const toolIconMapping = {
   "Responsive" :<DiResponsive />,
   "AppWrite" : <SiAppwrite />, // Custom icon for Appwrite
   "SMS" :<FaSms />,
+  "Lovable": <FaHeart />,
+  "Cursor": <BsCursorFill />,
+  "Antigravity": <TbBrandGraphql />,
 };
 
 function Toolstack({ tools }) {

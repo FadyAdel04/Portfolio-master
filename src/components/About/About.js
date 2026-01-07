@@ -12,26 +12,28 @@ import WorkExperience from "./WorkExperience";
 
 function About() {
   // Define the skills and technologies you want to show on the About page
-  const skills = ["HTML", "CSS", "Bootstrap", "Tailwind", "JavaScript","TypeScript", "React", "Next.js", "PHP", "MySQL", "Python", "Java", "C++", "C#", "ShadCN", "Sanity", "Net", "Open Ai"];
-  const technologies = [ ];
+  const skills = [
+    "HTML", "CSS", "JavaScript", "TypeScript", 
+    "React", "Next.js", "Redux", "Bootstrap", 
+    "Tailwind", "ShadCN", "WordPress", "WooCommerce", 
+    "Framer Motion", "Node.js", "Supabase", 
+    "SQL", "MongoDB" ,"Express.js"
+  ];
+  const technologies = [];
 
   // Define the tools you want to show on the About page
   const tools = [
-    "VS Code",
-    "VS Community",
-    "Postman",
-    "Slack",
-    "Vercel",
-    "Firebase",
-    "Strapi",
-    "GitHub",
-    "API",
     "Git",
-    "Node.js",
-    "Stripe",
-    "Windows",
+    "GitHub",
+    "Vercel",
+    "Figma",
+    "VS Code",
+    "Lovable",
+    "Cursor",
+    "Postman",
+    "Antigravity",
     "Animation",
-    "Responsive",
+    "Responsive"
   ];
 
   return (
