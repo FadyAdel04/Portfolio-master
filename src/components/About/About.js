@@ -8,33 +8,28 @@ import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack"; // Adjusted import path
 import WorkExperience from "./WorkExperience";
+import { supabase } from "../../utils/supabase";
+import { useState, useEffect } from "react";
 
 
 function About() {
-  // Define the skills and technologies you want to show on the About page
-  const skills = [
-    "HTML", "CSS", "JavaScript", "TypeScript", 
-    "React", "Next.js", "Redux", "Bootstrap", 
-    "Tailwind", "ShadCN", "WordPress", "WooCommerce", 
-    "Framer Motion", "Node.js", "Supabase", 
-    "SQL", "MongoDB" ,"Express.js"
-  ];
-  const technologies = [];
+  const [skills, setSkills] = useState([]);
+  const [tools, setTools] = useState([]);
 
-  // Define the tools you want to show on the About page
-  const tools = [
-    "Git",
-    "GitHub",
-    "Vercel",
-    "Figma",
-    "VS Code",
-    "Lovable",
-    "Cursor",
-    "Postman",
-    "Antigravity",
-    "Animation",
-    "Responsive"
-  ];
+  useEffect(() => {
+    const fetchAbout = async () => {
+      const { data } = await supabase.from('about_info').select('*');
+      if (data) {
+        const dbSkills = data.find(d => d.type === 'skills')?.items || [];
+        const dbTools = data.find(d => d.type === 'tools')?.items || [];
+        setSkills(dbSkills);
+        setTools(dbTools);
+      }
+    };
+    fetchAbout();
+  }, []);
+
+  const technologies = [];
 
   return (
     <Container fluid className="about-section" style={{ backgroundColor: "#0d1117" }}>

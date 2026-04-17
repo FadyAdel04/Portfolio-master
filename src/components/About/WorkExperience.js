@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { supabase } from "../../utils/supabase";
 
 const experiences = [
   {
@@ -64,6 +65,25 @@ const experiences = [
 ];
 
 function WorkExperience() {
+  const [experienceList, setExperienceList] = useState([]);
+
+  useEffect(() => {
+    const fetchExperiences = async () => {
+      const { data } = await supabase.from('work_experience').select('*').order('created_at', { ascending: false });
+      if (data && data.length > 0) {
+        // Ensure role mappings match local object signature
+        const mappedData = data.map(exp => ({
+          ...exp,
+          role: exp.roles || [],
+        }));
+        setExperienceList(mappedData);
+      } else {
+        setExperienceList(experiences); // fallback
+      }
+    };
+    fetchExperiences();
+  }, []);
+
   useEffect(() => {
     AOS.init({
       duration: 1500, // Animation duration
@@ -75,7 +95,7 @@ function WorkExperience() {
   return (
     <div className="work-experience-container">
       <div className="timeline">
-        {experiences.map((exp, index) => (
+        {experienceList.map((exp, index) => (
           <div
             key={exp.id}
             className={`timeline-item ${index % 2 === 0 ? "left" : "right"}`}

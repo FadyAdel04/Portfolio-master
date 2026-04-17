@@ -9,9 +9,17 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiCodeforces } from "react-icons/si";
 
+import { useLocation } from "react-router-dom";
+
 function Footer() {
+  const location = useLocation();
   let date = new Date();
   let year = date.getFullYear();
+
+  if (location.pathname === "/admin" || location.pathname.startsWith("/admin/")) {
+    return null;
+  }
+
   return (
     <Container fluid className="footer">
       <Row>

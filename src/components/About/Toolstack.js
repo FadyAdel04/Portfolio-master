@@ -73,21 +73,30 @@ function Toolstack({ tools }) {
 
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      {tools.map((tool, index) => (
-        <Col
-          xs={4}
-          md={2}
-          className="tool-icons"
-          data-aos="fade-up"
-          data-aos-delay={index * 200} // Increase delay for each icon
-          key={index}
-          style={{ position: "relative", textAlign: "center" }} // Tooltip positioning
-        >
-          {toolIconMapping[tool] || null} {/* Display the corresponding icon */}
-          {/* Tooltip displaying tool name */}
-          <div className="tool-tooltip">{tool}</div>
-        </Col>
-      ))}
+      {tools.map((toolItem, index) => {
+        const isObj = typeof toolItem === 'object' && toolItem !== null;
+        const name = isObj ? toolItem.name : toolItem;
+        const imgUrl = isObj ? toolItem.img_url : null;
+        
+        return (
+          <Col
+            xs={4}
+            md={2}
+            className="tool-icons"
+            data-aos="fade-up"
+            data-aos-delay={index * 200}
+            key={index}
+            style={{ position: "relative", textAlign: "center" }}
+          >
+            {imgUrl ? (
+              <img src={imgUrl} alt={name} style={{ width: "80px", height: "80px", objectFit: "contain" }} />
+            ) : (
+              toolIconMapping[name] || <span style={{ fontSize: "0.4em" }}>{name}</span>
+            )}
+            <div className="tool-tooltip">{name}</div>
+          </Col>
+        );
+      })}
     </Row>
   );
 }

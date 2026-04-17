@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import { supabase } from "../../utils/supabase";
 
 // Import your project images here
 import papa from "../../Assets/Projects/papa.png";
@@ -954,8 +955,27 @@ function Projects() {
     },
   ];
 
+  const [projectList, setProjectList] = useState([]);
   const [activeFilter, setActiveFilter] = useState("All");
-  const [filteredProjects, setFilteredProjects] = useState(projects);
+  const [filteredProjects, setFilteredProjects] = useState([]);
+
+  useEffect(() => {
+    const fetchProjects = async () => {
+      const { data } = await supabase.from('projects').select('*').order('created_at', { ascending: false });
+      if (data) {
+        const mappedData = data.map(p => ({
+          ...p,
+          imgPath: p.img_url,
+          demoLink: p.demo_link,
+          ghLink: p.gh_link,
+          keyFeatures: p.key_features || []
+        }));
+        setProjectList(mappedData);
+        setFilteredProjects(mappedData);
+      }
+    };
+    fetchProjects();
+  }, []);
 
   useEffect(() => {
     AOS.init({
@@ -968,11 +988,11 @@ function Projects() {
   // Filter projects based on active filter
   useEffect(() => {
     if (activeFilter === "All") {
-      setFilteredProjects(projects);
+      setFilteredProjects(projectList);
     } else {
-      setFilteredProjects(projects.filter(project => project.category === activeFilter));
+      setFilteredProjects(projectList.filter(project => project.category === activeFilter));
     }
-  }, [activeFilter]);
+  }, [activeFilter, projectList]);
 
   // Focus management for accessibility
   useEffect(() => {
@@ -1000,7 +1020,7 @@ function Projects() {
   }, [activeFilter, filteredProjects.length]);
 
   // Get unique categories
-  const categories = ["All", ...new Set(projects.map(project => project.category))];
+  const categories = ["All", ...new Set(projectList.map(project => project.category).filter(Boolean))];
 
   return (
     <Container fluid className="project-section">

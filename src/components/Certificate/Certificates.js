@@ -4,6 +4,7 @@ import CertificateCard from "./CertificateCard";
 import Particle from "../Particle";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { supabase } from "../../utils/supabase";
 
 
 // Import your certificate and organization logo images here
@@ -181,7 +182,26 @@ const certificates = [
 
 function Certificates() {
   const [activeFilter, setActiveFilter] = useState("All");
-  const [filteredCertificates, setFilteredCertificates] = useState(certificates);
+  const [certificateList, setCertificateList] = useState([]);
+  const [filteredCertificates, setFilteredCertificates] = useState([]);
+
+  useEffect(() => {
+    const fetchCerts = async () => {
+      const { data } = await supabase.from('certificates').select('*').order('created_at', { ascending: false });
+      if (data && data.length > 0) {
+        const mappedData = data.map(c => ({
+          ...c,
+          imgPath: c.img_url,
+          liveLink: c.live_link,
+          orgLogos: c.org_logos || []
+        }));
+        setCertificateList(mappedData);
+      } else {
+        setCertificateList(certificates); // fallback
+      }
+    };
+    fetchCerts();
+  }, []);
 
   useEffect(() => {
     AOS.init({
@@ -194,11 +214,11 @@ function Certificates() {
   // Filter certificates based on active filter
   useEffect(() => {
     if (activeFilter === "All") {
-      setFilteredCertificates(certificates);
+      setFilteredCertificates(certificateList);
     } else {
-      setFilteredCertificates(certificates.filter(certificate => certificate.category === activeFilter));
+      setFilteredCertificates(certificateList.filter(certificate => certificate.category === activeFilter));
     }
-  }, [activeFilter]);
+  }, [activeFilter, certificateList]);
 
   // Focus management for accessibility
   useEffect(() => {
@@ -226,7 +246,7 @@ function Certificates() {
   }, [activeFilter, filteredCertificates.length]);
 
   // Get unique categories
-  const categories = ["All", ...new Set(certificates.map(certificate => certificate.category))];
+  const categories = ["All", ...new Set(certificateList.map(certificate => certificate.category).filter(Boolean))];
 
   return (
     <Container fluid className="project-section">

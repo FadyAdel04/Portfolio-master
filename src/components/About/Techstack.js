@@ -86,21 +86,30 @@ function Techstack({ skills, technologies }) {
 
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      {allTechs.map((tech, index) => (
-        <Col
-          xs={4}
-          md={2}
-          className="tech-icons"
-          data-aos="fade-up"
-          data-aos-delay={index * 200} // Increase delay for each icon
-          key={index}
-          style={{ position: "relative", textAlign: "center" }} // Tooltip positioning
-        >
-          {iconMapping[tech] || null} {/* Display the corresponding icon */}
-          {/* Tooltip displaying tech name */}
-          <div className="tech-tooltip">{tech}</div>
-        </Col>
-      ))}
+      {allTechs.map((techItem, index) => {
+        const isObj = typeof techItem === 'object' && techItem !== null;
+        const name = isObj ? techItem.name : techItem;
+        const imgUrl = isObj ? techItem.img_url : null;
+        
+        return (
+          <Col
+            xs={4}
+            md={2}
+            className="tech-icons"
+            data-aos="fade-up"
+            data-aos-delay={index * 200}
+            key={index}
+            style={{ position: "relative", textAlign: "center" }}
+          >
+            {imgUrl ? (
+              <img src={imgUrl} alt={name} style={{ width: "80px", height: "80px", objectFit: "contain" }} />
+            ) : (
+              iconMapping[name] || <span style={{ fontSize: "0.4em" }}>{name}</span>
+            )}
+            <div className="tech-tooltip">{name}</div>
+          </Col>
+        );
+      })}
     </Row>
   );
 }

@@ -16,6 +16,7 @@ import Contact from "./components/Contact/Contact"; // Import Contact component
 import Resume from "./components/Resume/ResumeNew";
 import ProjectDetail from "./components/Projects/ProjectDetail";
 import Preloader from "../src/components/Pre";
+import AdminDashboard from "./components/Admin/AdminDashboard";
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
@@ -1584,13 +1585,14 @@ function App() {
           <Route path="/project" element={<Projects />} />
           <Route
             path="/project/:projectId"
-            element={<ProjectDetail projects={projects} />}
+            element={<ProjectDetail />}
           />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/certificates" element={<Certificates />} />
           <Route path="/contact" element={<Contact />} />{" "}
           {/* Add Contact Route */}
+          <Route path="/admin" element={<AdminDashboard />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />

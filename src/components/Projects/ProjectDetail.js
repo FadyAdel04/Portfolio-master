@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Particle from "../Particle";
 import { Button } from "react-bootstrap";
@@ -12,24 +12,55 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CustomArrow from "../CustomArrow";
 import "./ProjectDetail.css";
+import { supabase } from "../../utils/supabase";
 
-const ProjectDetail = ({ projects }) => {
+const ProjectDetail = () => {
   const { projectId } = useParams();
   const navigate = useNavigate();
-  const currentProjectId = parseInt(projectId, 10);
-  const project = projects.find((p) => p.id === currentProjectId);
+  const [projectsList, setProjectsList] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  if (!project) {
-    return <div className="project-not-found">Project not found.</div>;
+  useEffect(() => {
+    const fetchProjects = async () => {
+      const { data } = await supabase.from('projects').select('*').order('created_at', { ascending: false });
+      if (data) {
+        const mappedData = data.map(p => ({
+          ...p,
+          imgPath: p.img_url,
+          demoLink: p.demo_link,
+          ghLink: p.gh_link,
+          keyFeatures: p.key_features || [],
+          imagePaths: Array.isArray(p.image_paths) ? p.image_paths : (p.image_paths ? p.image_paths.split(',').map(s=>s.trim()) : [])
+        }));
+        setProjectsList(mappedData);
+      }
+      setLoading(false);
+    };
+    fetchProjects();
+  }, []);
+
+  const project = projectsList.find((p) => String(p.id) === String(projectId));
+
+  if (loading) {
+     return <div className="project-not-found" style={{color: "white", textAlign: "center", padding: "100px"}}>Loading project details...</div>;
   }
 
-  const currentProjectIndex = projects.findIndex(
-    (p) => p.id === currentProjectId
+  if (!project) {
+    return (
+      <div className="project-not-found" style={{color: "white", textAlign: "center", padding: "100px"}}>
+        <h2>Project not found.</h2>
+        <Button onClick={() => navigate("/project")} variant="primary" style={{marginTop: "20px"}}>Back to Projects</Button>
+      </div>
+    );
+  }
+
+  const currentProjectIndex = projectsList.findIndex(
+    (p) => String(p.id) === String(projectId)
   );
   const nextProjectId =
-    projects[(currentProjectIndex + 1) % projects.length]?.id;
+    projectsList[(currentProjectIndex + 1) % projectsList.length]?.id;
   const prevProjectId =
-    projects[(currentProjectIndex - 1 + projects.length) % projects.length]?.id;
+    projectsList[(currentProjectIndex - 1 + projectsList.length) % projectsList.length]?.id;
 
   const handleNext = () => {
     navigate(`/project/${nextProjectId}`);
@@ -43,7 +74,7 @@ const ProjectDetail = ({ projects }) => {
     color: "#c889e6",
   };
 
-  const imageSlider = [project.imgPath, ...project.imagePaths];
+  const imageSlider = [project.imgPath, ...(project.imagePaths || [])].filter(Boolean);
   const settings = {
     dots: true,
     infinite: true,
@@ -58,8 +89,8 @@ const ProjectDetail = ({ projects }) => {
   };
 
   // Get previous and next project details for images
-  const prevProject = projects.find((p) => p.id === prevProjectId);
-  const nextProject = projects.find((p) => p.id === nextProjectId);
+  const prevProject = projectsList.find((p) => p.id === prevProjectId);
+  const nextProject = projectsList.find((p) => p.id === nextProjectId);
 
   return (
     <div className="project-detail-section">
@@ -139,7 +170,7 @@ const ProjectDetail = ({ projects }) => {
 
         <div className="skills-container">
           <h2 className="section-title">Tools Used</h2>
-          <Toolstack tools={project.tools} />
+          <Toolstack tools={project.tools || []} />
         </div>
       </div>
 
@@ -163,8 +194,8 @@ const ProjectDetail = ({ projects }) => {
           )}
         </div>
         <div className="project-title-row">
-        <p className="project-title">{prevProject.title}</p>
-          <h3 className="project-title">{nextProject.title}</h3>
+          <p className="project-title">{prevProject?.title}</p>
+          <h3 className="project-title">{nextProject?.title}</h3>
         </div>
         <div className="navigation-buttons">
           <Button onClick={handlePrev} variant="primary">

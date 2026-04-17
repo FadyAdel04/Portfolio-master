@@ -9,12 +9,28 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import { supabase } from "../../utils/supabase";
+
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
+  const [resumeUrl, setResumeUrl] = useState(pdf); // Default to local static PDF
 
   useEffect(() => {
+    const fetchResume = async () => {
+      const { data } = await supabase
+        .from('about_info')
+        .select('items')
+        .eq('type', 'resume')
+        .single();
+        
+      if (data?.items?.url) {
+        setResumeUrl(data.items.url);
+      }
+    };
+    fetchResume();
+
     AOS.init({
       duration: 2000,
       once: true,
@@ -30,7 +46,7 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={pdf}
+            href={resumeUrl}
             target="_blank"
             style={{ maxWidth: "250px" }}
             data-aos="fade-up"
@@ -41,11 +57,11 @@ function ResumeNew() {
         </Row>
 
         <Row className="resume" data-aos="fade-up" data-aos-delay="200">
-          <Document file={pdf} className="d-flex justify-content-center">
+          <Document file={resumeUrl} className="d-flex justify-content-center">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
             </Document>
           <hr />
-          <Document file={pdf} className="d-flex justify-content-center">
+          <Document file={resumeUrl} className="d-flex justify-content-center">
             <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} />
             </Document>
         </Row>

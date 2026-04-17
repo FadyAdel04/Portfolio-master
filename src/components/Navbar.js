@@ -33,6 +33,10 @@ function NavBar() {
 
   window.addEventListener("scroll", scrollHandler);
 
+  if (path === "/admin" || path.startsWith("/admin/")) {
+    return null;
+  }
+
   return (
     <Navbar
       expanded={expand}
