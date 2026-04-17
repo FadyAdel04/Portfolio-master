@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Button, Form, Alert, Badge } from "react-bootstrap";
+import { Container, Form, Alert, Badge } from "react-bootstrap";
 import { supabase } from "../../utils/supabase";
-import { AiOutlineUpload, AiOutlineCloudUpload } from "react-icons/ai";
+
 
 function ResumeManager() {
   const [resumeUrl, setResumeUrl] = useState("");

@@ -6,7 +6,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
   AiFillFacebook,
 } from "react-icons/ai";
