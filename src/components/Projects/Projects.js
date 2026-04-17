@@ -6,45 +6,7 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 import { supabase } from "../../utils/supabase";
 
-// Import your project images here
-import papa from "../../Assets/Projects/papa.png";
-import vivaDecor from "../../Assets/Projects/viva.png";
-import amazon from "../../Assets/Projects/amazone.png";
-import moviesApp from "../../Assets/Projects/movie.png";
-import imaginify from "../../Assets/Projects/imaginify.png";
-import gym from "../../Assets/Projects/gym.png";
-import techTrove from "../../Assets/Projects/techTrove.png";
-import novil from "../../Assets/Projects/novil.png";
-import chat from "../../Assets/Projects/chat.png";
-import courses from "../../Assets/Projects/courses.png";
-import brain from "../../Assets/Projects/brain.png";
-import car from "../../Assets/Projects/car.png";
-import space from "../../Assets/Projects/space.png";
-import store from "../../Assets/Projects/store.png";
-import travel from "../../Assets/Projects/travel.png";
-import red from "../../Assets/Projects/red.png";
-import zen from "../../Assets/Projects/zen.png";
-import holla from "../../Assets/Projects/holla.png";
-import shopping from "../../Assets/Projects/shopping.png";
-import bootstrap from "../../Assets/Projects/bootstrap.png";
-import dash from "../../Assets/Projects/dash.png";
-import spicial from "../../Assets/Projects/spicial.png";
-import phone from "../../Assets/Projects/phone.png";
-import dev from "../../Assets/Projects/dev.png";
-import phlox from "../../Assets/Projects/phlox.png";
-import edited from "../../Assets/Projects/edited.png";
-import crud from "../../Assets/Projects/crud.png";
-import health from "../../Assets/Projects/health.png";
-import hospital from "../../Assets/Projects/hospital.png";
-import blog1 from "../../Assets/Projects/blog.png";
-import solar from "../../Assets/Projects/solar.png";
-import register from "../../Assets/Projects/login.png";
-import souq from "../../Assets/Projects/souq.png";
-import rawafed from "../../Assets/Projects/rawafed.png";
-import golden from "../../Assets/Projects/golden.png";
-import cafeBloom from "../../Assets/Projects/cafe.png";
-import aurora from "../../Assets/Projects/aurora.png";
-import tabeaa from "../../Assets/Projects/tapeaa.png";
+// Images are imported dynamically from Supabase
 
 function Projects() {
 

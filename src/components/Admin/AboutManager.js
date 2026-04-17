@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Form, Button, Alert, Row, Col, Badge, Modal } from "react-bootstrap";
+import { Form, Button, Alert, Row, Col, Modal } from "react-bootstrap";
 import { supabase } from "../../utils/supabase";
 
 function AboutManager() {

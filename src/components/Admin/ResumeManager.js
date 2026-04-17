@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Form, Alert, Badge } from "react-bootstrap";
+import { Form, Alert, Badge } from "react-bootstrap";
 import { supabase } from "../../utils/supabase";
 
 
