@@ -17,6 +17,13 @@ function ProjectCards(props) {
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
+        {props.category && (
+          <div style={{ marginBottom: "15px" }}>
+            <span style={{ backgroundColor: "#c770f0", color: "white", padding: "5px 12px", borderRadius: "20px", fontSize: "0.85em", fontWeight: "600", boxShadow: "0 0 10px rgba(199, 112, 240, 0.4)" }}>
+              {props.category}
+            </span>
+          </div>
+        )}
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>

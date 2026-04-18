@@ -111,6 +111,13 @@ const ProjectDetail = () => {
           </div>
           <div className="project-details">
             <h1 className="project-title">{project.title}</h1>
+            {project.category && (
+              <div style={{ marginBottom: "20px", textAlign: "left" }}>
+                <span style={{ backgroundColor: "#c770f0", color: "white", padding: "6px 15px", borderRadius: "20px", fontSize: "0.9em", fontWeight: "600", boxShadow: "0 0 10px rgba(199, 112, 240, 0.4)" }}>
+                  {project.category}
+                </span>
+              </div>
+            )}
             <p className="project-description">{project.description}</p>
             <p className="project-date">
               <strong style={divStyle}>Completed on:</strong> {project.date}
