@@ -73,7 +73,7 @@ function Toolstack({ tools }) {
 
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      {tools.map((toolItem, index) => {
+      {(tools || []).map((toolItem, index) => {
         const isObj = typeof toolItem === 'object' && toolItem !== null;
         const name = isObj ? toolItem.name : toolItem;
         const imgUrl = isObj ? toolItem.img_url : null;

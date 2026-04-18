@@ -82,7 +82,7 @@ function Techstack({ skills, technologies }) {
   }, []);
 
   // Combine skills and technologies into one array
-  const allTechs = [...skills, ...technologies];
+  const allTechs = [...(skills || []), ...(technologies || [])];
 
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
